@@ -68,3 +68,11 @@ test("Track Trades tab shows the trade leaderboard and every trade", async ({ pa
   await expect(page.getByRole("list", { name: "Trade leaderboard" })).toBeVisible();
   await expect(page.getByText("Bijan Robinson", { exact: true })).toBeVisible();
 });
+
+test("Waiver Wire tab shows the best pickups and worst drops", async ({ page }) => {
+  await page.goto("/#waivers");
+  await expect(page.getByRole("heading", { level: 2, name: "Waiver Wire" })).toBeVisible();
+  await expect(page.getByRole("list", { name: /Best pickups of Week/ })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Best pickups of the season" })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Worst drops of the season" })).toBeVisible();
+});

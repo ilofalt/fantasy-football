@@ -13,7 +13,7 @@ describe("LeagueTabs", () => {
     expect(document.querySelector("#matchups")).not.toBeNull();
   });
 
-  it("switches to News and Track Trades and updates the URL hash", () => {
+  it("switches between every tab and updates the URL hash", () => {
     renderWithTheme(<LeagueTabs />);
 
     fireEvent.click(screen.getByRole("tab", { name: "News" }));
@@ -23,6 +23,10 @@ describe("LeagueTabs", () => {
     fireEvent.click(screen.getByRole("tab", { name: "Track Trades" }));
     expect(screen.getByRole("heading", { level: 2, name: "Track Trades" })).toBeInTheDocument();
     expect(window.location.hash).toBe("#trades");
+
+    fireEvent.click(screen.getByRole("tab", { name: "Waiver Wire" }));
+    expect(screen.getByRole("heading", { level: 2, name: "Waiver Wire" })).toBeInTheDocument();
+    expect(window.location.hash).toBe("#waivers");
 
     fireEvent.click(screen.getByRole("tab", { name: "Matchups" }));
     expect(window.location.hash).toBe("");

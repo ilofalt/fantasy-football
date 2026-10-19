@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Tab from "@mui/material/Tab";
@@ -8,17 +8,26 @@ import Tabs from "@mui/material/Tabs";
 import Matchups from "./Matchups";
 import News from "./News";
 import Trades from "./Trades";
+import Waivers from "./Waivers";
 
 // The site is a static export served straight from S3, so extra pages would
 // 404 on refresh without a CloudFront rewrite. Tabs live on the one page
-// instead, with the URL hash (#news, #trades) making each one linkable.
+// instead, with the URL hash (#news, #trades, #waivers) making each one linkable.
 export const TABS = [
   { id: "matchups", label: "Matchups" },
   { id: "news", label: "News" },
   { id: "trades", label: "Track Trades" },
+  { id: "waivers", label: "Waiver Wire" },
 ] as const;
 
 export type TabId = (typeof TABS)[number]["id"];
+
+const PANELS: Record<TabId, ReactNode> = {
+  matchups: <Matchups />,
+  news: <News />,
+  trades: <Trades />,
+  waivers: <Waivers />,
+};
 
 function tabFromHash(hash: string): TabId {
   const id = hash.replace(/^#/, "");
@@ -62,7 +71,7 @@ export default function LeagueTabs() {
       </Container>
       {TABS.map((t) => (
         <div key={t.id} role="tabpanel" id={`panel-${t.id}`} aria-labelledby={`tab-${t.id}`} hidden={tab !== t.id}>
-          {tab === t.id && (t.id === "matchups" ? <Matchups /> : t.id === "news" ? <News /> : <Trades />)}
+          {tab === t.id && PANELS[t.id]}
         </div>
       ))}
     </>
