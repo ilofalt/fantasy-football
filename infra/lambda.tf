@@ -1,9 +1,10 @@
 variable "yahoo_league_id" {
-  description = "Yahoo Fantasy league ID — the number in football.fantasysports.yahoo.com/f1/<league_id>"
+  description = "Yahoo Fantasy league ID — the number in football.fantasysports.yahoo.com/f1/<league_id>. Required before enabling the schedule."
   type        = string
+  default     = ""
 
   validation {
-    condition     = can(regex("^[0-9]+$", var.yahoo_league_id))
+    condition     = var.yahoo_league_id == "" || can(regex("^[0-9]+$", var.yahoo_league_id))
     error_message = "yahoo_league_id must be the numeric league ID."
   }
 }
@@ -11,7 +12,15 @@ variable "yahoo_league_id" {
 variable "scoreboard_schedule" {
   description = "How often the scoreboard Lambda refreshes data/scoreboard.json"
   type        = string
-  default     = "rate(5 minutes)"
+  # Weekly, Tuesdays 12:00 UTC (8am ET) — after Monday Night Football, once
+  # the new week's matchups are set.
+  default = "cron(0 12 ? * TUE *)"
+}
+
+variable "scoreboard_schedule_enabled" {
+  description = "Whether the schedule runs the scoreboard Lambda. Off until Yahoo grants the app Fantasy API access."
+  type        = bool
+  default     = false
 }
 
 locals {
@@ -104,12 +113,11 @@ resource "aws_lambda_function" "scoreboard" {
 
   environment {
     variables = {
-      PARAM_PREFIX = local.yahoo_param_prefix
-      LEAGUE_KEY   = "nfl.l.${var.yahoo_league_id}"
-      BUCKET       = aws_s3_bucket.site.id
-      OBJECT_KEY   = local.scoreboard_object_key
+      LEAGUE_KEY = "nfl.l.${var.yahoo_league_id}"
+      BUCKET     = aws_s3_bucket.site.id
+      OBJECT_KEY = local.scoreboard_object_key
       # Must match the Redirect URI registered on the Yahoo app.
-      YAHOO_REDIRECT_URI = "https://${local.domain_name}"
+      YAHOO_REDIRECT_URI = "oob"
     }
   }
 
@@ -119,6 +127,14 @@ resource "aws_lambda_function" "scoreboard" {
 resource "aws_cloudwatch_event_rule" "scoreboard" {
   name                = "${local.scoreboard_function_name}-schedule"
   schedule_expression = var.scoreboard_schedule
+  state               = var.scoreboard_schedule_enabled ? "ENABLED" : "DISABLED"
+
+  lifecycle {
+    precondition {
+      condition     = !var.scoreboard_schedule_enabled || var.yahoo_league_id != ""
+      error_message = "Set yahoo_league_id before enabling the scoreboard schedule."
+    }
+  }
 }
 
 resource "aws_cloudwatch_event_target" "scoreboard" {

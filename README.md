@@ -44,7 +44,7 @@ terraform apply
 
 Matchups come from the [Yahoo Fantasy Sports API](https://developer.yahoo.com/fantasysports/guide/), which requires OAuth, so the static page can't call it directly. Instead:
 
-1. A Lambda ([`lambda/scoreboard/handler.ts`](lambda/scoreboard/handler.ts)) runs every 5 minutes on an EventBridge schedule.
+1. A Lambda ([`lambda/scoreboard/handler.ts`](lambda/scoreboard/handler.ts)) runs weekly (Tuesdays 8am ET) on an EventBridge schedule. The schedule is **off** until `scoreboard_schedule_enabled = true` — set it once Yahoo grants the app Fantasy API access.
 2. It refreshes the Yahoo access token using credentials stored as SecureString parameters under `/fantasy-football/yahoo/` in SSM, fetches the league scoreboard, and simplifies Yahoo's response ([`src/lib/scoreboard/normalize.ts`](src/lib/scoreboard/normalize.ts)).
 3. It writes the result to `data/scoreboard.json` in the site bucket (60-second cache), which the page loads and re-polls every minute.
 

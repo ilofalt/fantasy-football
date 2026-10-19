@@ -3,8 +3,8 @@
 //   node scripts/yahoo-auth.mjs
 //
 // It asks for your Yahoo app's Client ID and Secret, has you approve access in
-// the browser (you'll land on ff.isaiahofalt.com/?code=... — copy that URL),
-// trades the code for a refresh token, and stores all three as
+// the browser (Yahoo then shows a code), trades the code for a refresh token,
+// and stores all three as
 // SecureString parameters in AWS SSM, where the scoreboard Lambda reads them.
 // Nothing is written to disk or printed.
 import { createInterface } from "node:readline/promises";
@@ -12,10 +12,10 @@ import { exec } from "node:child_process";
 import { PutParameterCommand, SSMClient } from "@aws-sdk/client-ssm";
 
 const PARAM_PREFIX = "/fantasy-football/yahoo";
-// Must match the Redirect URI registered on the Yahoo app (and the Lambda's
-// YAHOO_REDIRECT_URI). The site doesn't need to be live for this to work —
-// the code is read straight from the address bar.
-const REDIRECT_URI = "https://ff.isaiahofalt.com";
+// "oob" (out-of-band): Yahoo displays the code instead of redirecting. Yahoo
+// rejects the app's registered https URI, but accepts oob. Must match the
+// Lambda's YAHOO_REDIRECT_URI.
+const REDIRECT_URI = "oob";
 
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
@@ -35,9 +35,8 @@ const opener =
       : `xdg-open "${authUrl}"`;
 exec(opener, () => {});
 
-// After approving, Yahoo redirects to https://ff.isaiahofalt.com/?code=...
-// Accept either that whole URL or just the code.
-const answer = (await rl.question("Paste the URL you were redirected to (or just the code): ")).trim();
+// Accept either the bare code or a URL containing ?code=...
+const answer = (await rl.question("Paste the code Yahoo shows you: ")).trim();
 rl.close();
 const code = answer.includes("code=") ? new URL(answer).searchParams.get("code") : answer;
 if (!code) {
