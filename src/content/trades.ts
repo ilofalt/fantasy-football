@@ -4,10 +4,9 @@ import type { Trade } from "@/lib/trades/types";
 // points in league scoring, per NFL week, counted from the first week each
 // player could score for his new team.
 //
-// Last updated: Sunday night, Week 6 (Oct 18, 2026). Sunday night and Monday
-// night games were still to be played or in progress, so a few Week 6 numbers
-// will move.
-export const TRADES_UPDATED = "Week 6 · Sun Oct 18, 2026";
+// Last updated: after Sunday night's game, Week 6 (Oct 18, 2026). Monday
+// night (Washington at San Francisco) is still to be played.
+export const TRADES_UPDATED = "Week 6 · after Sunday night, Oct 18";
 
 export const trades: Trade[] = [
   {
@@ -19,7 +18,7 @@ export const trades: Trade[] = [
         manager: "Raymond",
         received: [
           { name: "Amon-Ra St. Brown", position: "WR · DET", weeklyPointsSinceTrade: [null], note: "Bye in Week 6" },
-          { name: "Javonte Williams", position: "RB · DAL", weeklyPointsSinceTrade: [12.0], note: "Sunday night game in progress" },
+          { name: "Javonte Williams", position: "RB · DAL", weeklyPointsSinceTrade: [13.0] },
           { name: "Blake Corum", position: "RB · LAR", weeklyPointsSinceTrade: [14.0] },
         ],
       },
@@ -36,7 +35,7 @@ export const trades: Trade[] = [
     headline: "Ray wins Week 1 of the blockbuster. lanny still has the best player in it.",
     writeUp: [
       "The biggest trade of the season: a 3-for-3 where Ray sent Bijan Robinson, Chase Brown, and Jameson Williams to lanny for Amon-Ra St. Brown, Javonte Williams, and Blake Corum.",
-      "On the scoreboard, Ray is up 26.0 to 5.8 after one week, but that's mostly the schedule. Detroit and Cincinnati were both on bye, so Amon-Ra, Chase Brown, and Jameson Williams all scored zero, and Bijan had his worst game of the season (5.8) against Chicago.",
+      "On the scoreboard, Ray is up 27.0 to 5.8 after one week, but that's mostly the schedule. Detroit and Cincinnati were both on bye, so Amon-Ra, Chase Brown, and Jameson Williams all scored zero, and Bijan had his worst game of the season (5.8) against Chicago.",
       "Corum's 14 points are the real wrinkle. He's Kyren Williams' backup, and lanny owns Kyren, so Corum's value to Ray depends on him getting carries behind a starter Ray doesn't control.",
       "Before the trade, Bijan was averaging about 24 points a game, more than any player Ray got back. Ray is ahead for now, but we'd still take lanny's side the rest of the way. They play each other in Week 7.",
     ],
@@ -53,7 +52,7 @@ export const trades: Trade[] = [
       {
         manager: "Daniel",
         received: [
-          { name: "George Pickens", position: "WR · DAL", weeklyPointsSinceTrade: [6.5], note: "Sunday night game in progress" },
+          { name: "George Pickens", position: "WR · DAL", weeklyPointsSinceTrade: [9.8] },
         ],
       },
     ],
@@ -61,7 +60,7 @@ export const trades: Trade[] = [
     headline: "Tuten has his best game of the year the week after he's traded.",
     writeUp: [
       "A straight swap: Isaiah sent George Pickens to Daniel for Bhayshul Tuten, Daniel's 3rd-round pick.",
-      "Tuten responded with 23.2 points, his best game of the season. Pickens had 6.5 with Dallas trailing late on Sunday night.",
+      "Tuten responded with 23.2 points, his best game of the season. Pickens had 9.8 on Sunday night in a 23-13 loss at Green Bay.",
       "Daniel needed WR help, and Pickens has a 22-point game this season, so this can still swing back. For now, the trade went the way Daniel's whole season has.",
     ],
   },

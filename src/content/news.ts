@@ -26,21 +26,22 @@ export const news: NewsArticle[] = [
   {
     id: "week-6-recap",
     category: "Recap",
-    title: "Week 6: Isaiah posts the top score, Daniel falls to 0-6",
-    dek: "Results as of Sunday night. One game is still waiting on Monday night.",
+    title: "Week 6: Isaiah posts the top score, Daniel's 0-6 all but sealed",
+    dek: "Results through Sunday night's Packers win. Two matchups still have players going Monday night.",
     date: "2026-10-18",
     paragraphs: [
-      "Isaiah had the best score of the week so far, 125.24, and beat Noah by 38 to get back to .500. Ethan kept rolling with a win over Andrew and is the league's only 5-1 team if Matthew loses.",
-      "lanny got his first win with Bijan Robinson on the roster, edging Chris 100.42 to 93.78. Chris drops to 1-5, and has now allowed the most points in the league.",
-      "Raymond finally got a result to match his scoring, beating Jonathan 100.30 to 71.88. Daniel lost to Zachary 100.70 to 68.96 and is now 0-6, the worst start in league history.",
+      "Isaiah's 125.24 is the top score of the week with only Monday night left, and it beat Noah by 38 to get him back to .500. Ethan beat Andrew 106.12 to 73.34 and moves to 5-1.",
+      "lanny edged Chris 100.54 to 93.78 in his first week with Bijan Robinson. Chris drops to 1-5 and has now allowed the most points in the league.",
+      "Raymond finally got a result to match his scoring, beating Jonathan 101.30 to 72.48. Daniel trails Zachary 100.70 to 80.42 with only his kicker, Eddy Pineiro, left to play Monday night. Pineiro would need about 20 points to keep Daniel from 0-6.",
+      "Matthew leads Nicholas 98.32 to 58.60, but Nicholas still has players going Monday night. Yahoo projects Matthew to finish ahead, about 109 to 100.",
     ],
     list: [
-      { label: "Isaiah 125.24 · Noah 87.20", detail: "Final" },
-      { label: "Ethan 106.12 · Andrew 71.24", detail: "Ethan wins" },
-      { label: "lanny 100.42 · Chris 93.78", detail: "Final" },
-      { label: "Raymond 100.30 · Jonathan 71.88", detail: "Raymond wins" },
-      { label: "Zachary 100.70 · Daniel 68.96", detail: "Zachary wins" },
-      { label: "Matthew 97.02 · Nicholas 58.60", detail: "Nicholas has players left Monday night" },
+      { label: "Isaiah 125.24 · Noah 87.20", detail: "Isaiah wins" },
+      { label: "Ethan 106.12 · Andrew 73.34", detail: "Ethan wins" },
+      { label: "lanny 100.54 · Chris 93.78", detail: "Final" },
+      { label: "Raymond 101.30 · Jonathan 72.48", detail: "Raymond wins" },
+      { label: "Zachary 100.70 · Daniel 80.42", detail: "Daniel needs about 20 from his kicker Monday night" },
+      { label: "Matthew 98.32 · Nicholas 58.60", detail: "Nicholas has players left Monday night" },
     ],
   },
   {
@@ -104,7 +105,7 @@ export const news: NewsArticle[] = [
     dek: "We went back through every season since 2022 to check.",
     date: "2026-10-18",
     paragraphs: [
-      "No team in league history had ever started 0-5 before this season. Daniel is now 0-6, with the fewest points through five weeks of any team since 2022 (412.44) and an all-play record of 6-49.",
+      "No team in league history had ever started 0-5 before this season. Daniel will almost certainly be 0-6 after Monday night (he trails by 20 with only his kicker left), with the fewest points through five weeks of any team since 2022 (412.44) and an all-play record of 6-49.",
       "The closest comparison is Abiy's 2024 team, which started 1-5. That team actually scored slightly fewer points through six weeks, thanks to a 36.91-point Week 6, but it had a win, and its all-play record was more than twice as good.",
       "It hasn't been all Daniel's fault. His opponents have averaged nearly 117 points a week, close to the hardest schedule on record. But the draft didn't help: his first five picks have produced the fewest points of any team in the league.",
       "He was one of the league's best managers before this year, going 11-3 in 2024 and 8-6 in 2025. Everyone has a bad season. This is just the worst one we've seen.",
@@ -113,7 +114,7 @@ export const news: NewsArticle[] = [
   {
     id: "draft-report-card",
     category: "Feature",
-    title: "Draft report card, six weeks in",
+    title: "Draft report card, through Week 5",
     dek: "Grading every draft by how many points its picks have scored, no matter where they play now.",
     date: "2026-10-18",
     paragraphs: [

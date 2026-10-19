@@ -5,10 +5,10 @@
 // at Sunday kickoff. Re-adding your own draft pick after dropping him doesn't
 // count as a pickup.
 //
-// Last updated: Sunday night, Week 6 (Oct 18, 2026). Monday night's game
-// hadn't been played yet.
+// Last updated: after Sunday night's game, Week 6 (Oct 18, 2026). Monday
+// night (Washington at San Francisco) is still to be played.
 
-export const WAIVERS_UPDATED = "Week 6 · Sun Oct 18, 2026";
+export const WAIVERS_UPDATED = "Week 6 · after Sunday night, Oct 18";
 export const CURRENT_WEEK = 6;
 
 export interface Pickup {
@@ -137,16 +137,16 @@ export const seasonDrops: Drop[] = [
 ];
 
 export const managerDropRecords: ManagerDropRecord[] = [
-  { manager: "Nicholas", pointsGivenAway: 801.7, drops: 36 },
+  { manager: "Nicholas", pointsGivenAway: 801.5, drops: 36 },
   { manager: "Isaiah", pointsGivenAway: 444.4, drops: 17 },
-  { manager: "Noah", pointsGivenAway: 349.2, drops: 11 },
+  { manager: "Noah", pointsGivenAway: 349.0, drops: 11 },
   { manager: "Chris", pointsGivenAway: 313.4, drops: 21 },
   { manager: "Matthew", pointsGivenAway: 253.7, drops: 19 },
   { manager: "lanny", pointsGivenAway: 213.2, drops: 14 },
   { manager: "Ethan", pointsGivenAway: 194.6, drops: 12 },
   { manager: "Raymond", pointsGivenAway: 179.3, drops: 16 },
   { manager: "Daniel", pointsGivenAway: 157.5, drops: 14 },
-  { manager: "Jonathan", pointsGivenAway: 118.1, drops: 6 },
+  { manager: "Jonathan", pointsGivenAway: 114.1, drops: 6 },
   { manager: "Zachary", pointsGivenAway: 71.5, drops: 11 },
   { manager: "Andrew", pointsGivenAway: 24.7, drops: 2 },
 ];
