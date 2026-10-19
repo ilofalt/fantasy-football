@@ -1,0 +1,80 @@
+{
+  "leagueName": "Sample League",
+  "leagueUrl": "https://football.fantasysports.yahoo.com/f1/12345",
+  "week": 7,
+  "updatedAt": "2026-10-18T20:00:00.000Z",
+  "matchups": [
+    {
+      "status": "live",
+      "isPlayoffs": false,
+      "teams": [
+        {
+          "key": "461.l.12345.t.1",
+          "name": "Hurts So Good",
+          "manager": "Isaiah",
+          "logoUrl": null,
+          "points": 87.34,
+          "projectedPoints": 112.5,
+          "winProbability": 0.62
+        },
+        {
+          "key": "461.l.12345.t.2",
+          "name": "Kamara Chameleon",
+          "manager": "Jordan",
+          "logoUrl": null,
+          "points": 79.1,
+          "projectedPoints": 104.2,
+          "winProbability": 0.38
+        }
+      ]
+    },
+    {
+      "status": "live",
+      "isPlayoffs": false,
+      "teams": [
+        {
+          "key": "461.l.12345.t.3",
+          "name": "Bijan Mustard",
+          "manager": "Taylor",
+          "logoUrl": null,
+          "points": 101.06,
+          "projectedPoints": 118.9,
+          "winProbability": 0.71
+        },
+        {
+          "key": "461.l.12345.t.4",
+          "name": "Purdy Little Liars",
+          "manager": "Casey",
+          "logoUrl": null,
+          "points": 64.4,
+          "projectedPoints": 95.3,
+          "winProbability": 0.29
+        }
+      ]
+    },
+    {
+      "status": "live",
+      "isPlayoffs": false,
+      "teams": [
+        {
+          "key": "461.l.12345.t.5",
+          "name": "The Lamb Chops",
+          "manager": "Riley",
+          "logoUrl": null,
+          "points": 55.82,
+          "projectedPoints": 99,
+          "winProbability": 0.47
+        },
+        {
+          "key": "461.l.12345.t.6",
+          "name": "Ja'Marr the Merrier",
+          "manager": "Morgan",
+          "logoUrl": null,
+          "points": 58.2,
+          "projectedPoints": 101.7,
+          "winProbability": 0.53
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fantasy-football",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/copy-sample-scoreboard.mjs",
+    "dev": "next dev",
+    "build": "next build",
+    "build:lambda": "esbuild lambda/scoreboard/handler.ts --bundle --platform=node --target=node24 --format=esm --external:@aws-sdk/* --outfile=infra/build/scoreboard/index.mjs",
+    "start": "npx serve out",
+    "lint": "eslint src e2e lambda scripts",
+    "test": "jest",
+    "test:e2e": "playwright test",
+    "deploy": "bash infra/deploy.sh",
+    "yahoo:auth": "node scripts/yahoo-auth.mjs"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "@mui/material-nextjs": "^9.4.0",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "@aws-sdk/client-ssm": "^3.1152.0",
+    "@playwright/test": "^1.61.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.5",
+    "jest": "^30.5.1",
+    "jest-environment-jsdom": "^30.5.1",
+    "serve": "^14.2.6",
+    "typescript": "^6.0.3"
+  }
+}

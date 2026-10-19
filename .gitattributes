@@ -1,0 +1,7 @@
+*.pdf -text binary
+*.woff -text binary
+*.woff2 -text binary
+*.png -text binary
+*.jpg -text binary
+*.jpeg -text binary
+*.ico -text binary
