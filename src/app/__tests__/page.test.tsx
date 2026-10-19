@@ -6,11 +6,12 @@ beforeEach(() => {
 });
 
 describe("Home page composition", () => {
-  it("renders header, hero, matchups, and footer", () => {
+  it("renders header, hero, section tabs, matchups, and footer", () => {
     const { container } = renderWithTheme(<Home />);
 
     expect(container.querySelector("header")).not.toBeNull();
     expect(container.querySelector("main #home")).not.toBeNull();
+    expect(container.querySelector("main [role=tablist]")).not.toBeNull();
     expect(container.querySelector("main #matchups")).not.toBeNull();
     expect(container.querySelector("footer")).not.toBeNull();
   });

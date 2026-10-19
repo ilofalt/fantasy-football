@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Matchups from "@/components/Matchups";
+import LeagueTabs from "@/components/LeagueTabs";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Matchups />
+        <LeagueTabs />
       </main>
       <Footer />
     </>

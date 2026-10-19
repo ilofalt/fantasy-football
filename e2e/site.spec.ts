@@ -50,3 +50,21 @@ test("dark mode toggle actually changes the rendered background color", async ({
     expect(after).not.toBe(before);
   }).toPass();
 });
+
+test("News tab shows league stories and is linkable", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("tab", { name: "News" }).click();
+  await expect(page.getByRole("heading", { name: "League News" })).toBeVisible();
+  await expect(page).toHaveURL(/#news$/);
+
+  await page.goto("/#news");
+  await expect(page.getByRole("tab", { name: "News" })).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByRole("heading", { name: "League News" })).toBeVisible();
+});
+
+test("Track Trades tab shows the trade leaderboard and every trade", async ({ page }) => {
+  await page.goto("/#trades");
+  await expect(page.getByRole("heading", { level: 2, name: "Track Trades" })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Trade leaderboard" })).toBeVisible();
+  await expect(page.getByText("Bijan Robinson", { exact: true })).toBeVisible();
+});
