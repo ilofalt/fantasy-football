@@ -4,9 +4,9 @@ import type { Trade } from "@/lib/trades/types";
 // points in league scoring, per NFL week, counted from the first week each
 // player could score for his new team.
 //
-// Last updated: after Sunday night's game, Week 6 (Oct 18, 2026). Monday
-// night (Washington at San Francisco) is still to be played.
-export const TRADES_UPDATED = "Week 6 · after Sunday night, Oct 18";
+// Last updated: Week 6 final, including Monday night and stat corrections
+// (Oct 19, 2026).
+export const TRADES_UPDATED = "Week 6 final · Mon Oct 19, 2026";
 
 export const trades: Trade[] = [
   {
@@ -72,7 +72,7 @@ export const trades: Trade[] = [
       {
         manager: "Andrew",
         received: [
-          { name: "Mike Evans", position: "WR · SF", weeklyPointsSinceTrade: [22.3, null], note: "Plays Monday night" },
+          { name: "Mike Evans", position: "WR · SF", weeklyPointsSinceTrade: [22.3, 10.9] },
           { name: "Jeremiyah Love", position: "RB · ARI", weeklyPointsSinceTrade: [2.2, 0], note: "Out" },
         ],
       },
@@ -84,11 +84,11 @@ export const trades: Trade[] = [
         ],
       },
     ],
-    verdict: null,
-    headline: "Too close to call, and Mike Evans plays Monday night.",
+    verdict: "Andrew",
+    headline: "Mike Evans' Monday night puts Andrew in front.",
     writeUp: [
       "A 2-for-2: Andrew sent Garrett Wilson and Quinshon Judkins to Nicholas for Mike Evans and Jeremiyah Love.",
-      "Evans has been the best player in the deal so far, with 22.3 points in his first game for Andrew. Nicholas is narrowly ahead 30.3 to 24.5, but Evans still plays Monday night and should pass that.",
+      "Evans has been the best player in the deal, with 22.3 points in his first game for Andrew and 10.9 on Monday night. That flipped the trade: Andrew now leads 35.4 to 30.3.",
       "Both RBs, Love and Judkins, are out right now, so the WRs are deciding this one. If both backs come back healthy, Love has more upside.",
     ],
   },
@@ -134,7 +134,7 @@ export const trades: Trade[] = [
       {
         manager: "Nicholas",
         received: [
-          { name: "Stefon Diggs", position: "WR · WAS", weeklyPointsSinceTrade: [4.0, 0, null], note: "Plays Monday night" },
+          { name: "Stefon Diggs", position: "WR · WAS", weeklyPointsSinceTrade: [4.0, 0, 11.9] },
           { name: "Noah Fant", position: "TE · NO", weeklyPointsSinceTrade: [0, 0.7, 0], note: "Since dropped" },
         ],
       },
@@ -143,8 +143,8 @@ export const trades: Trade[] = [
     headline: "The most lopsided trade of the season.",
     writeUp: [
       "The first trade of the year: Ray sent Stefon Diggs and Noah Fant to Nicholas for Ollie Gordon II and Kenyon Sadiq.",
-      "Gordon became Miami's lead back almost immediately and has 35.3 points in two games since the trade. Diggs has 4 points and Fant has less than 1.",
-      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Diggs plays Monday night, but he'd need a big game to make this close.",
+      "Gordon became Miami's lead back almost immediately and has 35.3 points in two games since the trade. Diggs has 15.9, most of it from 11.9 on Monday night, and Fant has less than 1.",
+      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Ray leads 37.0 to 16.6, and Gordon's Week 6 bye was the only thing keeping it from being worse.",
     ],
   },
 ];

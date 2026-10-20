@@ -5,10 +5,10 @@
 // at Sunday kickoff. Re-adding your own draft pick after dropping him doesn't
 // count as a pickup.
 //
-// Last updated: after Sunday night's game, Week 6 (Oct 18, 2026). Monday
-// night (Washington at San Francisco) is still to be played.
+// Last updated: Week 6 final, including Monday night and stat corrections
+// (Oct 19, 2026).
 
-export const WAIVERS_UPDATED = "Week 6 · after Sunday night, Oct 18";
+export const WAIVERS_UPDATED = "Week 6 final · Mon Oct 19, 2026";
 export const CURRENT_WEEK = 6;
 
 export interface Pickup {
@@ -41,8 +41,8 @@ export const weekPickups: Pickup[] = [
   { player: "Tre Tucker", position: "WR · LV", manager: "lanny", added: "Oct 14", cost: 0, method: "Free agent", points: 23.7, weeksOnRoster: 1, blurb: "Free on Wednesday, and the top-scoring pickup of the week." },
   { player: "Michael Penix Jr.", position: "QB · ATL", manager: "Matthew", added: "Oct 15", cost: 0, method: "Free agent", points: 23.1, weeksOnRoster: 1, blurb: "A Thursday add who's helping Matthew to a likely 5-1 start." },
   { player: "Jaylin Noel", position: "WR · HOU", manager: "Raymond", added: "Oct 14", cost: 5, method: "Waiver", points: 21.38, weeksOnRoster: 1, blurb: "Five dollars well spent in the same week as Ray's blockbuster trade." },
-  { player: "Chiefs", position: "D/ST · KC", manager: "Jonathan", added: "Oct 14", cost: 15, method: "Waiver", points: 20.0, weeksOnRoster: 1, blurb: "A $15 bid on a defense looks steep, until it scores 20 against the Chargers." },
   { player: "Tyler Bass", position: "K · BUF", manager: "lanny", added: "Oct 14", cost: 0, method: "Waiver", points: 18.7, weeksOnRoster: 1, blurb: "lanny's second top-five pickup of the week." },
+  { player: "Chiefs", position: "D/ST · KC", manager: "Jonathan", added: "Oct 14", cost: 15, method: "Waiver", points: 18.0, weeksOnRoster: 1, blurb: "A $15 bid on a defense looks steep, until it scores 18 against the Chargers. A stat correction knocked it down from 20." },
   { player: "Chris Boswell", position: "K · PIT", manager: "Isaiah", added: "Oct 16", cost: 0, method: "Free agent", points: 17.9, weeksOnRoster: 1, blurb: "Picked up Friday, and a big part of the week's top score." },
   { player: "Germie Bernard", position: "WR · PIT", manager: "Nicholas", added: "Oct 14", cost: 1, method: "Waiver", points: 17.2, weeksOnRoster: 1, blurb: "A $1 claim on a rookie WR who delivered right away." },
   { player: "Aaron Rodgers", position: "QB · PIT", manager: "Ethan", added: "Oct 16", cost: 0, method: "Free agent", points: 17.02, weeksOnRoster: 1, blurb: "A bye-week fill-in. Even Ethan's backups are producing." },
@@ -66,23 +66,23 @@ export const seasonPickups: Pickup[] = [
 ];
 
 export const managerWaiverRecords: ManagerWaiverRecord[] = [
-  { manager: "Nicholas", points: 251.8, pickups: 36, faabSpent: 96 },
+  { manager: "Nicholas", points: 256.5, pickups: 36, faabSpent: 96 },
   { manager: "Noah", points: 250.8, pickups: 12, faabSpent: 71 },
   { manager: "lanny", points: 235.2, pickups: 13, faabSpent: 30 },
   { manager: "Isaiah", points: 228.3, pickups: 18, faabSpent: 100 },
-  { manager: "Raymond", points: 217.8, pickups: 15, faabSpent: 13 },
+  { manager: "Raymond", points: 224.8, pickups: 15, faabSpent: 13 },
   { manager: "Matthew", points: 194.6, pickups: 19, faabSpent: 35 },
-  { manager: "Zachary", points: 188.5, pickups: 12, faabSpent: 46 },
+  { manager: "Zachary", points: 191.7, pickups: 12, faabSpent: 46 },
   { manager: "Chris", points: 159.9, pickups: 26, faabSpent: 85 },
   { manager: "Ethan", points: 149.7, pickups: 12, faabSpent: 52 },
   { manager: "Daniel", points: 128.6, pickups: 15, faabSpent: 91 },
-  { manager: "Jonathan", points: 114.5, pickups: 6, faabSpent: 23 },
+  { manager: "Jonathan", points: 112.5, pickups: 6, faabSpent: 23 },
   { manager: "Andrew", points: 79.6, pickups: 2, faabSpent: 0 },
 ];
 
 export const waiverNotes: { title: string; body: string }[] = [
-  { title: "Best value", body: "Raymond has gotten 217.8 points from the wire while spending just $13 of FAAB, about $0.06 a point." },
-  { title: "Most active", body: "Nicholas has made 36 pickups, more than anyone else. Volume has paid off: he leads the league in points from pickups." },
+  { title: "Best value", body: "Raymond has gotten 224.8 points from the wire while spending just $13 of FAAB, about $0.06 a point." },
+  { title: "Most active", body: "Nicholas has made 36 pickups, more than anyone else. Volume has paid off: he leads the league in points from pickups (256.5)." },
   { title: "Most efficient", body: "Noah is a close second in points (250.8) with a third as many moves (12)." },
   { title: "Biggest misses", body: "Isaiah bid $51 on Jaylen Wright and dropped him after two weeks and 8.3 points. Nicholas bid $26 on Ollie Gordon II and traded him to Ray before he scored a point; Gordon has 35.3 for Ray since." },
   { title: "Doesn't count", body: "Re-adding your own draft pick isn't a pickup. Brock Purdy would top the season list for Nicholas, but Nicholas drafted him." },
@@ -137,16 +137,16 @@ export const seasonDrops: Drop[] = [
 ];
 
 export const managerDropRecords: ManagerDropRecord[] = [
-  { manager: "Nicholas", pointsGivenAway: 801.5, drops: 36 },
-  { manager: "Isaiah", pointsGivenAway: 444.4, drops: 17 },
-  { manager: "Noah", pointsGivenAway: 349.0, drops: 11 },
+  { manager: "Nicholas", pointsGivenAway: 818.2, drops: 36 },
+  { manager: "Isaiah", pointsGivenAway: 442.4, drops: 17 },
+  { manager: "Noah", pointsGivenAway: 356.1, drops: 11 },
   { manager: "Chris", pointsGivenAway: 313.4, drops: 21 },
-  { manager: "Matthew", pointsGivenAway: 253.7, drops: 19 },
-  { manager: "lanny", pointsGivenAway: 213.2, drops: 14 },
+  { manager: "Matthew", pointsGivenAway: 255.5, drops: 19 },
+  { manager: "lanny", pointsGivenAway: 215.2, drops: 14 },
   { manager: "Ethan", pointsGivenAway: 194.6, drops: 12 },
   { manager: "Raymond", pointsGivenAway: 179.3, drops: 16 },
   { manager: "Daniel", pointsGivenAway: 157.5, drops: 14 },
   { manager: "Jonathan", pointsGivenAway: 114.1, drops: 6 },
-  { manager: "Zachary", pointsGivenAway: 71.5, drops: 11 },
+  { manager: "Zachary", pointsGivenAway: 78.7, drops: 11 },
   { manager: "Andrew", pointsGivenAway: 24.7, drops: 2 },
 ];

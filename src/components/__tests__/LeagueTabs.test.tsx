@@ -20,6 +20,10 @@ describe("LeagueTabs", () => {
     expect(screen.getByRole("heading", { name: "League News" })).toBeInTheDocument();
     expect(window.location.hash).toBe("#news");
 
+    fireEvent.click(screen.getByRole("tab", { name: "Playoff Picture" }));
+    expect(screen.getByRole("heading", { level: 2, name: "Playoff Picture" })).toBeInTheDocument();
+    expect(window.location.hash).toBe("#playoffs");
+
     fireEvent.click(screen.getByRole("tab", { name: "Track Trades" }));
     expect(screen.getByRole("heading", { level: 2, name: "Track Trades" })).toBeInTheDocument();
     expect(window.location.hash).toBe("#trades");

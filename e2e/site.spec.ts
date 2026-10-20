@@ -76,3 +76,11 @@ test("Waiver Wire tab shows the best pickups and worst drops", async ({ page }) 
   await expect(page.getByRole("list", { name: "Best pickups of the season" })).toBeVisible();
   await expect(page.getByRole("list", { name: "Worst drops of the season" })).toBeVisible();
 });
+
+test("Playoff Picture tab shows both brackets and the standings", async ({ page }) => {
+  await page.goto("/#playoffs");
+  await expect(page.getByRole("heading", { level: 2, name: "Playoff Picture" })).toBeVisible();
+  await expect(page.getByRole("region", { name: "Playoff bracket" })).toBeVisible();
+  await expect(page.getByRole("region", { name: "Toilet Bowl bracket" })).toBeVisible();
+  await expect(page.getByRole("table")).toBeVisible();
+});
