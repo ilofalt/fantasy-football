@@ -84,3 +84,27 @@ test("Playoff Picture tab shows both brackets and the standings", async ({ page 
   await expect(page.getByRole("region", { name: "Toilet Bowl bracket" })).toBeVisible();
   await expect(page.getByRole("table")).toBeVisible();
 });
+
+test("Weekly Report tab shows Sleeper-style awards", async ({ page }) => {
+  await page.goto("/#report");
+  await expect(page.getByRole("heading", { level: 2, name: /Week \d+ Report/ })).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Best Manager/ })).toBeVisible();
+  await expect(page.getByRole("table", { name: "Lineup efficiency" })).toBeVisible();
+});
+
+test("deep links open the right tab and scroll to the item", async ({ page }) => {
+  await page.goto("/#news/week-7-preview");
+  await expect(page.getByRole("tab", { name: "News" })).toHaveAttribute("aria-selected", "true");
+  const story = page.locator("#week-7-preview");
+  await expect(story).toBeInViewport();
+
+  await page.goto("/#trades/ray-lanny-oct-14");
+  await expect(page.locator("#ray-lanny-oct-14")).toBeInViewport();
+});
+
+test("the link button puts a specific item's link in the address bar", async ({ page }) => {
+  await page.goto("/#report");
+  await page.getByRole("link", { name: "Copy link to Worst Manager" }).click();
+  await expect(page).toHaveURL(/#report\/worst-manager$/);
+  await expect(page.locator("#worst-manager")).toBeInViewport();
+});

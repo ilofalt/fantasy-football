@@ -20,6 +20,10 @@ describe("LeagueTabs", () => {
     expect(screen.getByRole("heading", { name: "League News" })).toBeInTheDocument();
     expect(window.location.hash).toBe("#news");
 
+    fireEvent.click(screen.getByRole("tab", { name: "Weekly Report" }));
+    expect(screen.getByRole("heading", { level: 2, name: /Week \d+ Report/ })).toBeInTheDocument();
+    expect(window.location.hash).toBe("#report");
+
     fireEvent.click(screen.getByRole("tab", { name: "Playoff Picture" }));
     expect(screen.getByRole("heading", { level: 2, name: "Playoff Picture" })).toBeInTheDocument();
     expect(window.location.hash).toBe("#playoffs");
@@ -40,6 +44,16 @@ describe("LeagueTabs", () => {
     window.history.replaceState(null, "", "/#trades");
     renderWithTheme(<LeagueTabs />);
     expect(screen.getByRole("tab", { name: "Track Trades" })).toHaveAttribute("aria-selected", "true");
+  });
+
+  it("opens the tab from a deep link to a specific item and scrolls to it", () => {
+    const scrollIntoView = jest.fn();
+    Element.prototype.scrollIntoView = scrollIntoView;
+    window.history.replaceState(null, "", "/#news/week-7-preview");
+    renderWithTheme(<LeagueTabs />);
+    expect(screen.getByRole("tab", { name: "News" })).toHaveAttribute("aria-selected", "true");
+    expect(document.getElementById("week-7-preview")).not.toBeNull();
+    expect(scrollIntoView).toHaveBeenCalled();
   });
 
   it("falls back to Matchups for an unknown hash", () => {

@@ -10,13 +10,18 @@ import News from "./News";
 import Playoffs from "./Playoffs";
 import Trades from "./Trades";
 import Waivers from "./Waivers";
+import WeeklyReport from "./WeeklyReport";
+import { parseHash } from "@/lib/permalink";
 
 // The site is a static export served straight from S3, so extra pages would
 // 404 on refresh without a CloudFront rewrite. Tabs live on the one page
-// instead, with the URL hash (#news, #playoffs, #trades, #waivers) making each one linkable.
+// instead, with the URL hash (#news, #report, #playoffs, #trades, #waivers)
+// making each one linkable. "#<tab>/<item>" links to a specific story, award,
+// trade, or section within a tab.
 export const TABS = [
   { id: "matchups", label: "Matchups" },
   { id: "news", label: "News" },
+  { id: "report", label: "Weekly Report" },
   { id: "playoffs", label: "Playoff Picture" },
   { id: "trades", label: "Track Trades" },
   { id: "waivers", label: "Waiver Wire" },
@@ -27,27 +32,40 @@ export type TabId = (typeof TABS)[number]["id"];
 const PANELS: Record<TabId, ReactNode> = {
   matchups: <Matchups />,
   news: <News />,
+  report: <WeeklyReport />,
   playoffs: <Playoffs />,
   trades: <Trades />,
   waivers: <Waivers />,
 };
 
 function tabFromHash(hash: string): TabId {
-  const id = hash.replace(/^#/, "");
-  return TABS.some((t) => t.id === id) ? (id as TabId) : "matchups";
+  const { tab } = parseHash(hash);
+  return TABS.some((t) => t.id === tab) ? (tab as TabId) : "matchups";
 }
+
 
 export default function LeagueTabs() {
   const [tab, setTab] = useState<TabId>("matchups");
+  // Item to scroll to; `n` bumps so re-clicking the same link scrolls again.
+  const [target, setTarget] = useState<{ anchor: string; n: number } | null>(null);
 
   useEffect(() => {
     // Sync from the URL on load and on back/forward. This runs after
     // hydration, so the server-rendered HTML always starts on Matchups.
-    const sync = () => setTab(tabFromHash(window.location.hash));
+    const sync = () => {
+      setTab(tabFromHash(window.location.hash));
+      const { anchor } = parseHash(window.location.hash);
+      if (anchor) setTarget((t) => ({ anchor, n: (t?.n ?? 0) + 1 }));
+    };
     sync();
     window.addEventListener("hashchange", sync);
     return () => window.removeEventListener("hashchange", sync);
   }, []);
+
+  useEffect(() => {
+    // Runs after the selected tab has rendered, so the item exists.
+    if (target) document.getElementById(target.anchor)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [target, tab]);
 
   function select(next: TabId) {
     setTab(next);

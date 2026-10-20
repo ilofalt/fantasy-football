@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { news, type NewsArticle } from "@/content/news";
+import Permalink from "./Permalink";
 
 export function formatDate(iso: string): string {
   // Parse as a calendar date, not UTC midnight, so it never shifts a day.
@@ -21,6 +22,7 @@ function ArticleCard({ article, featured }: { article: NewsArticle; featured: bo
           <Typography variant="caption" color="text.secondary">
             {formatDate(article.date)}
           </Typography>
+          <Permalink tab="news" anchor={article.id} label={article.title} />
         </Stack>
         <Box>
           <Typography

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Permalink from "./Permalink";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import Container from "@mui/material/Container";
@@ -123,12 +124,15 @@ function DropList({ drops, label, showWeeks }: { drops: Drop[]; label: string; s
   );
 }
 
-function Section({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
+function Section({ id, title, subtitle, children }: { id: string; title: string; subtitle: string; children: ReactNode }) {
   return (
-    <Card variant="outlined" sx={{ p: { xs: 2.5, md: 3 } }}>
-      <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
-        {title}
-      </Typography>
+    <Card variant="outlined" id={id} sx={{ p: { xs: 2.5, md: 3 } }}>
+      <Stack direction="row" sx={{ alignItems: "center" }}>
+        <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+          {title}
+        </Typography>
+        <Permalink tab="waivers" anchor={id} label={title} />
+      </Stack>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
         {subtitle}
       </Typography>
@@ -162,15 +166,15 @@ export default function Waivers() {
         </Typography>
 
         <Stack spacing={3}>
-          <Section title={`Best pickups of Week ${CURRENT_WEEK}`} subtitle="Players added this week, by points this week.">
+          <Section id="week-pickups" title={`Best pickups of Week ${CURRENT_WEEK}`} subtitle="Players added this week, by points this week.">
             <PickupList pickups={weekPickups} label={`Best pickups of Week ${CURRENT_WEEK}`} showWeeks={false} />
           </Section>
 
-          <Section title="Best pickups of the season" subtitle="Total points for the team that added him.">
+          <Section id="season-pickups" title="Best pickups of the season" subtitle="Total points for the team that added him.">
             <PickupList pickups={seasonPickups} label="Best pickups of the season" showWeeks />
           </Section>
 
-          <Section title="Who works the wire best" subtitle="Points from pickups, number of pickups, and FAAB spent this season.">
+          <Section id="wire-records" title="Who works the wire best" subtitle="Points from pickups, number of pickups, and FAAB spent this season.">
             <Box component="table" sx={{ width: "100%", borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
               <Box component="thead">
                 <Box component="tr" sx={{ "& th": { textAlign: "right", py: 1, fontWeight: 600, fontSize: "0.875rem", color: "text.secondary", borderBottom: 1, borderColor: "divider" } }}>
@@ -203,11 +207,12 @@ export default function Waivers() {
             </Box>
           </Section>
 
-          <Section title={`Worst drops of Week ${CURRENT_WEEK}`} subtitle="Players dropped this week, by what they scored after.">
+          <Section id="week-drops" title={`Worst drops of Week ${CURRENT_WEEK}`} subtitle="Players dropped this week, by what they scored after.">
             <DropList drops={weekDrops} label={`Worst drops of Week ${CURRENT_WEEK}`} showWeeks={false} />
           </Section>
 
           <Section
+            id="season-drops"
             title="Worst drops of the season"
             subtitle="Everything a player scored after he was dropped, until the same team picked him back up."
           >
@@ -215,6 +220,7 @@ export default function Waivers() {
           </Section>
 
           <Section
+            id="points-given-away"
             title="Points given away"
             subtitle="Total points every player a manager dropped went on to score. More drops means more chances to regret one."
           >

@@ -8,8 +8,8 @@ export const REGULAR_SEASON_WEEKS = 14;
 
 export const standings: StandingRow[] = [
   { manager: "Ethan", wins: 5, losses: 1, ties: 0, pointsFor: 794.96, pointsAgainst: 580.26, streak: "W2" },
-  { manager: "Matthew", wins: 5, losses: 1, ties: 0, pointsFor: 725.58, pointsAgainst: 650.78, streak: "W1" },
-  { manager: "Nicholas", wins: 4, losses: 2, ties: 0, pointsFor: 661.42, pointsAgainst: 574.32, streak: "L1" },
+  { manager: "Matthew", wins: 5, losses: 1, ties: 0, pointsFor: 725.58, pointsAgainst: 650.28, streak: "W1" },
+  { manager: "Nicholas", wins: 4, losses: 2, ties: 0, pointsFor: 660.92, pointsAgainst: 574.32, streak: "L1" },
   { manager: "lanny", wins: 4, losses: 2, ties: 0, pointsFor: 631.56, pointsAgainst: 691.94, streak: "W1" },
   { manager: "Andrew", wins: 4, losses: 2, ties: 0, pointsFor: 625.12, pointsAgainst: 586.48, streak: "L1" },
   { manager: "Jonathan", wins: 3, losses: 3, ties: 0, pointsFor: 667.02, pointsAgainst: 645.76, streak: "L1" },

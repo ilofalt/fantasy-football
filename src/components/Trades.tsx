@@ -8,6 +8,7 @@ import { trades, TRADES_UPDATED } from "@/content/trades";
 import { formatPoints, playerTotal, sideTotal } from "@/lib/trades/score";
 import type { Trade, TradeSide } from "@/lib/trades/types";
 import { formatDate } from "./News";
+import Permalink from "./Permalink";
 
 /** Net points per manager across all trades: points received minus points given up. */
 export function tradeLedger(list: Trade[]): { manager: string; net: number; trades: number }[] {
@@ -91,6 +92,7 @@ function TradeCard({ trade }: { trade: Trade }) {
           <Typography variant="caption" color="text.secondary">
             {formatDate(trade.date)} · Points since trade ({weeksLabel(trade.weeksCounted)})
           </Typography>
+          <Permalink tab="trades" anchor={trade.id} label={`${a.manager} and ${b.manager} trade`} />
         </Stack>
         <Typography variant="h6" component="h3" sx={{ fontWeight: 700, lineHeight: 1.3 }}>
           {a.manager} ↔ {b.manager}: {trade.headline}
@@ -135,10 +137,13 @@ export default function Trades() {
           <Typography color="text.secondary">No trades yet this season.</Typography>
         ) : (
           <Stack spacing={3}>
-            <Card variant="outlined" sx={{ p: { xs: 2.5, md: 3 } }}>
-              <Typography variant="h6" component="h3" sx={{ fontWeight: 700, mb: 0.5 }}>
-                Trade leaderboard
-              </Typography>
+            <Card variant="outlined" id="trade-leaderboard" sx={{ p: { xs: 2.5, md: 3 } }}>
+              <Stack direction="row" sx={{ alignItems: "center", mb: 0.5 }}>
+                <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+                  Trade leaderboard
+                </Typography>
+                <Permalink tab="trades" anchor="trade-leaderboard" label="the trade leaderboard" />
+              </Stack>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                 Net points across all of a manager&apos;s trades: points received minus points given up.
               </Typography>

@@ -14,6 +14,7 @@ import {
   type Bracket,
   type SeededTeam,
 } from "@/lib/playoffs/seed";
+import Permalink from "./Permalink";
 
 function record(t: SeededTeam): string {
   return t.ties ? `${t.wins}-${t.losses}-${t.ties}` : `${t.wins}-${t.losses}`;
@@ -40,6 +41,7 @@ function TeamLine({ team }: { team: SeededTeam }) {
 }
 
 function BracketCard({
+  id,
   title,
   subtitle,
   bracket,
@@ -47,6 +49,7 @@ function BracketCard({
   afterRound,
   label,
 }: {
+  id: string;
   title: string;
   subtitle: string;
   bracket: Bracket;
@@ -55,10 +58,13 @@ function BracketCard({
   label: string;
 }) {
   return (
-    <Card variant="outlined" component="section" aria-label={label} sx={{ p: { xs: 2.5, md: 3 } }}>
-      <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
-        {title}
-      </Typography>
+    <Card variant="outlined" component="section" id={id} aria-label={label} sx={{ p: { xs: 2.5, md: 3 } }}>
+      <Stack direction="row" sx={{ alignItems: "center" }}>
+        <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+          {title}
+        </Typography>
+        <Permalink tab="playoffs" anchor={id} label={label} />
+      </Stack>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
         {subtitle}
       </Typography>
@@ -131,6 +137,7 @@ export default function Playoffs() {
         <Stack spacing={3}>
           <Box sx={{ display: "grid", gap: 3, gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" } }}>
             <BracketCard
+              id="playoff-bracket"
               label="Playoff bracket"
               title="Playoffs"
               subtitle="Seeds 1–6"
@@ -139,6 +146,7 @@ export default function Playoffs() {
               afterRound={`The bracket reseeds after round 1: ${top.manager} (1) would play ${lowestRemaining}, and ${winners.byes[1].manager} (2) the other winner. The final is Week 17. In a tied playoff game, the higher seed advances.`}
             />
             <BracketCard
+              id="toilet-bowl"
               label="Toilet Bowl bracket"
               title="Toilet Bowl"
               subtitle="Seeds 7–12"
@@ -148,10 +156,13 @@ export default function Playoffs() {
             />
           </Box>
 
-          <Card variant="outlined" sx={{ p: { xs: 2.5, md: 3 } }}>
-            <Typography variant="h6" component="h3" sx={{ fontWeight: 700, mb: 2 }}>
-              Standings
-            </Typography>
+          <Card variant="outlined" id="standings" sx={{ p: { xs: 2.5, md: 3 } }}>
+            <Stack direction="row" sx={{ alignItems: "center", mb: 2 }}>
+              <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+                Standings
+              </Typography>
+              <Permalink tab="playoffs" anchor="standings" label="the standings" />
+            </Stack>
             <Box sx={{ overflowX: "auto" }}>
               <Box
                 component="table"
@@ -214,10 +225,13 @@ export default function Playoffs() {
             </Typography>
           </Card>
 
-          <Card variant="outlined" sx={{ p: { xs: 2.5, md: 3 } }}>
-            <Typography variant="h6" component="h3" sx={{ fontWeight: 700, mb: 1 }}>
-              On the bubble
-            </Typography>
+          <Card variant="outlined" id="bubble" sx={{ p: { xs: 2.5, md: 3 } }}>
+            <Stack direction="row" sx={{ alignItems: "center", mb: 1 }}>
+              <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+                On the bubble
+              </Typography>
+              <Permalink tab="playoffs" anchor="bubble" label="the playoff bubble" />
+            </Stack>
             <Box component="ul" sx={{ m: 0, pl: 2.5 }}>
               {bubbleNotes.map((note) => (
                 <Typography component="li" key={note} sx={{ lineHeight: 1.7, mb: 0.75 }}>
