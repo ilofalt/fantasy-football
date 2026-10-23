@@ -14,6 +14,9 @@ import {
   type Bracket,
   type SeededTeam,
 } from "@/lib/playoffs/seed";
+import { odds } from "@/content/odds";
+import { pct } from "@/lib/playoffs/odds";
+import { permalinkHash } from "@/lib/permalink";
 import Permalink from "./Permalink";
 
 function record(t: SeededTeam): string {
@@ -166,6 +169,7 @@ export default function Playoffs() {
             <Box sx={{ overflowX: "auto" }}>
               <Box
                 component="table"
+                aria-label="Standings"
                 sx={{
                   width: "100%",
                   minWidth: { xs: 0, sm: 420 },
@@ -223,6 +227,67 @@ export default function Playoffs() {
             <Typography variant="caption" color="text.secondary" sx={{ display: "block", mt: 1.5 }}>
               The line marks the playoff cut. GB is games behind the 6th seed; 0 means tied on record but behind on points for.
             </Typography>
+          </Card>
+
+          <Card variant="outlined" id="odds" component="section" aria-label="Playoff odds" sx={{ p: { xs: 2.5, md: 3 } }}>
+            <Stack direction="row" sx={{ alignItems: "center", mb: 0.5 }}>
+              <Typography variant="h6" component="h3" sx={{ fontWeight: 700 }}>
+                Playoff odds
+              </Typography>
+              <Permalink tab="playoffs" anchor="odds" label="the playoff odds" />
+            </Stack>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+              The rest of the regular season and the playoffs, simulated 10,000 times. Each team&apos;s scoring is based on
+              its average so far, pulled toward the league average, with normal week-to-week swings.
+            </Typography>
+            <Box sx={{ overflowX: "auto" }}>
+              <Box
+                component="table"
+                aria-label="Playoff odds by manager"
+                sx={{
+                  width: "100%",
+                  borderCollapse: "collapse",
+                  fontVariantNumeric: "tabular-nums",
+                  "& th, & td": { py: 1, px: 1, borderBottom: 1, borderColor: "divider", textAlign: "right", whiteSpace: "nowrap" },
+                  "& th": { fontSize: "0.8125rem", fontWeight: 600, color: "text.secondary" },
+                  "& th:first-of-type, & td:first-of-type": { textAlign: "left", width: "100%" },
+                  "& tbody tr:last-of-type td": { borderBottom: 0 },
+                  // Last place hidden on phones so the table fits.
+                  "& th:nth-of-type(6), & td:nth-of-type(6)": { display: { xs: "none", sm: "table-cell" } },
+                }}
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">Manager</th>
+                    <th scope="col">Proj W</th>
+                    <th scope="col">Playoffs</th>
+                    <th scope="col">Bye</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Last</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[...odds]
+                    .sort((a, b) => b.playoffs - a.playoffs || b.title - a.title)
+                    .map((o) => (
+                      <tr key={o.manager} data-testid="odds-row">
+                        <td>
+                          <Box component="a" href={permalinkHash("managers", o.manager.toLowerCase())} sx={{ color: "inherit", textDecoration: "none", "&:hover": { textDecoration: "underline" } }}>
+                            {o.manager}
+                          </Box>
+                        </td>
+                        <td>{o.avgWins.toFixed(1)}</td>
+                        <Box component="td" sx={{ fontWeight: 700, color: o.playoffs >= 0.5 ? "success.main" : o.playoffs < 0.1 ? "error.main" : "text.primary" }}>
+                          {pct(o.playoffs)}
+                        </Box>
+                        <td>{pct(o.bye)}</td>
+                        <td>{pct(o.title)}</td>
+                        <td>{pct(o.lastPlace)}</td>
+                      </tr>
+                    ))}
+                </tbody>
+              </Box>
+            </Box>
           </Card>
 
           <Card variant="outlined" id="bubble" sx={{ p: { xs: 2.5, md: 3 } }}>

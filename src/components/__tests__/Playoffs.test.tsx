@@ -1,5 +1,6 @@
 import { renderWithTheme, screen, within } from "@/test-utils";
 import Playoffs from "../Playoffs";
+import { odds } from "@/content/odds";
 import { standings } from "@/content/standings";
 import { seedTeams } from "@/lib/playoffs/seed";
 
@@ -34,8 +35,17 @@ describe("Playoffs", () => {
 
   it("lists all 12 teams in seed order in the standings table", () => {
     renderWithTheme(<Playoffs />);
-    const rows = within(screen.getByRole("table")).getAllByRole("row").slice(1);
+    const rows = within(screen.getByRole("table", { name: "Standings" })).getAllByRole("row").slice(1);
     expect(rows).toHaveLength(12);
     rows.forEach((r, i) => expect(r).toHaveTextContent(seeded[i].manager));
+  });
+
+  it("shows playoff odds for every team, best odds first", () => {
+    renderWithTheme(<Playoffs />);
+    const rows = within(screen.getByRole("table", { name: "Playoff odds by manager" })).getAllByRole("row").slice(1);
+    expect(rows).toHaveLength(12);
+    const sorted = [...odds].sort((a, b) => b.playoffs - a.playoffs || b.title - a.title);
+    rows.forEach((r, i) => expect(r).toHaveTextContent(sorted[i].manager));
+    expect(screen.getByRole("link", { name: sorted[0].manager })).toHaveAttribute("href", `#managers/${sorted[0].manager.toLowerCase()}`);
   });
 });

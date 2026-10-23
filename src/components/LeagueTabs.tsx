@@ -7,7 +7,9 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import Matchups from "./Matchups";
 import News from "./News";
+import Managers from "./Managers";
 import Playoffs from "./Playoffs";
+import Rivalries from "./Rivalries";
 import Trades from "./Trades";
 import Waivers from "./Waivers";
 import WeeklyReport from "./WeeklyReport";
@@ -15,7 +17,7 @@ import { parseHash } from "@/lib/permalink";
 
 // The site is a static export served straight from S3, so extra pages would
 // 404 on refresh without a CloudFront rewrite. Tabs live on the one page
-// instead, with the URL hash (#news, #report, #playoffs, #trades, #waivers)
+// instead, with the URL hash (#news, #report, #playoffs, #rivalries, #managers, #trades, #waivers)
 // making each one linkable. "#<tab>/<item>" links to a specific story, award,
 // trade, or section within a tab.
 export const TABS = [
@@ -23,6 +25,8 @@ export const TABS = [
   { id: "news", label: "News" },
   { id: "report", label: "Weekly Report" },
   { id: "playoffs", label: "Playoff Picture" },
+  { id: "rivalries", label: "Rivalries" },
+  { id: "managers", label: "Managers" },
   { id: "trades", label: "Track Trades" },
   { id: "waivers", label: "Waiver Wire" },
 ] as const;
@@ -34,6 +38,8 @@ const PANELS: Record<TabId, ReactNode> = {
   news: <News />,
   report: <WeeklyReport />,
   playoffs: <Playoffs />,
+  rivalries: <Rivalries />,
+  managers: <Managers />,
   trades: <Trades />,
   waivers: <Waivers />,
 };

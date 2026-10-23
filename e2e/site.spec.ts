@@ -101,7 +101,30 @@ test("Playoff Picture tab shows both brackets and the standings", async ({ page 
   await expect(page.getByRole("heading", { level: 2, name: "Playoff Picture" })).toBeVisible();
   await expect(page.getByRole("region", { name: "Playoff bracket" })).toBeVisible();
   await expect(page.getByRole("region", { name: "Toilet Bowl bracket" })).toBeVisible();
-  await expect(page.getByRole("table")).toBeVisible();
+  await expect(page.getByRole("table", { name: "Standings" })).toBeVisible();
+  await expect(page.getByRole("table", { name: "Playoff odds by manager" })).toBeVisible();
+});
+
+test("Rivalries tab compares any two managers and links to the pair", async ({ page }) => {
+  await page.goto("/#rivalries/chris-vs-lanny");
+  await expect(page.getByRole("tab", { name: "Rivalries" })).toHaveAttribute("aria-selected", "true");
+  const card = page.getByRole("region", { name: "Head to head" });
+  await expect(card).toBeInViewport();
+  await expect(card.getByText("11 meetings")).toBeVisible();
+  await page.getByRole("button", { name: /^Daniel vs\. Ethan: / }).click();
+  await expect(page).toHaveURL(/#rivalries\/daniel-vs-ethan$/);
+  await expect(page.getByRole("link", { name: "Copy link to Daniel vs. Ethan" })).toBeVisible();
+});
+
+test("Managers tab opens a manager's page and links to rivalries", async ({ page }) => {
+  await page.goto("/#managers");
+  await page.getByRole("button", { name: "Open Isaiah's page" }).click();
+  await expect(page).toHaveURL(/#managers\/isaiah$/);
+  await expect(page.getByRole("heading", { level: 2, name: "Isaiah" })).toBeVisible();
+  await expect(page.getByRole("img", { name: "Isaiah" }).first()).toBeVisible();
+  await page.getByRole("link", { name: /Jonathan/ }).click();
+  await expect(page.getByRole("tab", { name: "Rivalries" })).toHaveAttribute("aria-selected", "true");
+  await expect(page.getByRole("link", { name: "Copy link to Isaiah vs. Jonathan" })).toBeVisible();
 });
 
 test("Weekly Report tab shows Sleeper-style awards", async ({ page }) => {

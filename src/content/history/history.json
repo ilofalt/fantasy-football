@@ -1,0 +1,3621 @@
+{
+ "updated": "2026-10-22",
+ "seasons": [
+  {
+   "year": 2022,
+   "finish": [
+    "Chris",
+    "Isaiah",
+    "Raymond",
+    "lanny",
+    "Varron",
+    "Zachary",
+    "Jonathan",
+    "Matthew",
+    "Abiy",
+    "Andrew"
+   ]
+  },
+  {
+   "year": 2023,
+   "finish": [
+    "Andrew",
+    "Jonathan",
+    "Varron",
+    "Zachary",
+    "Raymond",
+    "Isaiah",
+    "Matthew",
+    "Chris",
+    "Abiy",
+    "lanny"
+   ]
+  },
+  {
+   "year": 2024,
+   "finish": [
+    "Raymond",
+    "Zachary",
+    "Varron",
+    "Daniel",
+    "Isaiah",
+    "Ethan",
+    "Chris",
+    "Matthew",
+    "Andrew",
+    "Abiy",
+    "Jonathan",
+    "lanny"
+   ]
+  },
+  {
+   "year": 2025,
+   "finish": [
+    "Jonathan",
+    "lanny",
+    "Ethan",
+    "Noah",
+    "Raymond",
+    "Daniel",
+    "Matthew",
+    "Andrew",
+    "Chris",
+    "Zachary",
+    "Isaiah",
+    "Abiy"
+   ]
+  },
+  {
+   "year": 2026,
+   "finish": null
+  }
+ ],
+ "games": [
+  {
+   "year": 2022,
+   "week": 1,
+   "a": "Isaiah",
+   "aScore": 128.42,
+   "b": "Raymond",
+   "bScore": 122.98,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 1,
+   "a": "Chris",
+   "aScore": 97.92,
+   "b": "Varron",
+   "bScore": 72.62,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 1,
+   "a": "Jonathan",
+   "aScore": 96.06,
+   "b": "Matthew",
+   "bScore": 98.76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 1,
+   "a": "Zachary",
+   "aScore": 119.62,
+   "b": "lanny",
+   "bScore": 114,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 1,
+   "a": "Abiy",
+   "aScore": 87.58,
+   "b": "Andrew",
+   "bScore": 112,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 2,
+   "a": "Isaiah",
+   "aScore": 82.96,
+   "b": "Varron",
+   "bScore": 114.82,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 2,
+   "a": "Raymond",
+   "aScore": 153.28,
+   "b": "lanny",
+   "bScore": 70.76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 2,
+   "a": "Chris",
+   "aScore": 118.92,
+   "b": "Matthew",
+   "bScore": 122.36,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 2,
+   "a": "Jonathan",
+   "aScore": 105.38,
+   "b": "Abiy",
+   "bScore": 94,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 2,
+   "a": "Zachary",
+   "aScore": 136.28,
+   "b": "Andrew",
+   "bScore": 110,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 3,
+   "a": "Isaiah",
+   "aScore": 83.9,
+   "b": "lanny",
+   "bScore": 108.26,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 3,
+   "a": "Raymond",
+   "aScore": 75.6,
+   "b": "Andrew",
+   "bScore": 109.08,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 3,
+   "a": "Chris",
+   "aScore": 112.9,
+   "b": "Abiy",
+   "bScore": 64.34,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 3,
+   "a": "Jonathan",
+   "aScore": 108.32,
+   "b": "Zachary",
+   "bScore": 100.76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 3,
+   "a": "Matthew",
+   "aScore": 82.98,
+   "b": "Varron",
+   "bScore": 143.02,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 4,
+   "a": "Isaiah",
+   "aScore": 148.28,
+   "b": "Matthew",
+   "bScore": 99.3,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 4,
+   "a": "Raymond",
+   "aScore": 112.22,
+   "b": "Jonathan",
+   "bScore": 89.42,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 4,
+   "a": "Chris",
+   "aScore": 134.86,
+   "b": "Zachary",
+   "bScore": 111.28,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 4,
+   "a": "lanny",
+   "aScore": 127.34,
+   "b": "Andrew",
+   "bScore": 132.76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 4,
+   "a": "Abiy",
+   "aScore": 113.1,
+   "b": "Varron",
+   "bScore": 84.36,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 5,
+   "a": "Isaiah",
+   "aScore": 122.2,
+   "b": "Andrew",
+   "bScore": 135.28,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 5,
+   "a": "Raymond",
+   "aScore": 93.26,
+   "b": "Chris",
+   "bScore": 136.96,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 5,
+   "a": "Jonathan",
+   "aScore": 104.76,
+   "b": "lanny",
+   "bScore": 143.08,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 5,
+   "a": "Matthew",
+   "aScore": 84.72,
+   "b": "Abiy",
+   "bScore": 100.54,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 5,
+   "a": "Zachary",
+   "aScore": 91,
+   "b": "Varron",
+   "bScore": 107.96,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 6,
+   "a": "Isaiah",
+   "aScore": 127.2,
+   "b": "Abiy",
+   "bScore": 62.52,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 6,
+   "a": "Raymond",
+   "aScore": 118.16,
+   "b": "Varron",
+   "bScore": 89,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 6,
+   "a": "Chris",
+   "aScore": 119.7,
+   "b": "lanny",
+   "bScore": 97.44,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 6,
+   "a": "Jonathan",
+   "aScore": 124.18,
+   "b": "Andrew",
+   "bScore": 74.02,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 6,
+   "a": "Matthew",
+   "aScore": 77.32,
+   "b": "Zachary",
+   "bScore": 116.88,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 7,
+   "a": "Isaiah",
+   "aScore": 143.54,
+   "b": "Jonathan",
+   "bScore": 122.6,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 7,
+   "a": "Raymond",
+   "aScore": 95.4,
+   "b": "Matthew",
+   "bScore": 95.92,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 7,
+   "a": "Chris",
+   "aScore": 102.28,
+   "b": "Andrew",
+   "bScore": 101.42,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 7,
+   "a": "Zachary",
+   "aScore": 92.36,
+   "b": "Abiy",
+   "bScore": 76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 7,
+   "a": "lanny",
+   "aScore": 63.86,
+   "b": "Varron",
+   "bScore": 69.5,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 8,
+   "a": "Isaiah",
+   "aScore": 131.38,
+   "b": "Zachary",
+   "bScore": 130.84,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 8,
+   "a": "Raymond",
+   "aScore": 94.12,
+   "b": "Abiy",
+   "bScore": 100.3,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 8,
+   "a": "Chris",
+   "aScore": 138.36,
+   "b": "Jonathan",
+   "bScore": 83.26,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 8,
+   "a": "Matthew",
+   "aScore": 178.92,
+   "b": "lanny",
+   "bScore": 97.54,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 8,
+   "a": "Varron",
+   "aScore": 122.48,
+   "b": "Andrew",
+   "bScore": 72.68,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 9,
+   "a": "Isaiah",
+   "aScore": 161.04,
+   "b": "Chris",
+   "bScore": 89.52,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 9,
+   "a": "Raymond",
+   "aScore": 144.3,
+   "b": "Zachary",
+   "bScore": 116.8,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 9,
+   "a": "Jonathan",
+   "aScore": 80.9,
+   "b": "Varron",
+   "bScore": 76.02,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 9,
+   "a": "Matthew",
+   "aScore": 67.9,
+   "b": "Andrew",
+   "bScore": 100.64,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 9,
+   "a": "lanny",
+   "aScore": 120.82,
+   "b": "Abiy",
+   "bScore": 115.9,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 10,
+   "a": "Isaiah",
+   "aScore": 97.88,
+   "b": "Raymond",
+   "bScore": 114.9,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 10,
+   "a": "Chris",
+   "aScore": 103.2,
+   "b": "Varron",
+   "bScore": 110.5,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 10,
+   "a": "Jonathan",
+   "aScore": 84,
+   "b": "Matthew",
+   "bScore": 90.8,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 10,
+   "a": "Zachary",
+   "aScore": 106.96,
+   "b": "lanny",
+   "bScore": 140.88,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 10,
+   "a": "Abiy",
+   "aScore": 107.02,
+   "b": "Andrew",
+   "bScore": 95.14,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 11,
+   "a": "Isaiah",
+   "aScore": 113.26,
+   "b": "Varron",
+   "bScore": 128.36,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 11,
+   "a": "Raymond",
+   "aScore": 147.78,
+   "b": "lanny",
+   "bScore": 131.72,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 11,
+   "a": "Chris",
+   "aScore": 100.4,
+   "b": "Matthew",
+   "bScore": 96.9,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 11,
+   "a": "Jonathan",
+   "aScore": 113.74,
+   "b": "Abiy",
+   "bScore": 60,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 11,
+   "a": "Zachary",
+   "aScore": 77.6,
+   "b": "Andrew",
+   "bScore": 107.46,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 12,
+   "a": "Isaiah",
+   "aScore": 120.84,
+   "b": "lanny",
+   "bScore": 99.8,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 12,
+   "a": "Raymond",
+   "aScore": 123.32,
+   "b": "Andrew",
+   "bScore": 118.4,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 12,
+   "a": "Chris",
+   "aScore": 111.92,
+   "b": "Abiy",
+   "bScore": 151.54,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 12,
+   "a": "Jonathan",
+   "aScore": 108.34,
+   "b": "Zachary",
+   "bScore": 111.34,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 12,
+   "a": "Matthew",
+   "aScore": 109.56,
+   "b": "Varron",
+   "bScore": 83.26,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 13,
+   "a": "Isaiah",
+   "aScore": 137.64,
+   "b": "Matthew",
+   "bScore": 108.6,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 13,
+   "a": "Raymond",
+   "aScore": 105.62,
+   "b": "Jonathan",
+   "bScore": 87.3,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 13,
+   "a": "Chris",
+   "aScore": 113.6,
+   "b": "Zachary",
+   "bScore": 90.76,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 13,
+   "a": "lanny",
+   "aScore": 143.46,
+   "b": "Andrew",
+   "bScore": 105.62,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 13,
+   "a": "Abiy",
+   "aScore": 103.14,
+   "b": "Varron",
+   "bScore": 113.64,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 14,
+   "a": "Isaiah",
+   "aScore": 114.36,
+   "b": "Andrew",
+   "bScore": 101.78,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 14,
+   "a": "Raymond",
+   "aScore": 99.78,
+   "b": "Chris",
+   "bScore": 125.38,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 14,
+   "a": "Jonathan",
+   "aScore": 108.26,
+   "b": "lanny",
+   "bScore": 110.6,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 14,
+   "a": "Matthew",
+   "aScore": 77.38,
+   "b": "Abiy",
+   "bScore": 99.02,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 14,
+   "a": "Zachary",
+   "aScore": 80.86,
+   "b": "Varron",
+   "bScore": 76.8,
+   "type": "regular"
+  },
+  {
+   "year": 2022,
+   "week": 15,
+   "a": "Raymond",
+   "aScore": 115.26,
+   "b": "Zachary",
+   "bScore": 81.88,
+   "type": "playoff"
+  },
+  {
+   "year": 2022,
+   "week": 15,
+   "a": "lanny",
+   "aScore": 138.98,
+   "b": "Varron",
+   "bScore": 112.66,
+   "type": "playoff"
+  },
+  {
+   "year": 2022,
+   "week": 16,
+   "a": "Isaiah",
+   "aScore": 132.4,
+   "b": "Raymond",
+   "bScore": 108.98,
+   "type": "playoff"
+  },
+  {
+   "year": 2022,
+   "week": 16,
+   "a": "Chris",
+   "aScore": 129.1,
+   "b": "lanny",
+   "bScore": 112.16,
+   "type": "playoff"
+  },
+  {
+   "year": 2022,
+   "week": 16,
+   "a": "Jonathan",
+   "aScore": 88.4,
+   "b": "Andrew",
+   "bScore": 85.76,
+   "type": "consolation"
+  },
+  {
+   "year": 2022,
+   "week": 16,
+   "a": "Matthew",
+   "aScore": 76.9,
+   "b": "Abiy",
+   "bScore": 72.54,
+   "type": "consolation"
+  },
+  {
+   "year": 2022,
+   "week": 16,
+   "a": "Zachary",
+   "aScore": 78.6,
+   "b": "Varron",
+   "bScore": 106.2,
+   "type": "consolation"
+  },
+  {
+   "year": 2022,
+   "week": 17,
+   "a": "Isaiah",
+   "aScore": 74.2,
+   "b": "Chris",
+   "bScore": 130.66,
+   "type": "playoff"
+  },
+  {
+   "year": 2022,
+   "week": 17,
+   "a": "Raymond",
+   "aScore": 63.4,
+   "b": "lanny",
+   "bScore": 63.1,
+   "type": "consolation"
+  },
+  {
+   "year": 2022,
+   "week": 17,
+   "a": "Jonathan",
+   "aScore": 122.08,
+   "b": "Matthew",
+   "bScore": 103.76,
+   "type": "consolation"
+  },
+  {
+   "year": 2022,
+   "week": 17,
+   "a": "Abiy",
+   "aScore": 158.18,
+   "b": "Andrew",
+   "bScore": 85.62,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 1,
+   "a": "Isaiah",
+   "aScore": 73.88,
+   "b": "Abiy",
+   "bScore": 74.57,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 1,
+   "a": "Raymond",
+   "aScore": 56.29,
+   "b": "Chris",
+   "bScore": 92.3,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 1,
+   "a": "Jonathan",
+   "aScore": 77.89,
+   "b": "Matthew",
+   "bScore": 99.55,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 1,
+   "a": "lanny",
+   "aScore": 96.14,
+   "b": "Andrew",
+   "bScore": 131.19,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 1,
+   "a": "Varron",
+   "aScore": 143.26,
+   "b": "Zachary",
+   "bScore": 85.71,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 2,
+   "a": "Isaiah",
+   "aScore": 118.68,
+   "b": "Jonathan",
+   "bScore": 121,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 2,
+   "a": "Raymond",
+   "aScore": 103.41,
+   "b": "Varron",
+   "bScore": 86.33,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 2,
+   "a": "Chris",
+   "aScore": 122.82,
+   "b": "Andrew",
+   "bScore": 91.34,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 2,
+   "a": "Matthew",
+   "aScore": 84.24,
+   "b": "lanny",
+   "bScore": 70.74,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 2,
+   "a": "Abiy",
+   "aScore": 81.5,
+   "b": "Zachary",
+   "bScore": 93.45,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 3,
+   "a": "Isaiah",
+   "aScore": 159.31,
+   "b": "Matthew",
+   "bScore": 111.2,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 3,
+   "a": "Raymond",
+   "aScore": 86.72,
+   "b": "Abiy",
+   "bScore": 154.76,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 3,
+   "a": "Chris",
+   "aScore": 72.13,
+   "b": "lanny",
+   "bScore": 103.56,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 3,
+   "a": "Jonathan",
+   "aScore": 174.23,
+   "b": "Zachary",
+   "bScore": 88.83,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 3,
+   "a": "Varron",
+   "aScore": 102.13,
+   "b": "Andrew",
+   "bScore": 97.56,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 4,
+   "a": "Isaiah",
+   "aScore": 121.08,
+   "b": "lanny",
+   "bScore": 118.81,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 4,
+   "a": "Raymond",
+   "aScore": 128.1,
+   "b": "Jonathan",
+   "bScore": 71.67,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 4,
+   "a": "Chris",
+   "aScore": 104.36,
+   "b": "Varron",
+   "bScore": 101.64,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 4,
+   "a": "Matthew",
+   "aScore": 104.77,
+   "b": "Zachary",
+   "bScore": 152.71,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 4,
+   "a": "Abiy",
+   "aScore": 83.14,
+   "b": "Andrew",
+   "bScore": 151.7,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 5,
+   "a": "Isaiah",
+   "aScore": 90.08,
+   "b": "Zachary",
+   "bScore": 101.26,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 5,
+   "a": "Raymond",
+   "aScore": 122.81,
+   "b": "Matthew",
+   "bScore": 94.43,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 5,
+   "a": "Chris",
+   "aScore": 89.27,
+   "b": "Abiy",
+   "bScore": 95.52,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 5,
+   "a": "Jonathan",
+   "aScore": 118.59,
+   "b": "Andrew",
+   "bScore": 86.07,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 5,
+   "a": "lanny",
+   "aScore": 81.25,
+   "b": "Varron",
+   "bScore": 131.44,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 6,
+   "a": "Isaiah",
+   "aScore": 116.78,
+   "b": "Raymond",
+   "bScore": 79.36,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 6,
+   "a": "Chris",
+   "aScore": 83.7,
+   "b": "Jonathan",
+   "bScore": 123.19,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 6,
+   "a": "Matthew",
+   "aScore": 98.2,
+   "b": "Andrew",
+   "bScore": 95.47,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 6,
+   "a": "lanny",
+   "aScore": 105.34,
+   "b": "Zachary",
+   "bScore": 119.35,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 6,
+   "a": "Abiy",
+   "aScore": 80.43,
+   "b": "Varron",
+   "bScore": 121.13,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 7,
+   "a": "Isaiah",
+   "aScore": 103.01,
+   "b": "Andrew",
+   "bScore": 108.71,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 7,
+   "a": "Raymond",
+   "aScore": 122.75,
+   "b": "Zachary",
+   "bScore": 111.45,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 7,
+   "a": "Chris",
+   "aScore": 81.86,
+   "b": "Matthew",
+   "bScore": 103.6,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 7,
+   "a": "Jonathan",
+   "aScore": 100.26,
+   "b": "Varron",
+   "bScore": 109.09,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 7,
+   "a": "lanny",
+   "aScore": 91.56,
+   "b": "Abiy",
+   "bScore": 49.5,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 8,
+   "a": "Isaiah",
+   "aScore": 81.32,
+   "b": "Chris",
+   "bScore": 115.01,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 8,
+   "a": "Raymond",
+   "aScore": 123.46,
+   "b": "lanny",
+   "bScore": 137.28,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 8,
+   "a": "Jonathan",
+   "aScore": 100.25,
+   "b": "Abiy",
+   "bScore": 112.46,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 8,
+   "a": "Matthew",
+   "aScore": 109.65,
+   "b": "Varron",
+   "bScore": 154.98,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 8,
+   "a": "Andrew",
+   "aScore": 102.26,
+   "b": "Zachary",
+   "bScore": 105.67,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 9,
+   "a": "Isaiah",
+   "aScore": 88.04,
+   "b": "Varron",
+   "bScore": 84.98,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 9,
+   "a": "Raymond",
+   "aScore": 79.67,
+   "b": "Andrew",
+   "bScore": 98.63,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 9,
+   "a": "Chris",
+   "aScore": 97.63,
+   "b": "Zachary",
+   "bScore": 119.62,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 9,
+   "a": "Jonathan",
+   "aScore": 102.05,
+   "b": "lanny",
+   "bScore": 108,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 9,
+   "a": "Matthew",
+   "aScore": 78.13,
+   "b": "Abiy",
+   "bScore": 115.11,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 10,
+   "a": "Isaiah",
+   "aScore": 148.32,
+   "b": "Abiy",
+   "bScore": 131.71,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 10,
+   "a": "Raymond",
+   "aScore": 103.33,
+   "b": "Chris",
+   "bScore": 87.85,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 10,
+   "a": "Jonathan",
+   "aScore": 131.47,
+   "b": "Matthew",
+   "bScore": 101.01,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 10,
+   "a": "lanny",
+   "aScore": 89.73,
+   "b": "Andrew",
+   "bScore": 138.44,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 10,
+   "a": "Varron",
+   "aScore": 73.62,
+   "b": "Zachary",
+   "bScore": 100.48,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 11,
+   "a": "Isaiah",
+   "aScore": 127.15,
+   "b": "Jonathan",
+   "bScore": 92.08,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 11,
+   "a": "Raymond",
+   "aScore": 135.34,
+   "b": "Varron",
+   "bScore": 121.75,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 11,
+   "a": "Chris",
+   "aScore": 122.1,
+   "b": "Andrew",
+   "bScore": 99.39,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 11,
+   "a": "Matthew",
+   "aScore": 107.12,
+   "b": "lanny",
+   "bScore": 86.14,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 11,
+   "a": "Abiy",
+   "aScore": 98.76,
+   "b": "Zachary",
+   "bScore": 59.69,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 12,
+   "a": "Isaiah",
+   "aScore": 129.18,
+   "b": "Matthew",
+   "bScore": 99.31,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 12,
+   "a": "Raymond",
+   "aScore": 103.96,
+   "b": "Abiy",
+   "bScore": 98.89,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 12,
+   "a": "Chris",
+   "aScore": 137.6,
+   "b": "lanny",
+   "bScore": 91.31,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 12,
+   "a": "Jonathan",
+   "aScore": 157.62,
+   "b": "Zachary",
+   "bScore": 104.46,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 12,
+   "a": "Varron",
+   "aScore": 111.18,
+   "b": "Andrew",
+   "bScore": 131.86,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 13,
+   "a": "Isaiah",
+   "aScore": 91.43,
+   "b": "lanny",
+   "bScore": 134.82,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 13,
+   "a": "Raymond",
+   "aScore": 70.09,
+   "b": "Jonathan",
+   "bScore": 155.87,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 13,
+   "a": "Chris",
+   "aScore": 106.27,
+   "b": "Varron",
+   "bScore": 135.7,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 13,
+   "a": "Matthew",
+   "aScore": 131.71,
+   "b": "Zachary",
+   "bScore": 106.88,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 13,
+   "a": "Abiy",
+   "aScore": 128.26,
+   "b": "Andrew",
+   "bScore": 130.21,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 14,
+   "a": "Isaiah",
+   "aScore": 83.44,
+   "b": "Zachary",
+   "bScore": 82.17,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 14,
+   "a": "Raymond",
+   "aScore": 120.92,
+   "b": "Matthew",
+   "bScore": 105.27,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 14,
+   "a": "Chris",
+   "aScore": 102.43,
+   "b": "Abiy",
+   "bScore": 86.14,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 14,
+   "a": "Jonathan",
+   "aScore": 131.84,
+   "b": "Andrew",
+   "bScore": 74.99,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 14,
+   "a": "lanny",
+   "aScore": 98.37,
+   "b": "Varron",
+   "bScore": 135.19,
+   "type": "regular"
+  },
+  {
+   "year": 2023,
+   "week": 15,
+   "a": "Isaiah",
+   "aScore": 90.61,
+   "b": "Zachary",
+   "bScore": 132.22,
+   "type": "playoff"
+  },
+  {
+   "year": 2023,
+   "week": 15,
+   "a": "Raymond",
+   "aScore": 119.01,
+   "b": "Andrew",
+   "bScore": 125.24,
+   "type": "playoff"
+  },
+  {
+   "year": 2023,
+   "week": 16,
+   "a": "Jonathan",
+   "aScore": 90.45,
+   "b": "Zachary",
+   "bScore": 86.07,
+   "type": "playoff"
+  },
+  {
+   "year": 2023,
+   "week": 16,
+   "a": "Varron",
+   "aScore": 116.63,
+   "b": "Andrew",
+   "bScore": 122.8,
+   "type": "playoff"
+  },
+  {
+   "year": 2023,
+   "week": 16,
+   "a": "Isaiah",
+   "aScore": 123.08,
+   "b": "Raymond",
+   "bScore": 128.58,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 16,
+   "a": "Chris",
+   "aScore": 137.64,
+   "b": "lanny",
+   "bScore": 112.72,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 16,
+   "a": "Matthew",
+   "aScore": 90.6,
+   "b": "Abiy",
+   "bScore": 67.87,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 17,
+   "a": "Jonathan",
+   "aScore": 104.8,
+   "b": "Andrew",
+   "bScore": 132.82,
+   "type": "playoff"
+  },
+  {
+   "year": 2023,
+   "week": 17,
+   "a": "Chris",
+   "aScore": 99.13,
+   "b": "Matthew",
+   "bScore": 99.15,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 17,
+   "a": "lanny",
+   "aScore": 106.18,
+   "b": "Abiy",
+   "bScore": 120.2,
+   "type": "consolation"
+  },
+  {
+   "year": 2023,
+   "week": 17,
+   "a": "Varron",
+   "aScore": 125.84,
+   "b": "Zachary",
+   "bScore": 101.31,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "Isaiah",
+   "aScore": 96.61,
+   "b": "Varron",
+   "bScore": 115.77,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "Abiy",
+   "aScore": 69.48,
+   "b": "Ethan",
+   "bScore": 110.87,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "Jonathan",
+   "aScore": 121.83,
+   "b": "Zachary",
+   "bScore": 111.32,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "lanny",
+   "aScore": 105.85,
+   "b": "Raymond",
+   "bScore": 126.13,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "Chris",
+   "aScore": 116.06,
+   "b": "Daniel",
+   "bScore": 70.49,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 1,
+   "a": "Andrew",
+   "aScore": 62.11,
+   "b": "Matthew",
+   "bScore": 85.44,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "Isaiah",
+   "aScore": 112.62,
+   "b": "Zachary",
+   "bScore": 154.77,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "Abiy",
+   "aScore": 101.54,
+   "b": "Chris",
+   "bScore": 93.77,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "Jonathan",
+   "aScore": 106.46,
+   "b": "Matthew",
+   "bScore": 99.14,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "lanny",
+   "aScore": 110.58,
+   "b": "Ethan",
+   "bScore": 127.44,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "Raymond",
+   "aScore": 97.01,
+   "b": "Andrew",
+   "bScore": 78.25,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 2,
+   "a": "Varron",
+   "aScore": 99.13,
+   "b": "Daniel",
+   "bScore": 91.81,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "Isaiah",
+   "aScore": 101.86,
+   "b": "Jonathan",
+   "bScore": 55.28,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "Abiy",
+   "aScore": 90.28,
+   "b": "Varron",
+   "bScore": 101.78,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "lanny",
+   "aScore": 69.66,
+   "b": "Chris",
+   "bScore": 109.16,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "Raymond",
+   "aScore": 110.47,
+   "b": "Matthew",
+   "bScore": 108.03,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "Andrew",
+   "aScore": 88.25,
+   "b": "Ethan",
+   "bScore": 152.04,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 3,
+   "a": "Zachary",
+   "aScore": 98.74,
+   "b": "Daniel",
+   "bScore": 107.57,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "Isaiah",
+   "aScore": 96.58,
+   "b": "Daniel",
+   "bScore": 116.84,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "Abiy",
+   "aScore": 65.78,
+   "b": "Zachary",
+   "bScore": 125.27,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "Jonathan",
+   "aScore": 66.64,
+   "b": "Raymond",
+   "bScore": 98.6,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "lanny",
+   "aScore": 104.75,
+   "b": "Varron",
+   "bScore": 95.14,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "Chris",
+   "aScore": 91.74,
+   "b": "Andrew",
+   "bScore": 100.65,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 4,
+   "a": "Matthew",
+   "aScore": 104.38,
+   "b": "Ethan",
+   "bScore": 127.28,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "Isaiah",
+   "aScore": 124.63,
+   "b": "Abiy",
+   "bScore": 103.25,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "Jonathan",
+   "aScore": 102.12,
+   "b": "Daniel",
+   "bScore": 156.75,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "lanny",
+   "aScore": 102.61,
+   "b": "Zachary",
+   "bScore": 115.95,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "Raymond",
+   "aScore": 107.24,
+   "b": "Ethan",
+   "bScore": 96.51,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "Chris",
+   "aScore": 109.84,
+   "b": "Matthew",
+   "bScore": 100.64,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 5,
+   "a": "Andrew",
+   "aScore": 129.19,
+   "b": "Varron",
+   "bScore": 99.02,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Isaiah",
+   "aScore": 103.92,
+   "b": "lanny",
+   "bScore": 107.27,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Abiy",
+   "aScore": 36.91,
+   "b": "Daniel",
+   "bScore": 110.15,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Jonathan",
+   "aScore": 109.66,
+   "b": "Ethan",
+   "bScore": 122.3,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Raymond",
+   "aScore": 160.7,
+   "b": "Chris",
+   "bScore": 105.4,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Andrew",
+   "aScore": 108.18,
+   "b": "Zachary",
+   "bScore": 97.41,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 6,
+   "a": "Varron",
+   "aScore": 91.27,
+   "b": "Matthew",
+   "bScore": 88.06,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "Isaiah",
+   "aScore": 129.69,
+   "b": "Andrew",
+   "bScore": 74.79,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "Abiy",
+   "aScore": 90.6,
+   "b": "Jonathan",
+   "bScore": 74.69,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "lanny",
+   "aScore": 112.85,
+   "b": "Daniel",
+   "bScore": 135.95,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "Raymond",
+   "aScore": 132.57,
+   "b": "Varron",
+   "bScore": 98.24,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "Chris",
+   "aScore": 105.04,
+   "b": "Ethan",
+   "bScore": 69.03,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 7,
+   "a": "Matthew",
+   "aScore": 99.95,
+   "b": "Zachary",
+   "bScore": 103.31,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Isaiah",
+   "aScore": 138.86,
+   "b": "Matthew",
+   "bScore": 105.4,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Abiy",
+   "aScore": 86.33,
+   "b": "lanny",
+   "bScore": 85.01,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Jonathan",
+   "aScore": 153.78,
+   "b": "Chris",
+   "bScore": 95.77,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Raymond",
+   "aScore": 122.62,
+   "b": "Zachary",
+   "bScore": 139.94,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Andrew",
+   "aScore": 100.55,
+   "b": "Daniel",
+   "bScore": 108.3,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 8,
+   "a": "Varron",
+   "aScore": 106.06,
+   "b": "Ethan",
+   "bScore": 97.31,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Isaiah",
+   "aScore": 149.44,
+   "b": "Raymond",
+   "bScore": 109.15,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Abiy",
+   "aScore": 79.61,
+   "b": "Andrew",
+   "bScore": 102.24,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Jonathan",
+   "aScore": 105.16,
+   "b": "lanny",
+   "bScore": 87.2,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Chris",
+   "aScore": 96.44,
+   "b": "Varron",
+   "bScore": 115.9,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Matthew",
+   "aScore": 91.02,
+   "b": "Daniel",
+   "bScore": 102.81,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 9,
+   "a": "Zachary",
+   "aScore": 124.73,
+   "b": "Ethan",
+   "bScore": 101.03,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "Isaiah",
+   "aScore": 103.52,
+   "b": "Ethan",
+   "bScore": 99.1,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "Abiy",
+   "aScore": 68.71,
+   "b": "Matthew",
+   "bScore": 90.7,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "Jonathan",
+   "aScore": 89.53,
+   "b": "Varron",
+   "bScore": 142.35,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "lanny",
+   "aScore": 107.25,
+   "b": "Andrew",
+   "bScore": 89.38,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "Raymond",
+   "aScore": 103.95,
+   "b": "Daniel",
+   "bScore": 130.37,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 10,
+   "a": "Chris",
+   "aScore": 79.44,
+   "b": "Zachary",
+   "bScore": 113.58,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "Isaiah",
+   "aScore": 132.29,
+   "b": "Chris",
+   "bScore": 63.62,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "Abiy",
+   "aScore": 84.53,
+   "b": "Raymond",
+   "bScore": 94.88,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "Jonathan",
+   "aScore": 129.81,
+   "b": "Andrew",
+   "bScore": 89.78,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "lanny",
+   "aScore": 99.14,
+   "b": "Matthew",
+   "bScore": 145.58,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "Varron",
+   "aScore": 131.18,
+   "b": "Zachary",
+   "bScore": 111.39,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 11,
+   "a": "Daniel",
+   "aScore": 96.71,
+   "b": "Ethan",
+   "bScore": 122.2,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "Isaiah",
+   "aScore": 127.77,
+   "b": "Varron",
+   "bScore": 103.53,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "Abiy",
+   "aScore": 92.05,
+   "b": "Ethan",
+   "bScore": 110.75,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "Jonathan",
+   "aScore": 112.15,
+   "b": "Zachary",
+   "bScore": 87.71,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "lanny",
+   "aScore": 131.87,
+   "b": "Raymond",
+   "bScore": 117.75,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "Chris",
+   "aScore": 74.48,
+   "b": "Daniel",
+   "bScore": 110.11,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 12,
+   "a": "Andrew",
+   "aScore": 78.33,
+   "b": "Matthew",
+   "bScore": 89.57,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "Isaiah",
+   "aScore": 135.26,
+   "b": "Zachary",
+   "bScore": 135.72,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "Abiy",
+   "aScore": 105.35,
+   "b": "Chris",
+   "bScore": 150.46,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "Jonathan",
+   "aScore": 117.79,
+   "b": "Matthew",
+   "bScore": 99.41,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "lanny",
+   "aScore": 109.16,
+   "b": "Ethan",
+   "bScore": 127.36,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "Raymond",
+   "aScore": 104.57,
+   "b": "Andrew",
+   "bScore": 74.53,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 13,
+   "a": "Varron",
+   "aScore": 80.13,
+   "b": "Daniel",
+   "bScore": 119.25,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "Isaiah",
+   "aScore": 147.41,
+   "b": "Jonathan",
+   "bScore": 72.45,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "Abiy",
+   "aScore": 78.36,
+   "b": "Varron",
+   "bScore": 111.54,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "lanny",
+   "aScore": 116.33,
+   "b": "Chris",
+   "bScore": 112.81,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "Raymond",
+   "aScore": 160.03,
+   "b": "Matthew",
+   "bScore": 130.12,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "Andrew",
+   "aScore": 93.71,
+   "b": "Ethan",
+   "bScore": 119.17,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 14,
+   "a": "Zachary",
+   "aScore": 113.42,
+   "b": "Daniel",
+   "bScore": 137.8,
+   "type": "regular"
+  },
+  {
+   "year": 2024,
+   "week": 15,
+   "a": "Isaiah",
+   "aScore": 135.29,
+   "b": "Zachary",
+   "bScore": 144.85,
+   "type": "playoff"
+  },
+  {
+   "year": 2024,
+   "week": 15,
+   "a": "Varron",
+   "aScore": 117.6,
+   "b": "Ethan",
+   "bScore": 80.87,
+   "type": "playoff"
+  },
+  {
+   "year": 2024,
+   "week": 15,
+   "a": "Jonathan",
+   "aScore": 109.74,
+   "b": "Matthew",
+   "bScore": 135.71,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 15,
+   "a": "lanny",
+   "aScore": 123.34,
+   "b": "Chris",
+   "bScore": 126.68,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Raymond",
+   "aScore": 130.61,
+   "b": "Varron",
+   "bScore": 76.78,
+   "type": "playoff"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Zachary",
+   "aScore": 117.39,
+   "b": "Daniel",
+   "bScore": 117.27,
+   "type": "playoff"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Isaiah",
+   "aScore": 128.13,
+   "b": "Ethan",
+   "bScore": 105.83,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Abiy",
+   "aScore": 96.03,
+   "b": "Chris",
+   "bScore": 154.79,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Jonathan",
+   "aScore": 127.67,
+   "b": "lanny",
+   "bScore": 119.98,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 16,
+   "a": "Andrew",
+   "aScore": 104.01,
+   "b": "Matthew",
+   "bScore": 116.29,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 17,
+   "a": "Raymond",
+   "aScore": 134.73,
+   "b": "Zachary",
+   "bScore": 69.46,
+   "type": "playoff"
+  },
+  {
+   "year": 2024,
+   "week": 17,
+   "a": "Abiy",
+   "aScore": 87.94,
+   "b": "Andrew",
+   "bScore": 127.33,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 17,
+   "a": "Chris",
+   "aScore": 149.77,
+   "b": "Matthew",
+   "bScore": 131.36,
+   "type": "consolation"
+  },
+  {
+   "year": 2024,
+   "week": 17,
+   "a": "Varron",
+   "aScore": 98.62,
+   "b": "Daniel",
+   "bScore": 84.71,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "Isaiah",
+   "aScore": 105.52,
+   "b": "Zachary",
+   "bScore": 85.88,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "Abiy",
+   "aScore": 97.57,
+   "b": "Andrew",
+   "bScore": 105.07,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "Jonathan",
+   "aScore": 121.97,
+   "b": "Matthew",
+   "bScore": 89.33,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "lanny",
+   "aScore": 94.71,
+   "b": "Ethan",
+   "bScore": 104.97,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "Raymond",
+   "aScore": 96.59,
+   "b": "Daniel",
+   "bScore": 43.55,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 1,
+   "a": "Chris",
+   "aScore": 138.21,
+   "b": "Noah",
+   "bScore": 83.52,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Isaiah",
+   "aScore": 125.99,
+   "b": "Noah",
+   "bScore": 140.24,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Abiy",
+   "aScore": 125.93,
+   "b": "lanny",
+   "bScore": 72.45,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Jonathan",
+   "aScore": 114.9,
+   "b": "Daniel",
+   "bScore": 105.27,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Raymond",
+   "aScore": 86.38,
+   "b": "Ethan",
+   "bScore": 94.1,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Chris",
+   "aScore": 85.82,
+   "b": "Andrew",
+   "bScore": 115.23,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "a": "Matthew",
+   "aScore": 89.69,
+   "b": "Zachary",
+   "bScore": 118.9,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "Isaiah",
+   "aScore": 95.59,
+   "b": "Andrew",
+   "bScore": 95.55,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "Abiy",
+   "aScore": 43.21,
+   "b": "Raymond",
+   "bScore": 100.87,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "Jonathan",
+   "aScore": 114.52,
+   "b": "Zachary",
+   "bScore": 104.77,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "lanny",
+   "aScore": 119.22,
+   "b": "Chris",
+   "bScore": 101.77,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "Noah",
+   "aScore": 101.49,
+   "b": "Matthew",
+   "bScore": 108.62,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "a": "Daniel",
+   "aScore": 122.07,
+   "b": "Ethan",
+   "bScore": 123.87,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Isaiah",
+   "aScore": 118.85,
+   "b": "lanny",
+   "bScore": 116.17,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Abiy",
+   "aScore": 113.55,
+   "b": "Ethan",
+   "bScore": 77.26,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Jonathan",
+   "aScore": 123.03,
+   "b": "Noah",
+   "bScore": 141.99,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Raymond",
+   "aScore": 144.03,
+   "b": "Chris",
+   "bScore": 144.46,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Andrew",
+   "aScore": 124.27,
+   "b": "Matthew",
+   "bScore": 86.78,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "a": "Zachary",
+   "aScore": 104.38,
+   "b": "Daniel",
+   "bScore": 112.08,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "Isaiah",
+   "aScore": 82.75,
+   "b": "Raymond",
+   "bScore": 87.27,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "Abiy",
+   "aScore": 83.27,
+   "b": "Daniel",
+   "bScore": 116.94,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "Jonathan",
+   "aScore": 117.19,
+   "b": "Andrew",
+   "bScore": 101.69,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "lanny",
+   "aScore": 110.07,
+   "b": "Matthew",
+   "bScore": 85.78,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "Chris",
+   "aScore": 128.57,
+   "b": "Ethan",
+   "bScore": 157.93,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "a": "Noah",
+   "aScore": 116.93,
+   "b": "Zachary",
+   "bScore": 94.25,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Isaiah",
+   "aScore": 69.22,
+   "b": "Ethan",
+   "bScore": 116.14,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Abiy",
+   "aScore": 87.53,
+   "b": "Chris",
+   "bScore": 64.65,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Jonathan",
+   "aScore": 140.74,
+   "b": "lanny",
+   "bScore": 106.49,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Raymond",
+   "aScore": 107.21,
+   "b": "Matthew",
+   "bScore": 98.04,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Andrew",
+   "aScore": 103.51,
+   "b": "Zachary",
+   "bScore": 114.64,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "a": "Noah",
+   "aScore": 121.29,
+   "b": "Daniel",
+   "bScore": 143.95,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "Isaiah",
+   "aScore": 104.14,
+   "b": "Abiy",
+   "bScore": 109.19,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "Jonathan",
+   "aScore": 81.24,
+   "b": "Raymond",
+   "bScore": 146.06,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "lanny",
+   "aScore": 88.88,
+   "b": "Zachary",
+   "bScore": 65.34,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "Chris",
+   "aScore": 150.11,
+   "b": "Daniel",
+   "bScore": 102.02,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "Andrew",
+   "aScore": 85.3,
+   "b": "Noah",
+   "bScore": 148.11,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "a": "Matthew",
+   "aScore": 149.17,
+   "b": "Ethan",
+   "bScore": 115.07,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "Isaiah",
+   "aScore": 160.26,
+   "b": "Chris",
+   "bScore": 79.87,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "Abiy",
+   "aScore": 103.91,
+   "b": "Matthew",
+   "bScore": 67.33,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "Jonathan",
+   "aScore": 109.9,
+   "b": "Ethan",
+   "bScore": 112.68,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "lanny",
+   "aScore": 166.84,
+   "b": "Noah",
+   "bScore": 135.07,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "Raymond",
+   "aScore": 68.87,
+   "b": "Zachary",
+   "bScore": 111.82,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "a": "Andrew",
+   "aScore": 76.18,
+   "b": "Daniel",
+   "bScore": 86.37,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "Isaiah",
+   "aScore": 58.91,
+   "b": "Daniel",
+   "bScore": 97,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "Abiy",
+   "aScore": 65.35,
+   "b": "Jonathan",
+   "bScore": 100.07,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "lanny",
+   "aScore": 119.96,
+   "b": "Andrew",
+   "bScore": 100.65,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "Raymond",
+   "aScore": 130.94,
+   "b": "Noah",
+   "bScore": 100,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "Chris",
+   "aScore": 167.17,
+   "b": "Matthew",
+   "bScore": 69.63,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "a": "Zachary",
+   "aScore": 128.26,
+   "b": "Ethan",
+   "bScore": 127.29,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "Isaiah",
+   "aScore": 80.27,
+   "b": "Matthew",
+   "bScore": 115.3,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "Abiy",
+   "aScore": 108.07,
+   "b": "Zachary",
+   "bScore": 141.69,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "Jonathan",
+   "aScore": 125.95,
+   "b": "Chris",
+   "bScore": 110.74,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "lanny",
+   "aScore": 109,
+   "b": "Daniel",
+   "bScore": 84.82,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "Raymond",
+   "aScore": 91.18,
+   "b": "Andrew",
+   "bScore": 76.55,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "a": "Noah",
+   "aScore": 142.15,
+   "b": "Ethan",
+   "bScore": 138.45,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "Isaiah",
+   "aScore": 78.9,
+   "b": "Jonathan",
+   "bScore": 105.82,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "Abiy",
+   "aScore": 85.84,
+   "b": "Noah",
+   "bScore": 91.92,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "lanny",
+   "aScore": 114.84,
+   "b": "Raymond",
+   "bScore": 102.61,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "Chris",
+   "aScore": 130.13,
+   "b": "Zachary",
+   "bScore": 82.02,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "Andrew",
+   "aScore": 69.59,
+   "b": "Ethan",
+   "bScore": 110,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "a": "Matthew",
+   "aScore": 93.33,
+   "b": "Daniel",
+   "bScore": 96.66,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "Isaiah",
+   "aScore": 105.01,
+   "b": "Zachary",
+   "bScore": 52.17,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "Abiy",
+   "aScore": 76.33,
+   "b": "Andrew",
+   "bScore": 107.34,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "Jonathan",
+   "aScore": 132.31,
+   "b": "Matthew",
+   "bScore": 129.58,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "lanny",
+   "aScore": 116.16,
+   "b": "Ethan",
+   "bScore": 150.87,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "Raymond",
+   "aScore": 104.96,
+   "b": "Daniel",
+   "bScore": 113.71,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "a": "Chris",
+   "aScore": 107.77,
+   "b": "Noah",
+   "bScore": 128.06,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Isaiah",
+   "aScore": 107.7,
+   "b": "Noah",
+   "bScore": 82.09,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Abiy",
+   "aScore": 100.29,
+   "b": "lanny",
+   "bScore": 120.53,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Jonathan",
+   "aScore": 96.91,
+   "b": "Daniel",
+   "bScore": 121.77,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Raymond",
+   "aScore": 124.29,
+   "b": "Ethan",
+   "bScore": 96.42,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Chris",
+   "aScore": 98.87,
+   "b": "Andrew",
+   "bScore": 65.39,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "a": "Matthew",
+   "aScore": 110.34,
+   "b": "Zachary",
+   "bScore": 103.84,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "Isaiah",
+   "aScore": 129.3,
+   "b": "Andrew",
+   "bScore": 100.36,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "Abiy",
+   "aScore": 90.75,
+   "b": "Raymond",
+   "bScore": 78.51,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "Jonathan",
+   "aScore": 94.62,
+   "b": "Zachary",
+   "bScore": 110.06,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "lanny",
+   "aScore": 92.21,
+   "b": "Chris",
+   "bScore": 132.79,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "Noah",
+   "aScore": 112.19,
+   "b": "Matthew",
+   "bScore": 107.39,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "a": "Daniel",
+   "aScore": 92.16,
+   "b": "Ethan",
+   "bScore": 136.44,
+   "type": "regular"
+  },
+  {
+   "year": 2025,
+   "week": 15,
+   "a": "lanny",
+   "aScore": 107.6,
+   "b": "Raymond",
+   "bScore": 95.04,
+   "type": "playoff"
+  },
+  {
+   "year": 2025,
+   "week": 15,
+   "a": "Noah",
+   "aScore": 120.4,
+   "b": "Daniel",
+   "bScore": 67.14,
+   "type": "playoff"
+  },
+  {
+   "year": 2025,
+   "week": 15,
+   "a": "Isaiah",
+   "aScore": 104.2,
+   "b": "Zachary",
+   "bScore": 118.2,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 15,
+   "a": "Abiy",
+   "aScore": 106,
+   "b": "Chris",
+   "bScore": 117.62,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "Jonathan",
+   "aScore": 162.1,
+   "b": "Noah",
+   "bScore": 148.01,
+   "type": "playoff"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "lanny",
+   "aScore": 98.3,
+   "b": "Ethan",
+   "bScore": 87.78,
+   "type": "playoff"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "Isaiah",
+   "aScore": 115.8,
+   "b": "Abiy",
+   "bScore": 84.67,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "Raymond",
+   "aScore": 134.26,
+   "b": "Daniel",
+   "bScore": 111.05,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "Chris",
+   "aScore": 111.55,
+   "b": "Matthew",
+   "bScore": 133.37,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "a": "Andrew",
+   "aScore": 113.81,
+   "b": "Zachary",
+   "bScore": 30.45,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 17,
+   "a": "Jonathan",
+   "aScore": 145.27,
+   "b": "lanny",
+   "bScore": 118.24,
+   "type": "playoff"
+  },
+  {
+   "year": 2025,
+   "week": 17,
+   "a": "Chris",
+   "aScore": 114.53,
+   "b": "Zachary",
+   "bScore": 73.84,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 17,
+   "a": "Andrew",
+   "aScore": 92.72,
+   "b": "Matthew",
+   "bScore": 99.68,
+   "type": "consolation"
+  },
+  {
+   "year": 2025,
+   "week": 17,
+   "a": "Noah",
+   "aScore": 104.83,
+   "b": "Ethan",
+   "bScore": 106.36,
+   "type": "consolation"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "Isaiah",
+   "aScore": 105.64,
+   "b": "Chris",
+   "bScore": 149.36,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "Nicholas",
+   "aScore": 94.74,
+   "b": "Andrew",
+   "bScore": 91.36,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "Noah",
+   "aScore": 116.92,
+   "b": "Daniel",
+   "bScore": 64.68,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "lanny",
+   "aScore": 113.3,
+   "b": "Jonathan",
+   "bScore": 102.86,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "Ethan",
+   "aScore": 160.86,
+   "b": "Zachary",
+   "bScore": 67.16,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "a": "Raymond",
+   "aScore": 118.34,
+   "b": "Matthew",
+   "bScore": 135.52,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "Isaiah",
+   "aScore": 80.96,
+   "b": "Raymond",
+   "bScore": 71.32,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "Nicholas",
+   "aScore": 117.82,
+   "b": "Noah",
+   "bScore": 62.22,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "Andrew",
+   "aScore": 95.88,
+   "b": "Zachary",
+   "bScore": 94.24,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "lanny",
+   "aScore": 105,
+   "b": "Matthew",
+   "bScore": 132.06,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "Daniel",
+   "aScore": 91.36,
+   "b": "Jonathan",
+   "bScore": 113.28,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "a": "Ethan",
+   "aScore": 145.5,
+   "b": "Chris",
+   "bScore": 115.76,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "Isaiah",
+   "aScore": 105.98,
+   "b": "Matthew",
+   "bScore": 118.84,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "Nicholas",
+   "aScore": 125.28,
+   "b": "Jonathan",
+   "bScore": 110.08,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "Andrew",
+   "aScore": 102.84,
+   "b": "Chris",
+   "bScore": 90.52,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "Noah",
+   "aScore": 84.66,
+   "b": "Zachary",
+   "bScore": 95.04,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "lanny",
+   "aScore": 99.14,
+   "b": "Daniel",
+   "bScore": 93.22,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "a": "Ethan",
+   "aScore": 144.8,
+   "b": "Raymond",
+   "bScore": 114.2,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Isaiah",
+   "aScore": 111.38,
+   "b": "Ethan",
+   "bScore": 100.48,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Nicholas",
+   "aScore": 105.66,
+   "b": "lanny",
+   "bScore": 117.56,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Andrew",
+   "aScore": 133.16,
+   "b": "Raymond",
+   "bScore": 102.04,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Noah",
+   "aScore": 124.66,
+   "b": "Chris",
+   "bScore": 71.34,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Daniel",
+   "aScore": 81.1,
+   "b": "Matthew",
+   "bScore": 140.62,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "a": "Jonathan",
+   "aScore": 136.02,
+   "b": "Zachary",
+   "bScore": 96.8,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "Isaiah",
+   "aScore": 98.82,
+   "b": "Andrew",
+   "bScore": 117.64,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "Nicholas",
+   "aScore": 114.76,
+   "b": "Daniel",
+   "bScore": 82.08,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "Noah",
+   "aScore": 116.96,
+   "b": "Raymond",
+   "bScore": 141.64,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "lanny",
+   "aScore": 96.02,
+   "b": "Zachary",
+   "bScore": 164.36,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "Ethan",
+   "aScore": 137.2,
+   "b": "Matthew",
+   "bScore": 87.52,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "a": "Chris",
+   "aScore": 110.22,
+   "b": "Jonathan",
+   "bScore": 134.8,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "Isaiah",
+   "aScore": 139.14,
+   "b": "Noah",
+   "bScore": 87.2,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "Nicholas",
+   "aScore": 102.66,
+   "b": "Matthew",
+   "bScore": 111.02,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "Andrew",
+   "aScore": 84.24,
+   "b": "Ethan",
+   "bScore": 106.12,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "lanny",
+   "aScore": 100.54,
+   "b": "Chris",
+   "bScore": 93.78,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "Daniel",
+   "aScore": 84.72,
+   "b": "Zachary",
+   "bScore": 121.7,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "a": "Jonathan",
+   "aScore": 69.98,
+   "b": "Raymond",
+   "bScore": 108.8,
+   "type": "regular"
+  }
+ ]
+}
