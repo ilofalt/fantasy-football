@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     url: "https://ff.isaiahofalt.com",
     siteName: "Fantasy Football",
     type: "website",
+    // Explicit preview image so link unfurlers don't pick a photo off the page.
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Fantasy Football" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/og-image.png"],
   },
 };
 
