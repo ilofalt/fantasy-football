@@ -4,6 +4,7 @@
 export const teamImages: Record<string, string> = {
   Andrew: "/teams/andrew.jpg",
   Chris: "/teams/chris.jpg",
+  Daniel: "/teams/daniel.jpg",
   Ethan: "/teams/ethan.jpg",
   Isaiah: "/teams/isaiah.jpg",
   Matthew: "/teams/matthew.jpg",
