@@ -13,18 +13,37 @@ test("loads with the expected title and heading", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1, name: "Fantasy Football" })).toBeVisible();
 });
 
-test("shows the current week's matchups", async ({ page }) => {
+test("shows the current week's matchups from the weekly snapshot", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Week 7 Matchups" })).toBeVisible();
-  await expect(page.getByRole("article")).toHaveCount(sample.matchups.length);
-  await expect(page.getByText("Hurts So Good")).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Week \d+ Matchups/ })).toBeVisible();
+  await expect(page.getByRole("article")).toHaveCount(6);
 });
 
-test("shows a fallback message when the scoreboard is missing", async ({ page }) => {
+test("shows the live scoreboard when it's for a newer week", async ({ page }) => {
+  await page.unroute("**/data/scoreboard.json");
+  await page.route("**/data/scoreboard.json", (route) => route.fulfill({ json: { ...sample, week: 99 } }));
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "Week 99 Matchups" })).toBeVisible();
+  await expect(page.getByText("Isaiah").first()).toBeVisible();
+  await expect(page.getByText("Hurts So Good")).toHaveCount(0);
+});
+
+test("still shows the snapshot when the live scoreboard is missing", async ({ page }) => {
   await page.unroute("**/data/scoreboard.json");
   await page.route("**/data/scoreboard.json", (route) => route.fulfill({ status: 403 }));
   await page.goto("/");
-  await expect(page.getByText(/Matchups aren't available right now/)).toBeVisible();
+  await expect(page.getByRole("article")).toHaveCount(6);
+});
+
+test("clicking a matchup opens both lineups with photos", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: /^View lineups:/ }).first().click();
+  const dialog = page.getByRole("dialog");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.getByRole("list", { name: "Starters" }).getByRole("listitem")).toHaveCount(9);
+  await expect(page).toHaveURL(/#matchups\/[a-z]+-vs-[a-z]+$/);
+  await dialog.getByRole("button", { name: "Close" }).click();
+  await expect(dialog).toBeHidden();
 });
 
 test("links back to the main site", async ({ page }) => {

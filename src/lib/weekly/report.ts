@@ -62,34 +62,51 @@ export function managerLines(week: WeekData): ManagerLine[] {
   });
 }
 
+export interface Side {
+  manager: string;
+  points: number;
+  logoUrl: string | null;
+}
+
 export interface MatchupResult {
-  winner: { manager: string; points: number };
-  loser: { manager: string; points: number };
+  winner: Side;
+  loser: Side;
   /** Winning margin as a fraction of the loser's score. */
   margin: number;
 }
 
 export function matchupResults(week: WeekData): MatchupResult[] {
   const pts = new Map(week.teams.map((t) => [t.manager, t.points]));
+  const logo = logoLookup(week);
   return week.matchups.map(([a, b]) => {
     const [w, l] = (pts.get(a) ?? 0) >= (pts.get(b) ?? 0) ? [a, b] : [b, a];
     const wp = pts.get(w) ?? 0;
     const lp = pts.get(l) ?? 0;
-    return { winner: { manager: w, points: wp }, loser: { manager: l, points: lp }, margin: lp > 0 ? (wp - lp) / lp : 0 };
+    return {
+      winner: { manager: w, points: wp, logoUrl: logo(w) },
+      loser: { manager: l, points: lp, logoUrl: logo(l) },
+      margin: lp > 0 ? (wp - lp) / lp : 0,
+    };
   });
 }
 
+export function logoLookup(week: WeekData): (manager: string) => string | null {
+  const logos = new Map(week.teams.map((t) => [t.manager, t.logoUrl ?? null]));
+  return (manager) => logos.get(manager) ?? null;
+}
+
 export type ReportCard =
-  | { kind: "manager"; id: string; title: string; emoji: string; text: string; manager: string; points: number }
   | {
-      kind: "matchup";
+      kind: "manager";
       id: string;
       title: string;
       emoji: string;
       text: string;
-      winner: { manager: string; points: number };
-      loser: { manager: string; points: number };
+      manager: string;
+      points: number;
+      logoUrl: string | null;
     }
+  | { kind: "matchup"; id: string; title: string; emoji: string; text: string; winner: Side; loser: Side }
   | {
       kind: "player";
       id: string;
@@ -97,6 +114,7 @@ export type ReportCard =
       emoji: string;
       text: string;
       manager: string;
+      logoUrl: string | null;
       player: WeeklyPlayer;
     };
 
@@ -121,6 +139,7 @@ function bestPlayer(week: WeekData, pos: string, bench: boolean) {
 export function buildReport(week: WeekData): ReportCard[] {
   const lines = managerLines(week);
   const results = matchupResults(week);
+  const logo = logoLookup(week);
   const cards: ReportCard[] = [];
 
   // Best/worst manager by lineup efficiency; ties go to the higher score.
@@ -142,6 +161,7 @@ export function buildReport(week: WeekData): ReportCard[] {
         : `${best.manager} set a lineup that was ${pct(best.efficiency)} of their perfect possible lineup (${fmt(best.perfect)}).`,
     manager: best.manager,
     points: best.points,
+    logoUrl: logo(best.manager),
   });
   cards.push({
     kind: "manager",
@@ -155,6 +175,7 @@ export function buildReport(week: WeekData): ReportCard[] {
         : ""),
     manager: worst.manager,
     points: worst.points,
+    logoUrl: logo(worst.manager),
   });
 
   const byMargin = [...results].sort((a, b) => b.margin - a.margin);
@@ -182,8 +203,8 @@ export function buildReport(week: WeekData): ReportCard[] {
   const byPoints = [...lines].sort((a, b) => b.points - a.points);
   const high = byPoints[0];
   const low = byPoints[byPoints.length - 1];
-  cards.push({ kind: "manager", id: "highest-scorer", title: "Highest Scorer", emoji: "😎", text: `${high.manager} put up the top score of the week.`, manager: high.manager, points: high.points });
-  cards.push({ kind: "manager", id: "lowest-scorer", title: "Lowest Scorer", emoji: "💩", text: `${low.manager} put up the lowest score of the week.`, manager: low.manager, points: low.points });
+  cards.push({ kind: "manager", id: "highest-scorer", title: "Highest Scorer", emoji: "😎", text: `${high.manager} put up the top score of the week.`, manager: high.manager, points: high.points, logoUrl: logo(high.manager) });
+  cards.push({ kind: "manager", id: "lowest-scorer", title: "Lowest Scorer", emoji: "💩", text: `${low.manager} put up the lowest score of the week.`, manager: low.manager, points: low.points, logoUrl: logo(low.manager) });
 
   const vsProj = (l: ManagerLine) => (l.projected > 0 ? (l.points - l.projected) / l.projected : 0);
   const byProj = [...lines].sort((a, b) => vsProj(b) - vsProj(a));
@@ -197,6 +218,7 @@ export function buildReport(week: WeekData): ReportCard[] {
     text: `${over.manager} beat their projection (${fmt(over.projected)}) by ${pct(vsProj(over))}!`,
     manager: over.manager,
     points: over.points,
+    logoUrl: logo(over.manager),
   });
   cards.push({
     kind: "manager",
@@ -206,6 +228,7 @@ export function buildReport(week: WeekData): ReportCard[] {
     text: `${under.manager} missed their projection (${fmt(under.projected)}) by ${pct(-vsProj(under))}!`,
     manager: under.manager,
     points: under.points,
+    logoUrl: logo(under.manager),
   });
 
   for (const pos of POSITIONS) {
@@ -218,6 +241,7 @@ export function buildReport(week: WeekData): ReportCard[] {
         emoji: "⭐",
         text: `${top.manager} started the best ${pos} of the week!`,
         manager: top.manager,
+        logoUrl: logo(top.manager),
         player: top.player,
       });
   }
@@ -231,6 +255,7 @@ export function buildReport(week: WeekData): ReportCard[] {
         emoji: "👀",
         text: `${top.manager} had the best ${pos} on the bench this week!`,
         manager: top.manager,
+        logoUrl: logo(top.manager),
         player: top.player,
       });
   }

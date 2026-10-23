@@ -9,13 +9,61 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { weeklyData } from "@/content/weekly";
-import { buildReport, managerLines, type ReportCard } from "@/lib/weekly/report";
+import { buildReport, logoLookup, managerLines, type ReportCard } from "@/lib/weekly/report";
+import type { WeeklyPlayer } from "@/lib/weekly/types";
+import { teamImage } from "@/content/teamImages";
 import Permalink from "./Permalink";
 
-function ManagerRow({ manager, points, muted = false }: { manager: string; points: number; muted?: boolean }) {
+// Images are hotlinked from Yahoo. If one fails to load, Avatar falls back to
+// the initial, so a missing photo never breaks a card.
+function TeamLogo({ manager, logoUrl, size = 32 }: { manager: string; logoUrl: string | null; size?: number }) {
+  return (
+    <Avatar
+      src={teamImage(manager, logoUrl) ?? undefined}
+      alt={manager}
+      sx={{ width: size, height: size, fontSize: size * 0.42, bgcolor: "primary.main" }}
+    >
+      {manager.charAt(0).toUpperCase()}
+    </Avatar>
+  );
+}
+
+function Headshot({ player }: { player: WeeklyPlayer }) {
+  const isDefense = player.position === "DEF";
+  return (
+    <Avatar
+      src={player.imageUrl ?? undefined}
+      alt={player.name}
+      variant="rounded"
+      slotProps={{ img: { style: { objectFit: isDefense ? "contain" : "cover", objectPosition: "top" } } }}
+      sx={{
+        width: 64,
+        height: 64,
+        bgcolor: "action.hover",
+        color: "text.secondary",
+        fontWeight: 700,
+        p: isDefense ? 1 : 0,
+      }}
+    >
+      {player.name.charAt(0)}
+    </Avatar>
+  );
+}
+
+function ManagerRow({
+  manager,
+  points,
+  logoUrl,
+  muted = false,
+}: {
+  manager: string;
+  points: number;
+  logoUrl: string | null;
+  muted?: boolean;
+}) {
   return (
     <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }}>
-      <Avatar sx={{ width: 32, height: 32, fontSize: "0.9rem", bgcolor: "primary.main" }}>{manager.charAt(0).toUpperCase()}</Avatar>
+      <TeamLogo manager={manager} logoUrl={logoUrl} />
       <Typography sx={{ flex: 1, fontWeight: 600, color: muted ? "text.secondary" : "text.primary" }}>{manager}</Typography>
       <Typography
         variant="h6"
@@ -45,20 +93,24 @@ function AwardCard({ card }: { card: ReportCard }) {
         {card.text}
       </Typography>
       <Box sx={{ mt: "auto", pt: 0.5 }}>
-        {card.kind === "manager" && <ManagerRow manager={card.manager} points={card.points} />}
+        {card.kind === "manager" && <ManagerRow manager={card.manager} points={card.points} logoUrl={card.logoUrl} />}
         {card.kind === "matchup" && (
           <Stack spacing={1}>
-            <ManagerRow manager={card.winner.manager} points={card.winner.points} />
-            <ManagerRow manager={card.loser.manager} points={card.loser.points} muted />
+            <ManagerRow manager={card.winner.manager} points={card.winner.points} logoUrl={card.winner.logoUrl} />
+            <ManagerRow manager={card.loser.manager} points={card.loser.points} logoUrl={card.loser.logoUrl} muted />
           </Stack>
         )}
         {card.kind === "player" && (
-          <Stack direction="row" spacing={2} sx={{ alignItems: "flex-start" }}>
+          <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
+            <Headshot player={card.player} />
             <Box sx={{ flex: 1, minWidth: 0 }}>
               <Typography sx={{ fontWeight: 700 }}>{card.player.name}</Typography>
-              <Typography variant="caption" color="text.secondary" sx={{ display: "block" }}>
-                {card.player.position} · {card.player.nflTeam} · {card.manager}
-              </Typography>
+              <Stack direction="row" spacing={0.75} sx={{ alignItems: "center", mt: 0.25 }}>
+                <TeamLogo manager={card.manager} logoUrl={card.logoUrl} size={18} />
+                <Typography variant="caption" color="text.secondary">
+                  {card.player.position} · {card.player.nflTeam} · {card.manager}
+                </Typography>
+              </Stack>
               {card.player.statLine && (
                 <Typography variant="caption" color="text.secondary" sx={{ display: "block", mt: 0.5 }}>
                   {card.player.statLine}
@@ -80,6 +132,7 @@ export default function WeeklyReport() {
   const week = weeklyData[index];
   const cards = buildReport(week);
   const lines = managerLines(week).sort((a, b) => b.efficiency - a.efficiency || b.points - a.points);
+  const logo = logoLookup(week);
 
   return (
     <Box component="section" id="report" sx={{ pb: { xs: 8, md: 12 } }}>
@@ -155,12 +208,17 @@ export default function WeeklyReport() {
               {lines.map((l) => (
                 <tr key={l.manager}>
                   <td>
-                    {l.manager}
-                    {l.shouldHaveStarted.length > 0 && (
-                      <Typography variant="caption" color="text.secondary" sx={{ display: "block" }}>
-                        Should&apos;ve started {l.shouldHaveStarted.map((p) => p.name).join(", ")}
-                      </Typography>
-                    )}
+                    <Stack direction="row" spacing={1.25} sx={{ alignItems: "center" }}>
+                      <TeamLogo manager={l.manager} logoUrl={logo(l.manager)} size={28} />
+                      <Box>
+                        {l.manager}
+                        {l.shouldHaveStarted.length > 0 && (
+                          <Typography variant="caption" color="text.secondary" sx={{ display: "block" }}>
+                            Should&apos;ve started {l.shouldHaveStarted.map((p) => p.name).join(", ")}
+                          </Typography>
+                        )}
+                      </Box>
+                    </Stack>
                   </td>
                   <td>{l.points.toFixed(2)}</td>
                   <td>{l.perfect.toFixed(2)}</td>

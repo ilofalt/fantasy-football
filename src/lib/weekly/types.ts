@@ -13,6 +13,8 @@ export interface WeeklyPlayer {
   points: number;
   projected: number;
   statLine: string;
+  /** Yahoo headshot (or team logo for a D/ST); null if Yahoo has none. */
+  imageUrl?: string | null;
 }
 
 export interface WeeklyTeam {
@@ -21,6 +23,8 @@ export interface WeeklyTeam {
   points: number;
   /** Yahoo's original projected total for the week. */
   projected: number;
+  /** The manager's Yahoo team logo. */
+  logoUrl?: string | null;
   players: WeeklyPlayer[];
 }
 
