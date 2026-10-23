@@ -7,7 +7,10 @@ export interface RosterPlayer {
   name: string;
   position: string;
   nflTeam: string;
+  /** Yahoo's projection. Kept in the data but never displayed. */
   projected: number;
+  /** Actual fantasy points scored, once the game has been played. */
+  points?: number;
   /** Kickoff or status, e.g. "Sun 2:25 pm vs LAR" or "Bye". */
   game: string;
   imageUrl: string | null;
@@ -19,8 +22,10 @@ export interface RosterTeam {
   record: string;
   rank: number;
   logoUrl: string | null;
-  /** Yahoo's projected total for the starting lineup. */
+  /** Yahoo's projected total for the starting lineup. Kept in the data but never displayed. */
   projected: number;
+  /** Actual points scored by the starting lineup, once games have been played. */
+  points?: number;
   players: RosterPlayer[];
 }
 

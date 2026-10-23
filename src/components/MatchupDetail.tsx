@@ -47,14 +47,11 @@ function ManagerHeader({ team, align }: { team: RosterTeam; align: "left" | "rig
           {team.record} · {ordinal(team.rank)}
         </Typography>
       </Box>
-      <Box>
+      {team.points !== undefined && (
         <Typography variant="h4" component="p" sx={{ fontWeight: 700, fontVariantNumeric: "tabular-nums", lineHeight: 1 }}>
-          {team.projected.toFixed(2)}
+          {team.points.toFixed(2)}
         </Typography>
-        <Typography variant="caption" color="text.secondary">
-          Projected
-        </Typography>
-      </Box>
+      )}
     </Stack>
   );
 }
@@ -105,12 +102,14 @@ function PlayerCell({ player, align }: { player: RosterPlayer | null; align: "le
           {player.game}
         </Typography>
       </Box>
-      <Typography
-        variant="body2"
-        sx={{ fontVariantNumeric: "tabular-nums", fontWeight: 600, flexShrink: 0, fontSize: { xs: "0.8rem", sm: "0.875rem" } }}
-      >
-        {player.projected.toFixed(2)}
-      </Typography>
+      {player.points !== undefined && (
+        <Typography
+          variant="body2"
+          sx={{ fontVariantNumeric: "tabular-nums", fontWeight: 600, flexShrink: 0, fontSize: { xs: "0.8rem", sm: "0.875rem" } }}
+        >
+          {player.points.toFixed(2)}
+        </Typography>
+      )}
     </Stack>
   );
 }

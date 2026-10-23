@@ -39,8 +39,7 @@ export function displayName(team: ScoreboardTeam): string {
 }
 
 function TeamRow({ team, leading, upcoming }: { team: ScoreboardTeam; leading: boolean; upcoming: boolean }) {
-  // Before kickoff the projection is the number that matters, so it's shown large.
-  const big = upcoming && team.projectedPoints !== null ? team.projectedPoints : team.points;
+  // Only actual points are shown; before kickoff there's nothing to show yet.
   const name = displayName(team);
   return (
     <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
@@ -59,20 +58,8 @@ function TeamRow({ team, leading, upcoming }: { team: ScoreboardTeam; leading: b
           data-testid="team-points"
           sx={{ fontWeight: leading ? 700 : 400, fontVariantNumeric: "tabular-nums" }}
         >
-          {big.toFixed(2)}
+          {upcoming ? "–" : team.points.toFixed(2)}
         </Typography>
-        {upcoming ? (
-          <Typography variant="caption" color="text.secondary">
-            Projected
-          </Typography>
-        ) : (
-          team.projectedPoints !== null && (
-            <Typography variant="caption" color="text.secondary" sx={{ fontVariantNumeric: "tabular-nums" }}>
-              Proj {team.projectedPoints.toFixed(2)}
-              {team.winProbability !== null && ` · ${Math.round(team.winProbability * 100)}%`}
-            </Typography>
-          )
-        )}
       </Box>
     </Stack>
   );
@@ -96,12 +83,12 @@ function MatchupCard({ matchup, id, onOpen }: { matchup: Matchup; id?: string; o
       <TeamRow
         team={a}
         upcoming={upcoming}
-        leading={upcoming ? (a.projectedPoints ?? 0) > (b.projectedPoints ?? 0) : a.points > b.points}
+        leading={!upcoming && a.points > b.points}
       />
       <TeamRow
         team={b}
         upcoming={upcoming}
-        leading={upcoming ? (b.projectedPoints ?? 0) > (a.projectedPoints ?? 0) : b.points > a.points}
+        leading={!upcoming && b.points > a.points}
       />
     </Stack>
   );
@@ -132,7 +119,7 @@ export function snapshotToMatchups(snapshot: WeekMatchups): Matchup[] {
       manager: t.manager,
       logoUrl: t.logoUrl,
       points: 0,
-      projectedPoints: t.projected,
+      projectedPoints: null,
       winProbability: null,
     })) as [ScoreboardTeam, ScoreboardTeam],
   }));
@@ -231,7 +218,7 @@ export default function Matchups({ snapshot = currentMatchups }: { snapshot?: We
         </Stack>
         {useSnapshot && (
           <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
-            {snapshot.note ?? "Pre-game projections."} Tap a matchup to see both lineups.
+            {snapshot.note ? `${snapshot.note} ` : ""}Tap a matchup to see both lineups.
           </Typography>
         )}
 

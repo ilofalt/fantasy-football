@@ -63,7 +63,7 @@ describe("Matchups (live scoreboard)", () => {
 describe("Matchups (weekly snapshot with rosters)", () => {
   beforeEach(() => window.history.replaceState(null, "", "/"));
 
-  it("shows the snapshot's matchups as upcoming, with projections and no live points", async () => {
+  it("shows the snapshot's matchups as upcoming, with no points and no projections", async () => {
     mockFetch({ ok: true, json: async () => ({ ...sample, week: currentMatchups.week - 1 }) });
     renderWithTheme(<Matchups />);
     expect(await screen.findByRole("heading", { name: `Week ${currentMatchups.week} Matchups` })).toBeInTheDocument();
@@ -73,11 +73,9 @@ describe("Matchups (weekly snapshot with rosters)", () => {
     const first = within(cards[0]);
     expect(first.getByText(a.manager)).toBeInTheDocument();
     expect(first.getByText(b.manager)).toBeInTheDocument();
-    expect(first.getAllByTestId("team-points").map((el) => el.textContent)).toEqual([
-      a.projected.toFixed(2),
-      b.projected.toFixed(2),
-    ]);
+    expect(first.getAllByTestId("team-points").map((el) => el.textContent)).toEqual(["–", "–"]);
     expect(first.getAllByText("Upcoming")).toHaveLength(1);
+    expect(screen.queryByText(/proj/i)).toBeNull();
   });
 
   it("prefers the live scoreboard when it's for a newer week", async () => {
