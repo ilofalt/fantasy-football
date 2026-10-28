@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-27",
  "seasons": [
   {
    "year": 2022,
@@ -3615,6 +3615,60 @@
    "aScore": 69.98,
    "b": "Raymond",
    "bScore": 108.8,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "Isaiah",
+   "aScore": 88.68,
+   "b": "Jonathan",
+   "bScore": 112.68,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "Nicholas",
+   "aScore": 83.42,
+   "b": "Zachary",
+   "bScore": 120.2,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "Andrew",
+   "aScore": 83.22,
+   "b": "Matthew",
+   "bScore": 89.52,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "Noah",
+   "aScore": 103.44,
+   "b": "Ethan",
+   "bScore": 111.2,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "lanny",
+   "aScore": 102.26,
+   "b": "Raymond",
+   "bScore": 110.8,
+   "type": "regular"
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "a": "Daniel",
+   "aScore": 98.08,
+   "b": "Chris",
+   "bScore": 98.2,
    "type": "regular"
   }
  ]

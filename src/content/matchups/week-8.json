@@ -1,0 +1,1666 @@
+{
+  "week": 8,
+  "updated": "2026-10-27",
+  "note": "Games haven't been played yet.",
+  "matchups": [
+    {
+      "id": "isaiah-vs-lanny",
+      "teams": [
+        {
+          "manager": "Isaiah",
+          "record": "3-4",
+          "rank": 9,
+          "logoUrl": "https://s.yimg.com/ep/cx/blendr/v2/image-football-trophy-png_1721174536245.png",
+          "projected": 93.5,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Trevor Lawrence",
+              "nflTeam": "JAX",
+              "position": "QB",
+              "projected": 20.58,
+              "game": "Sun 11:00 am vs Ind",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/rwUnBjPJUZ3SJvV9yXTxyA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08182026/33389.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Josh Jacobs",
+              "nflTeam": "GB",
+              "position": "RB",
+              "projected": 15.12,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/HuJ.GKzpejEagnN0Kwpvzg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/31856.3.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Bhayshul Tuten",
+              "nflTeam": "JAX",
+              "position": "RB",
+              "projected": 15.44,
+              "game": "Sun 11:00 am vs Ind",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/r4ZkCUMVovtP2OvbqjUgvQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08182026/41900.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Matthew Golden",
+              "nflTeam": "GB",
+              "position": "WR",
+              "projected": 12.81,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/2C9lfpyx_3qIuPAXmjr77Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/41808.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Tetairoa McMillan",
+              "nflTeam": "CAR",
+              "position": "WR",
+              "projected": 11.69,
+              "game": "Thu 6:15 pm @ GB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/yQ5O8EHujdH9P6XnQSNkrg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062026/41793.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "George Kittle",
+              "nflTeam": "SF",
+              "position": "TE",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/tdF4SLdC1nQnH1VcBatMwA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/30259.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "RJ Harvey",
+              "nflTeam": "DEN",
+              "position": "RB",
+              "projected": 6.31,
+              "game": "Sun 2:25 pm vs KC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/XEJImYiyCkI.Kkn5HlaDOA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/41845.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Chris Boswell",
+              "nflTeam": "PIT",
+              "position": "K",
+              "projected": 8.79,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/oATUzrRrziXHIcEWLVSyig--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09202024/28188.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Cardinals",
+              "nflTeam": "ARI",
+              "position": "DEF",
+              "projected": 2.76,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20230503/70x70/ari_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Braelon Allen",
+              "nflTeam": "NYJ",
+              "position": "RB",
+              "projected": 9.19,
+              "game": "Sun 11:00 am vs LV",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/.67IWzsDJ0Ftb8peWFdObg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/40981.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Omarion Hampton",
+              "nflTeam": "LAC",
+              "position": "RB",
+              "projected": 9.46,
+              "game": "Sun 2:05 pm @ LAR",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/l1DUNH.6zantjOg14jD34A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/41807.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Marvin Harrison Jr.",
+              "nflTeam": "HOU",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/tfxU4D242VOw1Uw2uOlT8Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/10142026/40893.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Tyrone Tracy Jr.",
+              "nflTeam": "NYG",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/mf7jm5ypejiIxo1oCLIsfQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092025/41048.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Kyle Monangai",
+              "nflTeam": "CHI",
+              "position": "RB",
+              "projected": 6.78,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/Z9eUvNTkHmAe6.wGST2vqg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/42025.1.png"
+            }
+          ]
+        },
+        {
+          "manager": "lanny",
+          "record": "4-3",
+          "rank": 6,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/eac37b75f6b133b0b51749f0afa071c350003497e0a6c6a84bfd12ccdedca067.jpg",
+          "projected": 113.37,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Jordan Love",
+              "nflTeam": "GB",
+              "position": "QB",
+              "projected": 18.95,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/C.1PAs9HQXu6GnNTwhJwYA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/32696.3.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Kyren Williams",
+              "nflTeam": "LAR",
+              "position": "RB",
+              "projected": 17.92,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/_efyERCaTk3wJ88993aVYg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/34120.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Bijan Robinson",
+              "nflTeam": "ATL",
+              "position": "RB",
+              "projected": 19.67,
+              "game": "Sun 11:00 am @ TB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/Fc4OwPfnrDgeS9dZuAbYOA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/40055.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Jameson Williams",
+              "nflTeam": "DET",
+              "position": "WR",
+              "projected": 8.96,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/aDKe_Tlsi1xjQ5edQbr_EQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/33967.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Tre Tucker",
+              "nflTeam": "LV",
+              "position": "WR",
+              "projected": 8.66,
+              "game": "Sun 11:00 am @ NYJ",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/U2ANwuYhC2PtJ3zhZcEkiw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40114.2.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Travis Kelce",
+              "nflTeam": "KC",
+              "position": "TE",
+              "projected": 8.1,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/0b8UyhErqKde7JU9b1h3Ig--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/26686.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Chase Brown",
+              "nflTeam": "CIN",
+              "position": "RB",
+              "projected": 16.04,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/i7nHIVJWMsuqdFJ6IrdPBg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/40196.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Jason Sanders",
+              "nflTeam": "NYJ",
+              "position": "K",
+              "projected": 8.4,
+              "game": "Sun 11:00 am vs LV",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/HzcDzgOSsFLYHgqq4nVaeA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/31199.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Broncos",
+              "nflTeam": "DEN",
+              "position": "DEF",
+              "projected": 6.67,
+              "game": "Sun 2:25 pm vs KC",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_DEN_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jalen Coker",
+              "nflTeam": "CAR",
+              "position": "WR",
+              "projected": 11.07,
+              "game": "Thu 6:15 pm @ GB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/No4DicRM_BAfE4b.dQJKRw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062026/41293.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jaylen Waddle",
+              "nflTeam": "DEN",
+              "position": "WR",
+              "projected": 8.51,
+              "game": "Sun 2:25 pm vs KC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/uuM2cNmHUn9P3p9C2azJIA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/33394.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Rashee Rice",
+              "nflTeam": "KC",
+              "position": "WR",
+              "projected": 9.48,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/nSsbtBoO7Jxecz.5jr6UBA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40084.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Bryce Young",
+              "nflTeam": "CAR",
+              "position": "QB",
+              "projected": 18.58,
+              "game": "Thu 6:15 pm @ GB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/Rh.LhUWOb8O1zHr1ruZGtQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062026/40029.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "TreVeyon Henderson",
+              "nflTeam": "NE",
+              "position": "RB",
+              "projected": 6.9,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/M7iXPff0H_kY0laKzK.Knw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/41823.1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nicholas-vs-chris",
+      "teams": [
+        {
+          "manager": "Nicholas",
+          "record": "4-3",
+          "rank": 5,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/31dde0cc550a581b65897270db107b4d812f5002ca3964ec895ddc3ed7a8af6d.png",
+          "projected": 106.56,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Jacoby Brissett",
+              "nflTeam": "ARI",
+              "position": "QB",
+              "projected": 19.65,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ZAccykp_NTmpxvjVEU46vQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052026/29325.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Jordan Mason",
+              "nflTeam": "MIN",
+              "position": "RB",
+              "projected": 11.51,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/20Hcid2aVdmrjmdG5ej7Lw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/34320.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Quinshon Judkins",
+              "nflTeam": "CLE",
+              "position": "RB",
+              "projected": 10.24,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/T8fDhyIbs2yPyWeteE8pMA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/41821.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Garrett Wilson",
+              "nflTeam": "NYJ",
+              "position": "WR",
+              "projected": 11.29,
+              "game": "Sun 11:00 am vs LV",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ce9.EUHemkt.Wc6WQoifKQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/33965.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Zay Flowers",
+              "nflTeam": "BAL",
+              "position": "WR",
+              "projected": 14.63,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/G0U7zJ8Dz6FfRe3901XdMA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/40039.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Brock Bowers",
+              "nflTeam": "LV",
+              "position": "TE",
+              "projected": 11.58,
+              "game": "Sun 11:00 am @ NYJ",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ntwdmIlaVUkZo_6aKa4.ZQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40878.2.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Stefon Diggs",
+              "nflTeam": "WAS",
+              "position": "WR",
+              "projected": 9.13,
+              "game": "Sun 6:20 pm vs Phi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/wZwMl1abhoRkD_ur5r9SGg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09022026/28534.2.png"
+            },
+            {
+              "slot": "K",
+              "name": "Spencer Shrader",
+              "nflTeam": "IND",
+              "position": "K",
+              "projected": 7.94,
+              "game": "Sun 11:00 am @ Jax",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/vsXNwj6O0WXlylq25QusDg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/41499.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Bengals",
+              "nflTeam": "CIN",
+              "position": "DEF",
+              "projected": 10.59,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_CIN_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Germie Bernard",
+              "nflTeam": "PIT",
+              "position": "WR",
+              "projected": 7.93,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/PogIwMkQ8XKsEac7Oig9VA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/42669.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Christian McCaffrey",
+              "nflTeam": "SF",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/H6Xpn4cQmTQMbJAAHipg8g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/30121.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Brock Purdy",
+              "nflTeam": "SF",
+              "position": "QB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/UgaM0d2DetzWtw3AKBu2Kw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/34218.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Kaelon Black",
+              "nflTeam": "SF",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/fN7jF5prELm9l_PO0KhOAw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/42712.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Titans",
+              "nflTeam": "TEN",
+              "position": "DEF",
+              "projected": 2.39,
+              "game": "Sun 11:00 am @ Cin",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/20260413/70px/Titans2026.png"
+            },
+            {
+              "slot": "IR",
+              "name": "Terrance Ferguson",
+              "nflTeam": "LAR",
+              "position": "TE",
+              "projected": 0,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/GBnGykop7fNYvW91lpxNvg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/41831.2.png"
+            }
+          ]
+        },
+        {
+          "manager": "Chris",
+          "record": "2-5",
+          "rank": 10,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/946e6d12786b3be39a664fdac35f2db6b75f112c4c2e387b07d7bbb90e8c03a1.jpg",
+          "projected": 105.76,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Josh Allen",
+              "nflTeam": "BUF",
+              "position": "QB",
+              "projected": 25.79,
+              "game": "Sun 11:00 am vs Bal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/yJviiBf4TwVs43MdEBTaLg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/30977.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Jonathan Taylor",
+              "nflTeam": "IND",
+              "position": "RB",
+              "projected": 15.61,
+              "game": "Sun 11:00 am @ Jax",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/zuiKxPE8DUWpzg6AFg_LMA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/32711.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Zach Charbonnet",
+              "nflTeam": "SEA",
+              "position": "RB",
+              "projected": 9.03,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/FUzpWbCA9GufNY26pt995g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072026/40075.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Parker Washington",
+              "nflTeam": "JAX",
+              "position": "WR",
+              "projected": 13.92,
+              "game": "Sun 11:00 am vs Ind",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/t.q_GJqhGMTvqiGd.JSLsQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08182026/40234.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Michael Wilson",
+              "nflTeam": "ARI",
+              "position": "WR",
+              "projected": 11.05,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/9Shccm.Y2mwZDYUxkrXu5A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052026/40121.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Trey McBride",
+              "nflTeam": "ARI",
+              "position": "TE",
+              "projected": 12.8,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/b_yclnF4onLBwlDxXZ6WTw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052026/34010.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Omar Cooper Jr.",
+              "nflTeam": "NYJ",
+              "position": "WR",
+              "projected": 7.66,
+              "game": "Sun 11:00 am vs LV",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/hDFBS.CFIPVSi8rYmxlpYg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09182026/42652.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Evan McPherson",
+              "nflTeam": "CIN",
+              "position": "K",
+              "projected": 9.9,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/2Sjd767byrrbk9YiJJgnfA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/33537.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Seth McGowan",
+              "nflTeam": "IND",
+              "position": "RB",
+              "projected": 3.98,
+              "game": "Sun 11:00 am @ Jax",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/xUpO53Oml9d1zL.dneyILw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/42859.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Ja'Kobi Lane",
+              "nflTeam": "BAL",
+              "position": "WR",
+              "projected": 4.95,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/vu.P8LRRlZI79ychZmvtMA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/42702.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "DeMario Douglas",
+              "nflTeam": "NE",
+              "position": "WR",
+              "projected": 6.69,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/DuOeXESeeM7Y97nWUdJWXg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40222.1.png"
+            },
+            {
+              "slot": "IR",
+              "name": "Deebo Samuel Sr.",
+              "nflTeam": "SF",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/UVIA8bxR9egkY7hiFc5wXQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/10062026/31868.1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andrew-vs-noah",
+      "teams": [
+        {
+          "manager": "Andrew",
+          "record": "4-3",
+          "rank": 7,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c57317f8a95966835bbaa6a06724082b562c9f8881e8057888f2054246e2730c.jpg",
+          "projected": 95.05,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Justin Herbert",
+              "nflTeam": "LAC",
+              "position": "QB",
+              "projected": 15.77,
+              "game": "Sun 2:05 pm @ LAR",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/byIGLt4z3h6EGzB.pMFzeA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/32676.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Jaylen Warren",
+              "nflTeam": "PIT",
+              "position": "RB",
+              "projected": 14.94,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/J.Hyqa9biAW0Tt1RJj1NMg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/34447.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "J.K. Dobbins",
+              "nflTeam": "DEN",
+              "position": "RB",
+              "projected": 5.7,
+              "game": "Sun 2:25 pm vs KC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/d77St_n_vTyi_sehTmN_zQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/32725.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "CeeDee Lamb",
+              "nflTeam": "DAL",
+              "position": "WR",
+              "projected": 17.26,
+              "game": "Sun 11:00 am vs Ari",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/.hWXrlc.IjsX7QNBSsu6yg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/32687.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Denzel Boston",
+              "nflTeam": "CLE",
+              "position": "WR",
+              "projected": 8.39,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/lCctj7SK9d1BOKUPP8Fl1Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/42661.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Harold Fannin Jr.",
+              "nflTeam": "CLE",
+              "position": "TE",
+              "projected": 6.94,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/IAmZRHH4XdpLnT0lbZYrLw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/41877.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Breece Hall",
+              "nflTeam": "NYJ",
+              "position": "RB",
+              "projected": 13.05,
+              "game": "Sun 11:00 am vs LV",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/WbN1FS1ZAdXWIXo0oSFxZQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/33991.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Jason Myers",
+              "nflTeam": "SEA",
+              "position": "K",
+              "projected": 9.44,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/7ueYfFZqO7yAMbMYX8FB_A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072026/28378.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Ravens",
+              "nflTeam": "BAL",
+              "position": "DEF",
+              "projected": 3.56,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_BAL_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "C.J. Stroud",
+              "nflTeam": "HOU",
+              "position": "QB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/H_L47a3uZzJ8m4PfZufl9g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/40030.2.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Mike Evans",
+              "nflTeam": "SF",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/HXCRwTTk2E.5ZSQzXvxwrQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/27535.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Brian Robinson Jr.",
+              "nflTeam": "ATL",
+              "position": "RB",
+              "projected": 5.47,
+              "game": "Sun 11:00 am @ TB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/TIIFYDHIAEKSmJIOuO.CPg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/34054.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Romeo Doubs",
+              "nflTeam": "NE",
+              "position": "WR",
+              "projected": 0,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/nrkfvwH2CdlEyjwRfpEOFw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/34088.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jeremiyah Love",
+              "nflTeam": "ARI",
+              "position": "RB",
+              "projected": 9.64,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/bQkFtmZRqeM_c_v2535pNw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052026/42625.1.png"
+            },
+            {
+              "slot": "IR",
+              "name": "Jordyn Tyson",
+              "nflTeam": "NO",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/NXB7Zsb4d4dMDPth5Wm0JA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/42630.1.png"
+            }
+          ]
+        },
+        {
+          "manager": "Noah",
+          "record": "2-5",
+          "rank": 11,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/a10ad5ba8256675acd2b6907590e73a2f1f91128b0bc61fe6abbfeb7ca2be7be.jpg",
+          "projected": 82.48,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Drake Maye",
+              "nflTeam": "NE",
+              "position": "QB",
+              "projected": 22.4,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/3tnla_jUszzqjOx23fsaAA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40881.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Ashton Jeanty",
+              "nflTeam": "LV",
+              "position": "RB",
+              "projected": 15.18,
+              "game": "Sun 11:00 am @ NYJ",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/1kcn3.j_B8pc3JXYP.3gig--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07282025/41791.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Alvin Kamara",
+              "nflTeam": "NO",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/3wGVR1SklK6PdCpPxj0lnA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/30180.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "DK Metcalf",
+              "nflTeam": "PIT",
+              "position": "WR",
+              "projected": 9.17,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/I57cfJ_nVj_LKsXp3mJsTQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/31896.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Justin Jefferson",
+              "nflTeam": "MIN",
+              "position": "WR",
+              "projected": 13.41,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/RvKt9sm6pclsE6CsXvq3UQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/32692.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Colston Loveland",
+              "nflTeam": "CHI",
+              "position": "TE",
+              "projected": 7.49,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/9dxFQ1IBJ4n7klzX2TdZzg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/41795.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Emanuel Wilson",
+              "nflTeam": "SEA",
+              "position": "RB",
+              "projected": 6.46,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/HY2Op8F_0Paf5syF8PjfvA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/40707.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Tyler Loop",
+              "nflTeam": "BAL",
+              "position": "K",
+              "projected": 8.37,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/N.BNiLappJeC58GcM4zrVg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/41988.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "49ers",
+              "nflTeam": "SF",
+              "position": "DEF",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_SF_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Emeka Egbuka",
+              "nflTeam": "TB",
+              "position": "WR",
+              "projected": 8.82,
+              "game": "Sun 11:00 am vs Atl",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/veQQ7_WdFWqfvXuAaG2bGg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/41804.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Juwan Johnson",
+              "nflTeam": "NO",
+              "position": "TE",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/Ce797xBVQUIqJHQcGDq9fA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/33113.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Ladd McConkey",
+              "nflTeam": "LAC",
+              "position": "WR",
+              "projected": 8.65,
+              "game": "Sun 2:05 pm @ LAR",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/SM7Fte17PHmcn_2La8fGZw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092026/40908.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jadarian Price",
+              "nflTeam": "SEA",
+              "position": "RB",
+              "projected": 0,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/1z3WDBZSVGbM0dCiIo5dsg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/42654.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Travis Etienne Jr.",
+              "nflTeam": "NO",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/h64TG.MvQ.HoYMyqJXQuDA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/03102026/33413.2.png"
+            },
+            {
+              "slot": "IR",
+              "name": "Jonah Coleman",
+              "nflTeam": "DEN",
+              "position": "RB",
+              "projected": 8.85,
+              "game": "Sun 2:25 pm vs KC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/LFVkSeb.TD0pK59U41FKTA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/42730.1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daniel-vs-raymond",
+      "teams": [
+        {
+          "manager": "Daniel",
+          "record": "0-7",
+          "rank": 12,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/3295eab9fe54fba048324e81262121028ea3f472e817db1818e36d927ce92f73.jpg",
+          "projected": 81.64,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Dak Prescott",
+              "nflTeam": "DAL",
+              "position": "QB",
+              "projected": 22.75,
+              "game": "Sun 11:00 am vs Ari",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/O_wS.yoM_0RXSSOR6YtkCg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/29369.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Woody Marks",
+              "nflTeam": "HOU",
+              "position": "RB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/0Jvq.WPJiyVPVCKZ5JuRhw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/41902.2.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Roschon Johnson",
+              "nflTeam": "CHI",
+              "position": "RB",
+              "projected": 0.71,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/MnEvrdV7ccPI4cljmzuC5g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/40162.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Ja'Marr Chase",
+              "nflTeam": "CIN",
+              "position": "WR",
+              "projected": 14.96,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/L2ywVadSCcTZDzIcAfP65A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/33393.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "George Pickens",
+              "nflTeam": "DAL",
+              "position": "WR",
+              "projected": 12.67,
+              "game": "Sun 11:00 am vs Ari",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/FF5wFq.eSYkme5nBU83GFw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072025/34007.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Kyle Pitts Sr.",
+              "nflTeam": "ATL",
+              "position": "TE",
+              "projected": 5.89,
+              "game": "Sun 11:00 am @ TB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ed5fOChgitPsGRk_aAovZw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/33392.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Rico Dowdle",
+              "nflTeam": "PIT",
+              "position": "RB",
+              "projected": 8.47,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/_avEFgL69wFWWAFFonuayw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/33100.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Jake Bates",
+              "nflTeam": "DET",
+              "position": "K",
+              "projected": 9.05,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/qRpuRIUYodfJMji6U3QBnQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40835.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Seahawks",
+              "nflTeam": "SEA",
+              "position": "DEF",
+              "projected": 7.14,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_SEA_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Tank Dell",
+              "nflTeam": "HOU",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/6x4UvYm3ZeNSCAXNuh1qzg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/40097.2.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Luther Burden III",
+              "nflTeam": "CHI",
+              "position": "WR",
+              "projected": 9.95,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/m3k9p9Bw6NeaHyvarZA6Mw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/41824.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Rashid Shaheed",
+              "nflTeam": "SEA",
+              "position": "WR",
+              "projected": 8.47,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/uWOYrxR8kCw.pZkeVLm.hQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072026/34659.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "DJ Moore",
+              "nflTeam": "BUF",
+              "position": "WR",
+              "projected": 10.96,
+              "game": "Sun 11:00 am vs Bal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/enBlc6ox7K_nhcQE8xcRag--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/30994.1.png"
+            }
+          ]
+        },
+        {
+          "manager": "Raymond",
+          "record": "3-4",
+          "rank": 8,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/f5febe9c9870c42f87c486d4d421b9a9ee9fe08bd9e75347bab3ef109e13810c.jpg",
+          "projected": 92.19,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Jared Goff",
+              "nflTeam": "DET",
+              "position": "QB",
+              "projected": 17.95,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/LjtqC324pOusqUWuIkssHQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/29235.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Javonte Williams",
+              "nflTeam": "DAL",
+              "position": "RB",
+              "projected": 17.24,
+              "game": "Sun 11:00 am vs Ari",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/UDLXCkijWP5.D_I.S1_aXg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/33423.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Ollie Gordon II",
+              "nflTeam": "MIA",
+              "position": "RB",
+              "projected": 12.26,
+              "game": "Sun 2:25 pm vs NE",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/zEvNVKPHAw1w96BuLNinQg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08272025/41969.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Amon-Ra St. Brown",
+              "nflTeam": "DET",
+              "position": "WR",
+              "projected": 14.24,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/loXDliFxc63Kh71PKQ4wCA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/07312025/33500.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Rome Odunze",
+              "nflTeam": "CHI",
+              "position": "WR",
+              "projected": 7.5,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/jX2d8qjYhnL9CjToyPfDoA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/40901.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Brenton Strange",
+              "nflTeam": "JAX",
+              "position": "TE",
+              "projected": 7.62,
+              "game": "Sun 11:00 am vs Ind",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/3hQjWltUGcHlcABctFPK_g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08182026/40078.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Blake Corum",
+              "nflTeam": "LAR",
+              "position": "RB",
+              "projected": 9.22,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/5a6hIg2qglHh1bWZFao1lQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/40962.png"
+            },
+            {
+              "slot": "K",
+              "name": "Ka'imi Fairbairn",
+              "nflTeam": "HOU",
+              "position": "K",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/.zdwqRqqw89gaOLR.iJBUg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192025/29792.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Bears",
+              "nflTeam": "CHI",
+              "position": "DEF",
+              "projected": 6.16,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/20230905/70px/bears_new_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Caleb Williams",
+              "nflTeam": "CHI",
+              "position": "QB",
+              "projected": 17.75,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/65gBgXYuk4saVTHN94CeyA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08012025/40900.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Xavier Worthy",
+              "nflTeam": "KC",
+              "position": "WR",
+              "projected": 6.82,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/rGqUJ3KJX7Gv7e6XkW7hXw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40877.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jaylin Noel",
+              "nflTeam": "HOU",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/imQ1p4LpDJEqA.AZ55Xs8A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/41885.2.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Isaiah Likely",
+              "nflTeam": "NYG",
+              "position": "TE",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/QjSQUK1XUL6BclnhPMD5lQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/34095.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Chris Olave",
+              "nflTeam": "NO",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/QaQZHH4HXF_OyDMZuMMUPw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/33966.1.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethan-vs-jonathan",
+      "teams": [
+        {
+          "manager": "Ethan",
+          "record": "6-1",
+          "rank": 1,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/abcd7db1e22ae893a80448e43bb2d4a76b8283edffff2f87a855f022d87137be.jpg",
+          "projected": 115.29,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Kyler Murray",
+              "nflTeam": "MIN",
+              "position": "QB",
+              "projected": 18.79,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/qtMbw17MPxDBNoBX.NhyBw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/31833.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Chuba Hubbard",
+              "nflTeam": "CAR",
+              "position": "RB",
+              "projected": 16.11,
+              "game": "Thu 6:15 pm @ GB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/XCiDXF9C1hqmXkx3gIR8hw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062026/33514.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Saquon Barkley",
+              "nflTeam": "PHI",
+              "position": "RB",
+              "projected": 11.37,
+              "game": "Sun 6:20 pm @ Was",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/g2v5NPMO_Rkm65gtD3OwKA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/30972.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Christian Watson",
+              "nflTeam": "GB",
+              "position": "WR",
+              "projected": 12.91,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/cX9Ms5KjYLwfbDdWd9Py8Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/33989.3.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Jaxon Smith-Njigba",
+              "nflTeam": "SEA",
+              "position": "WR",
+              "projected": 20.21,
+              "game": "Mon 6:15 pm vs Chi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/jA4nCo7I90gmoqIi3jgDIA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08072026/40041.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Sam LaPorta",
+              "nflTeam": "DET",
+              "position": "TE",
+              "projected": 8.48,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/IP6ZeArKQmSV5.D0.xEc2A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40064.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "D'Andre Swift",
+              "nflTeam": "CHI",
+              "position": "RB",
+              "projected": 12.06,
+              "game": "Mon 6:15 pm @ Sea",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/roGs_lQG5alSaP2SeMxywg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/32705.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Chase McLaughlin",
+              "nflTeam": "TB",
+              "position": "K",
+              "projected": 9.22,
+              "game": "Sun 11:00 am vs Atl",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/NiHypl9YBsaKwDAI0fjY9g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/32417.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Vikings",
+              "nflTeam": "MIN",
+              "position": "DEF",
+              "projected": 6.14,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_MIN_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Devaughn Vele",
+              "nflTeam": "NO",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/BN7J8mmc6f1l9ssGG_KHzQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/41097.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Samaje Perine",
+              "nflTeam": "CIN",
+              "position": "RB",
+              "projected": 6.97,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/S4eXpT1oooPg8Xsn6OEVLA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/30227.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Bam Knight",
+              "nflTeam": "ARI",
+              "position": "RB",
+              "projected": 5.78,
+              "game": "Sun 11:00 am @ Dal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/fAAvSbCn36IvqcGQAqrSgA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08052026/34357.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jahan Dotson",
+              "nflTeam": "ATL",
+              "position": "WR",
+              "projected": 5.27,
+              "game": "Sun 11:00 am @ TB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/w8b6jrnh27y2aJ95ttVWfQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/33971.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Lamar Jackson",
+              "nflTeam": "BAL",
+              "position": "QB",
+              "projected": 20.76,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/P3gP9Qs8jUjmPlextXxE7Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/31002.1.png"
+            },
+            {
+              "slot": "IR",
+              "name": "Davante Adams",
+              "nflTeam": "LAR",
+              "position": "WR",
+              "projected": 0,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/wuwanyyS6mGdDgkKED_STA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252025/27581.png"
+            }
+          ]
+        },
+        {
+          "manager": "Jonathan",
+          "record": "4-3",
+          "rank": 3,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/c9aaa908026580931b05c29720504d576ce54e21d71ed76d25c4956c573d4d57.jpg",
+          "projected": 119.95,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Joe Burrow",
+              "nflTeam": "CIN",
+              "position": "QB",
+              "projected": 22.11,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/qtTPVzlY705viHHlJe5wyg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/32671.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Derrick Henry",
+              "nflTeam": "BAL",
+              "position": "RB",
+              "projected": 17.07,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/sAYIRfQn53U_P1VcXpVacQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/29279.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Rhamondre Stevenson",
+              "nflTeam": "NE",
+              "position": "RB",
+              "projected": 10.84,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/jHh55_pKrHmVjTUF48On5A--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/33508.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Drake London",
+              "nflTeam": "ATL",
+              "position": "WR",
+              "projected": 13.07,
+              "game": "Sun 11:00 am @ TB",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/OaHpVBJC8j5qItj1jR.Frg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/33963.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Tee Higgins",
+              "nflTeam": "CIN",
+              "position": "WR",
+              "projected": 13,
+              "game": "Sun 11:00 am vs Ten",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ofGXHU_Cic05_a0NV4mZiQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/32703.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Dalton Kincaid",
+              "nflTeam": "BUF",
+              "position": "TE",
+              "projected": 8.45,
+              "game": "Sun 11:00 am vs Bal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/CD3c6azq1OZSAVcdJR69NA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08122026/40048.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Puka Nacua",
+              "nflTeam": "LAR",
+              "position": "WR",
+              "projected": 17.83,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/7jLRKfsNcQR_7yniN3O3qA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/40168.2.png"
+            },
+            {
+              "slot": "K",
+              "name": "Brandon Aubrey",
+              "nflTeam": "DAL",
+              "position": "K",
+              "projected": 10.55,
+              "game": "Sun 11:00 am vs Ari",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/IvpYgh5kW3ar7.d0LjEJYw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40819.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Chiefs",
+              "nflTeam": "KC",
+              "position": "DEF",
+              "projected": 7.03,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_KC_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Mark Andrews",
+              "nflTeam": "BAL",
+              "position": "TE",
+              "projected": 6.25,
+              "game": "Sun 11:00 am @ Buf",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/C8Uz9DcdtJJwGQKsCrP7hw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08112026/31056.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Aaron Jones Sr.",
+              "nflTeam": "MIN",
+              "position": "RB",
+              "projected": 8.81,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/YHof7XUli5llgGtcyMvY0w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08152025/30295.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Matthew Stafford",
+              "nflTeam": "LAR",
+              "position": "QB",
+              "projected": 18.11,
+              "game": "Sun 2:05 pm vs LAC",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/ikl7JSHSUNE_WRIe3s0BvQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/9265.2.png"
+            },
+            {
+              "slot": "BN",
+              "name": "MarShawn Lloyd",
+              "nflTeam": "GB",
+              "position": "RB",
+              "projected": 5.48,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/a_OjOjmuZ4eZf.pB1oUjXg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/40971.3.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Texans",
+              "nflTeam": "HOU",
+              "position": "DEF",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_HOU_wbg.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zachary-vs-matthew",
+      "teams": [
+        {
+          "manager": "Zachary",
+          "record": "4-3",
+          "rank": 4,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/b68609c56d6fb49357cb4b1ccce4ff0be9f3d483f3c0fcb88192902049ac413f.jpg",
+          "projected": 82.3,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Patrick Mahomes",
+              "nflTeam": "KC",
+              "position": "QB",
+              "projected": 17.15,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/L.SVa9bFPxdb0Dc2Yfjnww--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/30123.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Bucky Irving",
+              "nflTeam": "TB",
+              "position": "RB",
+              "projected": 15.9,
+              "game": "Sun 11:00 am vs Atl",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/t_fJrPw4deR2iWuJ3vEGEQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/40993.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Tony Pollard",
+              "nflTeam": "TEN",
+              "position": "RB",
+              "projected": 12.36,
+              "game": "Sun 11:00 am @ Cin",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/sPyNiCy60p162yHvfCdTyg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/31960.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Malik Nabers",
+              "nflTeam": "NYG",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/Vep_T0Vpw0yjz1DcCOCEyw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/09092025/40899.png"
+            },
+            {
+              "slot": "WR",
+              "name": "A.J. Brown",
+              "nflTeam": "NE",
+              "position": "WR",
+              "projected": 11.32,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/mzry_Xo0Hali27MSNBrA5g--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/31883.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Hunter Henry",
+              "nflTeam": "NE",
+              "position": "TE",
+              "projected": 6.87,
+              "game": "Sun 2:25 pm @ Mia",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/YpSRpmPpyON7nuUPbPdJtQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/29269.1.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Christian Kirk",
+              "nflTeam": "SF",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/6qX0ebVZyCuTnHJfGX3XcA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/31017.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Will Reichard",
+              "nflTeam": "MIN",
+              "position": "K",
+              "projected": 9.28,
+              "game": "Sun 11:00 am @ Det",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/cEukM2PnqmY3YnOeBZxX8Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/41093.1.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Steelers",
+              "nflTeam": "PIT",
+              "position": "DEF",
+              "projected": 9.42,
+              "game": "Sun 11:00 am vs Cle",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/nfl/20190724/70x70/2019_PIT_wbg.png"
+            },
+            {
+              "slot": "BN",
+              "name": "James Cook III",
+              "nflTeam": "BUF",
+              "position": "RB",
+              "projected": 17.13,
+              "game": "Sun 11:00 am vs Bal",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/xqy9bL.KU1oc7YK5TwzjYQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08282024/34019.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jayden Daniels",
+              "nflTeam": "WAS",
+              "position": "QB",
+              "projected": 20.96,
+              "game": "Sun 6:20 pm vs Phi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/UL3KFqmRxR_bw9pSXo72tg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/40896.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Tyler Warren",
+              "nflTeam": "IND",
+              "position": "TE",
+              "projected": 7.96,
+              "game": "Sun 11:00 am @ Jax",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/1Ni90v7bFbDSyuc6a_yiXQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/41799.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Jakobi Meyers",
+              "nflTeam": "JAX",
+              "position": "WR",
+              "projected": 7.56,
+              "game": "Sun 11:00 am vs Ind",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/x0K._52GADNHz3AzpuaoRQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08182026/32231.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Antonio Williams",
+              "nflTeam": "WAS",
+              "position": "WR",
+              "projected": 5.84,
+              "game": "Sun 6:20 pm vs Phi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/WvM5L2d9j6.RISnaXNbkSA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/42693.1.png"
+            }
+          ]
+        },
+        {
+          "manager": "Matthew",
+          "record": "6-1",
+          "rank": 2,
+          "logoUrl": "https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/18d4a9b4cb747f0c07df01eea83f3057f6b21d00273f645c8eb8e45179904124.png",
+          "projected": 96.32,
+          "players": [
+            {
+              "slot": "QB",
+              "name": "Tyler Shough",
+              "nflTeam": "NO",
+              "position": "QB",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/tjJGlV8g_AZHq.3kQNm6JA--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08202026/41825.1.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Kenneth Walker III",
+              "nflTeam": "KC",
+              "position": "RB",
+              "projected": 20.09,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/1fM_9MdRInGpUJ7EhPkuvw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/33996.png"
+            },
+            {
+              "slot": "RB",
+              "name": "Jahmyr Gibbs",
+              "nflTeam": "DET",
+              "position": "RB",
+              "projected": 22.4,
+              "game": "Sun 11:00 am vs Min",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/PCDSP.rBVSe7sLbUwrAf5w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/40059.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "KC Concepcion Jr.",
+              "nflTeam": "CLE",
+              "position": "WR",
+              "projected": 8.59,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/khWIRW3BZwuWXroFZeBQQw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08132026/42646.1.png"
+            },
+            {
+              "slot": "WR",
+              "name": "Carnell Tate",
+              "nflTeam": "TEN",
+              "position": "WR",
+              "projected": 9.37,
+              "game": "Sun 11:00 am @ Cin",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/yKNAiDN2L6fdtmIo0b1txQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08242026/42626.1.png"
+            },
+            {
+              "slot": "TE",
+              "name": "Tucker Kraft",
+              "nflTeam": "GB",
+              "position": "TE",
+              "projected": 8.51,
+              "game": "Thu 6:15 pm vs Car",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/mv8EHXC1Y7DHqh0sS4ox6w--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/40102.3.png"
+            },
+            {
+              "slot": "W/R/T",
+              "name": "Rachaad White",
+              "nflTeam": "WAS",
+              "position": "RB",
+              "projected": 11.69,
+              "game": "Sun 6:20 pm vs Phi",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/BQmlk6TqFc5joD6dYQtzcQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08252026/34047.1.png"
+            },
+            {
+              "slot": "K",
+              "name": "Matt Gay",
+              "nflTeam": "LV",
+              "position": "K",
+              "projected": 8.39,
+              "game": "Sun 11:00 am @ NYJ",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/yV.zuCUWwIreX5UeqDqxLw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/31977.2.png"
+            },
+            {
+              "slot": "DEF",
+              "name": "Browns",
+              "nflTeam": "CLE",
+              "position": "DEF",
+              "projected": 7.28,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/cv/apiv2/default/202509/70px/browns2025_70.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Dallas Goedert",
+              "nflTeam": "PHI",
+              "position": "TE",
+              "projected": 7.33,
+              "game": "Sun 6:20 pm @ Was",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/0r6TzIMxgRAN2eAZtfuaHw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/31019.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Nico Collins",
+              "nflTeam": "HOU",
+              "position": "WR",
+              "projected": 0,
+              "game": "Bye",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/9m7QHlYUM8K3hdPH0uzFCg--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08142026/33477.2.png"
+            },
+            {
+              "slot": "BN",
+              "name": "DeVonta Smith",
+              "nflTeam": "PHI",
+              "position": "WR",
+              "projected": 8,
+              "game": "Sun 6:20 pm @ Was",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/VijS7gY7HFXT8GZWp.hjdQ--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08212026/33398.1.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Emmett Johnson",
+              "nflTeam": "KC",
+              "position": "RB",
+              "projected": 3.99,
+              "game": "Sun 2:25 pm @ Den",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/dIPPSeIqRq5p3Dz180iuBw--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08192026/42796.png"
+            },
+            {
+              "slot": "BN",
+              "name": "Dylan Sampson",
+              "nflTeam": "CLE",
+              "position": "RB",
+              "projected": 5.89,
+              "game": "Sun 11:00 am @ Pit",
+              "imageUrl": "https://s.yimg.com/iu/api/res/1.2/_z_So08hc_fF7aPfz9J82Q--~C/YXBwaWQ9eXNwb3J0cztjaD0yMzM2O2NyPTE7Y3c9MTc5MjtkeD04NTY7ZHk9MDtmaT11bGNyb3A7aD0yMTU7cT0xMDA7dz0xNjU-/https://s.yimg.com/xe/i/us/sp/v/nfl_cutout/players_l/08062025/41907.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

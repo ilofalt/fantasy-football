@@ -1,7 +1,6 @@
-// Remaining regular-season schedule, by manager. Week 7 counts as unplayed
+// Remaining regular-season schedule, by manager. Week 8 counts as unplayed
 // until every game is final, so the playoff odds never use a partial week.
 export const REMAINING_SCHEDULE: { week: number; games: [string, string][] }[] = [
-  { week: 7, games: [["Isaiah", "Jonathan"], ["Nicholas", "Zachary"], ["Andrew", "Matthew"], ["Noah", "Ethan"], ["lanny", "Raymond"], ["Daniel", "Chris"]] },
   { week: 8, games: [["Isaiah", "lanny"], ["Nicholas", "Chris"], ["Andrew", "Noah"], ["Daniel", "Raymond"], ["Ethan", "Jonathan"], ["Zachary", "Matthew"]] },
   { week: 9, games: [["Isaiah", "Daniel"], ["Nicholas", "Raymond"], ["Andrew", "Jonathan"], ["Noah", "Matthew"], ["lanny", "Ethan"], ["Chris", "Zachary"]] },
   { week: 10, games: [["Isaiah", "Nicholas"], ["Andrew", "lanny"], ["Noah", "Jonathan"], ["Daniel", "Ethan"], ["Chris", "Matthew"], ["Raymond", "Zachary"]] },
