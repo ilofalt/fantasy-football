@@ -108,17 +108,21 @@ function MatchupCard({ matchup, id, onOpen }: { matchup: Matchup; id?: string; o
   );
 }
 
-/** Pre-game snapshot matchups as scoreboard matchups (0 points, upcoming). */
+/**
+ * Snapshot matchups as scoreboard matchups. Before kickoff they're upcoming
+ * with no points; a live or final snapshot shows each team's points so far.
+ */
 export function snapshotToMatchups(snapshot: WeekMatchups): Matchup[] {
+  const status = snapshot.status ?? "upcoming";
   return snapshot.matchups.map((m) => ({
-    status: "upcoming",
+    status,
     isPlayoffs: false,
     teams: m.teams.map((t) => ({
       key: `${m.id}-${t.manager}`,
       name: t.manager,
       manager: t.manager,
       logoUrl: t.logoUrl,
-      points: 0,
+      points: status === "upcoming" ? 0 : (t.points ?? 0),
       projectedPoints: null,
       winProbability: null,
     })) as [ScoreboardTeam, ScoreboardTeam],

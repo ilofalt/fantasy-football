@@ -38,6 +38,11 @@ export interface RosterMatchup {
 export interface WeekMatchups {
   week: number;
   updated: string;
+  /**
+   * Where the week stands when the snapshot was taken. "live" shows each
+   * team's points so far; leave it out (or "upcoming") before kickoff.
+   */
+  status?: "upcoming" | "live" | "final";
   note?: string;
   matchups: RosterMatchup[];
 }

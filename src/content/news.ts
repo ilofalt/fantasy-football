@@ -1,7 +1,8 @@
 // Hand-written league news, newest first. Edit this file to publish a new
 // story; the News tab renders whatever is here.
 //
-// Last updated: Week 7 final, including Monday night (Oct 27, 2026).
+// Last updated: Week 8 in progress, Sunday night (Nov 1, 2026). Week 7
+// stories are final; the Week 8 update is not.
 
 export type NewsCategory =
   | "Recap"
@@ -32,6 +33,28 @@ export interface NewsArticle {
 }
 
 export const news: NewsArticle[] = [
+  {
+    id: "week-8-sunday-update",
+    category: "Recap",
+    title: "Week 8 in progress: Daniel is about to win, and Isaiah is about to jump to 5th",
+    dek: "Scores as of Sunday night. Washington-Philadelphia is at halftime and Chicago-Seattle is Monday night, so nothing is final yet.",
+    date: "2026-11-01",
+    paragraphs: [
+      "This week isn't over. A handful of players are still in the Sunday night game, and the Bears and Seahawks play Monday. Yahoo's win probabilities are below, and we'll post the final recap once Monday's game and any stat corrections are in.",
+      "Daniel leads Raymond 121.30 to 61.04, his best score of the season by more than 20 points. Tyler Allgeier, a free-agent pickup on Tuesday, has 34.6. Ray has only the Bears D/ST left. Barring something strange on Monday night, Daniel's first win of the season is a week away from being official.",
+      "Isaiah has 142.00, his highest score of the year, and lanny is done at 100.82. Bhayshul Tuten (30.4) and Braelon Allen (25.8) led the way. If the current leaders all hold, Isaiah goes from 9th to 5th, ahead of lanny on points for.",
+      "Jonathan has the top score of the week so far, 154.58, behind Joe Burrow's 42.98 and Tee Higgins' 32. Ethan has 71.30 with three players left, including Jaxon Smith-Njigba and D'Andre Swift on Monday night. Kyler Murray scored 21.4 on Ethan's bench.",
+    ],
+    list: [
+      { label: "Jonathan 154.58 · Ethan 71.30", detail: "Ethan has 3 players left. Yahoo: Jonathan 95%." },
+      { label: "Isaiah 142.00 · lanny 100.82", detail: "lanny is done; Isaiah has the Commanders D/ST in the Sunday night game. Yahoo: Isaiah 99%." },
+      { label: "Daniel 121.30 · Raymond 61.04", detail: "Each has one player left (Seahawks and Bears D/STs, Monday night). Yahoo: Daniel 99%." },
+      { label: "Zachary 110.74 · Matthew 105.82", detail: "Each has two players in the Sunday night game. Yahoo: Zachary 78%. The closest game left." },
+      { label: "Noah 99.56 · Andrew 68.58", detail: "Each has one player left on Monday night. Yahoo: Noah 99%." },
+      { label: "Chris 91.86 · Nicholas 67.16", detail: "Nicholas has Stefon Diggs in the Sunday night game; Chris has Zach Charbonnet on Monday. Yahoo: Chris 99%." },
+    ],
+    outro: "If every current leader wins: Ethan and Matthew 6-2; Jonathan and Zachary 5-3; Isaiah, lanny, Nicholas, and Andrew 4-4; Chris, Noah, and Raymond 3-5; Daniel 1-7. Standings, the Playoff Picture, and the Weekly Report stay at Week 7 until Week 8 is final.",
+  },
   {
     id: "week-7-recap",
     category: "Recap",

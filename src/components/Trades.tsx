@@ -5,7 +5,8 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { trades, TRADES_UPDATED } from "@/content/trades";
-import { formatPoints, playerTotal, sideTotal } from "@/lib/trades/score";
+import { history } from "@/content/history";
+import { formatPoints, formatRecord, playerTotal, recordSinceTrade, sideTotal } from "@/lib/trades/score";
 import type { Trade, TradeSide } from "@/lib/trades/types";
 import { formatDate } from "./News";
 import Permalink from "./Permalink";
@@ -34,7 +35,16 @@ function weeksLabel(weeks: number[]): string {
   return weeks.length === 1 ? `Week ${weeks[0]}` : `Weeks ${weeks[0]}–${weeks[weeks.length - 1]}`;
 }
 
-function SideColumn({ side, winning }: { side: TradeSide; winning: boolean }) {
+function recordLabel(trade: Trade, manager: string): string {
+  const year = Number(trade.date.slice(0, 4));
+  const r = recordSinceTrade(history.games, manager, year, trade.weeksCounted);
+  const record = formatRecord(r);
+  const pending = r.pending.length ? `${weeksLabel(r.pending)} in progress` : null;
+  if (!record) return `Record since trade: ${pending ?? "no games yet"}`;
+  return `Record since trade: ${record}${pending ? ` · ${pending}` : ""}`;
+}
+
+function SideColumn({ side, winning, record }: { side: TradeSide; winning: boolean; record: string }) {
   return (
     <Box
       sx={{
@@ -55,6 +65,9 @@ function SideColumn({ side, winning }: { side: TradeSide; winning: boolean }) {
           {formatPoints(sideTotal(side))}
         </Typography>
       </Stack>
+      <Typography variant="caption" color="text.secondary" component="p" data-testid="side-record" sx={{ mt: -1, mb: 1.5 }}>
+        {record}
+      </Typography>
       <Stack spacing={1.25}>
         {side.received.map((player) => (
           <Stack key={player.name} direction="row" spacing={2} sx={{ justifyContent: "space-between" }}>
@@ -98,8 +111,8 @@ function TradeCard({ trade }: { trade: Trade }) {
           {a.manager} ↔ {b.manager}: {trade.headline}
         </Typography>
         <Box sx={{ display: "grid", gap: 2, gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" } }}>
-          <SideColumn side={a} winning={trade.verdict === a.manager} />
-          <SideColumn side={b} winning={trade.verdict === b.manager} />
+          <SideColumn side={a} winning={trade.verdict === a.manager} record={recordLabel(trade, a.manager)} />
+          <SideColumn side={b} winning={trade.verdict === b.manager} record={recordLabel(trade, b.manager)} />
         </Box>
         {trade.writeUp.map((p, i) => (
           <Typography key={i} sx={{ lineHeight: 1.7 }}>

@@ -77,9 +77,20 @@ describe("current matchups data", () => {
     }
   });
 
-  it("doesn't leak Thursday night results", () => {
+  it("doesn't leak Thursday night results into a pre-game snapshot", () => {
+    if ((currentMatchups.status ?? "upcoming") !== "upcoming") return;
     const games = currentMatchups.matchups.flatMap((m) => m.teams.flatMap((t) => t.players.map((x) => x.game)));
     expect(games.some((g) => /^Final/.test(g))).toBe(false);
+  });
+
+  it("scores a live or final snapshot as the sum of each team's starters", () => {
+    if ((currentMatchups.status ?? "upcoming") === "upcoming") return;
+    for (const m of currentMatchups.matchups) {
+      for (const t of m.teams) {
+        const starters = t.players.filter((x) => x.slot !== "BN" && x.slot !== "IR");
+        expect(starters.reduce((s, x) => s + (x.points ?? 0), 0)).toBeCloseTo(t.points ?? 0, 2);
+      }
+    }
   });
 });
 

@@ -56,6 +56,13 @@ describe("Trades", () => {
     });
   });
 
+  it("shows each manager's record since the trade", () => {
+    renderWithTheme(<Trades />);
+    const records = screen.getAllByTestId("side-record");
+    expect(records).toHaveLength(trades.length * 2);
+    for (const r of records) expect(r.textContent).toMatch(/^Record since trade: /);
+  });
+
   it("shows every traded player", () => {
     renderWithTheme(<Trades />);
     for (const trade of trades) {

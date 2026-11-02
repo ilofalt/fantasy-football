@@ -1,7 +1,7 @@
 import { renderWithTheme, screen, within } from "@/test-utils";
 import sample from "@/lib/scoreboard/__fixtures__/scoreboard.json";
 import { fireEvent } from "@testing-library/react";
-import Matchups from "../Matchups";
+import Matchups, { snapshotToMatchups } from "../Matchups";
 import { currentMatchups } from "@/content/matchups";
 
 function mockFetch(response: Partial<Response>) {
@@ -63,7 +63,7 @@ describe("Matchups (live scoreboard)", () => {
 describe("Matchups (weekly snapshot with rosters)", () => {
   beforeEach(() => window.history.replaceState(null, "", "/"));
 
-  it("shows the snapshot's matchups as upcoming, with no points and no projections", async () => {
+  it("shows the snapshot's matchups with their status and no projections", async () => {
     mockFetch({ ok: true, json: async () => ({ ...sample, week: currentMatchups.week - 1 }) });
     renderWithTheme(<Matchups />);
     expect(await screen.findByRole("heading", { name: `Week ${currentMatchups.week} Matchups` })).toBeInTheDocument();
@@ -73,9 +73,21 @@ describe("Matchups (weekly snapshot with rosters)", () => {
     const first = within(cards[0]);
     expect(first.getByText(a.manager)).toBeInTheDocument();
     expect(first.getByText(b.manager)).toBeInTheDocument();
-    expect(first.getAllByTestId("team-points").map((el) => el.textContent)).toEqual(["–", "–"]);
-    expect(first.getAllByText("Upcoming")).toHaveLength(1);
+    const status = currentMatchups.status ?? "upcoming";
+    const expected = status === "upcoming" ? ["–", "–"] : [a, b].map((t) => (t.points ?? 0).toFixed(2));
+    expect(first.getAllByTestId("team-points").map((el) => el.textContent)).toEqual(expected);
+    expect(first.getAllByText({ upcoming: "Upcoming", live: "Live", final: "Final" }[status])).toHaveLength(1);
     expect(screen.queryByText(/proj/i)).toBeNull();
+  });
+
+  it("converts snapshots to scoreboard matchups by status", () => {
+    const base = { week: 1, updated: "2026-01-01", matchups: currentMatchups.matchups.slice(0, 1) };
+    const withPoints = {
+      ...base,
+      matchups: [{ ...base.matchups[0], teams: base.matchups[0].teams.map((t, i) => ({ ...t, points: 10 + i })) as typeof base.matchups[0]["teams"] }],
+    };
+    expect(snapshotToMatchups(withPoints)[0]).toMatchObject({ status: "upcoming", teams: [{ points: 0 }, { points: 0 }] });
+    expect(snapshotToMatchups({ ...withPoints, status: "live" })[0]).toMatchObject({ status: "live", teams: [{ points: 10 }, { points: 11 }] });
   });
 
   it("prefers the live scoreboard when it's for a newer week", async () => {
