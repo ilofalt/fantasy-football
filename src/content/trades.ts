@@ -4,9 +4,8 @@ import type { Trade } from "@/lib/trades/types";
 // points in league scoring, per NFL week, counted from the first week each
 // player could score for his new team.
 //
-// Last updated: Week 8 in progress, Sunday night (Nov 1, 2026). Week 8
-// numbers are partial: the Sunday and Monday night games aren't final.
-export const TRADES_UPDATED = "Week 8 in progress · Sun Nov 1, 2026";
+// Last updated: Week 8 final, including Monday night (Nov 2, 2026).
+export const TRADES_UPDATED = "Week 8 final · Mon Nov 2, 2026";
 
 export const trades: Trade[] = [
   {
@@ -40,7 +39,7 @@ export const trades: Trade[] = [
         manager: "Raymond",
         received: [
           { name: "Amon-Ra St. Brown", position: "WR · DET", weeklyPointsSinceTrade: [null, 19.2, 7.6], note: "Bye in Week 6" },
-          { name: "Javonte Williams", position: "RB · DAL", weeklyPointsSinceTrade: [13.0, 25.5, 7.2] },
+          { name: "Javonte Williams", position: "RB · DAL", weeklyPointsSinceTrade: [13.0, 25.5, 7.7] },
           { name: "Blake Corum", position: "RB · LAR", weeklyPointsSinceTrade: [14.0, 19.6, 14.8] },
         ],
       },
@@ -49,7 +48,7 @@ export const trades: Trade[] = [
         received: [
           { name: "Bijan Robinson", position: "RB · ATL", weeklyPointsSinceTrade: [5.8, 15.7, 8.6] },
           { name: "Chase Brown", position: "RB · CIN", weeklyPointsSinceTrade: [null, 7.3, 9.1], note: "Bye in Week 6" },
-          { name: "Jameson Williams", position: "WR · DET", weeklyPointsSinceTrade: [null, 23.1, 14.0], note: "Bye in Week 6" },
+          { name: "Jameson Williams", position: "WR · DET", weeklyPointsSinceTrade: [null, 23.1, 14.5], note: "Bye in Week 6" },
         ],
       },
     ],
@@ -59,7 +58,7 @@ export const trades: Trade[] = [
       "The biggest trade of the season: a 3-for-3 where Ray sent Bijan Robinson, Chase Brown, and Jameson Williams to lanny for Amon-Ra St. Brown, Javonte Williams, and Blake Corum.",
       "Week 1 was skewed by byes. Week 7 wasn't, and Ray won it anyway: Javonte Williams scored 25.5, Amon-Ra came back with 19.2, and Corum added 19.6, all against 46.1 from lanny's three. Ray now leads 91.3 to 51.9.",
       "It also decided the head-to-head game. Ray beat lanny 110.80 to 102.26 in Week 7, with Javonte and Amon-Ra both starting. Jameson Williams (23.1) was lanny's best player.",
-      "Bijan has 30.1 points in three games for lanny after averaging about 24 a game before the trade. Week 8 was close (29.6 to 31.7, lanny's first win of the trade), but Ray still leads 120.9 to 83.6. Every player in this trade is done for Week 8.",
+      "Bijan has 30.1 points in three games for lanny after averaging about 24 a game before the trade. Week 8 was lanny's first win of the trade, 32.2 to 30.1, but Ray still leads 121.4 to 84.1.",
     ],
   },
   {
@@ -114,7 +113,7 @@ export const trades: Trade[] = [
       "Evans carried Andrew's side early with 33.2 points in two games, then scored zero in Week 7. Both he and Love are questionable, and Love still has 2.2 points in three weeks.",
       "Judkins returned in Week 7 and scored 25.9 in Cleveland's win at Tennessee, the most by any player in this trade. Nicholas now leads 59.3 to 35.4.",
       "The catch: Judkins was on Nicholas' bench, and Nicholas lost by 36.78. The trade is working. The lineup decisions aren't.",
-      "Week 8 so far: Wilson 11.3 and Judkins 5.9 for Nicholas, Love 2.8 for Andrew with Evans on bye. Nicholas leads 76.5 to 38.2.",
+      "Week 8: Wilson 11.3 and Judkins 5.9 for Nicholas, Love 2.8 for Andrew with Evans on bye. Nicholas leads 76.5 to 38.2.",
     ],
   },
   {
@@ -132,7 +131,7 @@ export const trades: Trade[] = [
       {
         manager: "Chris",
         received: [
-          { name: "Zach Charbonnet", position: "RB · SEA", weeklyPointsSinceTrade: [0, 0, 0, null], note: "Plays Monday night" },
+          { name: "Zach Charbonnet", position: "RB · SEA", weeklyPointsSinceTrade: [0, 0, 0, 3.4], note: "Back from the PUP list" },
         ],
       },
     ],
@@ -140,8 +139,8 @@ export const trades: Trade[] = [
     headline: "Chris is paying for a stash that hasn't played yet.",
     writeUp: [
       "Chris gave up rookie WR Denzel Boston and Adonai Mitchell for Zach Charbonnet, who hasn't played this season and is still on the PUP list.",
-      "Boston has 23.0 points for Andrew since the trade, including 5.2 in Week 8. Mitchell, long since dropped, scored 23.2 on waivers this week. Charbonnet still has zero.",
-      "This is a bet on Charbonnet returning for the second half. He's in Chris's Week 8 lineup for Monday night against Chicago. Until he scores, Andrew wins by default.",
+      "Boston has 23.0 points for Andrew since the trade, including 5.2 in Week 8. Mitchell, long since dropped, scored 23.2 on waivers this week.",
+      "This is a bet on Charbonnet returning for the second half. He finally played on Monday night and scored 3.4 against Chicago. Andrew still leads 46.2 to 3.4.",
     ],
   },
   {
@@ -159,7 +158,7 @@ export const trades: Trade[] = [
       {
         manager: "Nicholas",
         received: [
-          { name: "Stefon Diggs", position: "WR · WAS", weeklyPointsSinceTrade: [4.0, 0, 11.9, null, 9.8], note: "Playing Sunday night" },
+          { name: "Stefon Diggs", position: "WR · WAS", weeklyPointsSinceTrade: [4.0, 0, 11.9, null, 11.3], note: "Bye in Week 7" },
           { name: "Noah Fant", position: "TE · NO", weeklyPointsSinceTrade: [0, 0.7, 0, 1.1, null], note: "Since dropped" },
         ],
       },
@@ -168,8 +167,8 @@ export const trades: Trade[] = [
     headline: "The most lopsided trade of the season.",
     writeUp: [
       "The first trade of the year: Ray sent Stefon Diggs and Noah Fant to Nicholas for Ollie Gordon II and Kenyon Sadiq.",
-      "Gordon became Miami's lead back almost immediately and has 55.1 points in three games since the trade, including 19.8 in Week 7. Diggs has 15.9 and was on bye in Week 7. Fant has less than 2.",
-      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Ray leads 69.0 to 27.5, with Diggs at 9.8 at halftime of Sunday night's game.",
+      "Gordon became Miami's lead back almost immediately and has 64.0 points in four games since the trade, including 8.9 in Week 8. Diggs has 27.2, with 11.3 on Sunday night in Week 8. Fant has less than 2.",
+      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Ray leads 69.0 to 29.0. Diggs won Week 8, but he'd need a lot more weeks like it to catch up.",
     ],
   },
 ];

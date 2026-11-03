@@ -135,9 +135,9 @@ test("Weekly Report tab shows Sleeper-style awards", async ({ page }) => {
 });
 
 test("deep links open the right tab and scroll to the item", async ({ page }) => {
-  await page.goto("/#news/week-8-preview");
+  await page.goto("/#news/week-9-preview");
   await expect(page.getByRole("tab", { name: "News" })).toHaveAttribute("aria-selected", "true");
-  const story = page.locator("#week-8-preview");
+  const story = page.locator("#week-9-preview");
   await expect(story).toBeInViewport();
 
   await page.goto("/#trades/ray-lanny-oct-14");
