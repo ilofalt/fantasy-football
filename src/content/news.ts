@@ -1,7 +1,8 @@
 // Hand-written league news, newest first. Edit this file to publish a new
 // story; the News tab renders whatever is here.
 //
-// Last updated: Week 8 final, including Monday night (Nov 2, 2026).
+// Last updated: Week 9 in progress, Sunday night (Nov 8, 2026). The Week 8
+// stories are final; the Week 9 update is not.
 
 export type NewsCategory =
   | "Recap"
@@ -32,6 +33,28 @@ export interface NewsArticle {
 }
 
 export const news: NewsArticle[] = [
+  {
+    id: "week-9-sunday-update",
+    category: "Recap",
+    title: "Week 9 in progress: Daniel wins again, and three games come down to Monday night",
+    dek: "Scores as of Sunday night. Bills-Vikings on Monday decides Chris vs. Zachary and finishes three other games.",
+    date: "2026-11-08",
+    paragraphs: [
+      "This week isn't over. Every player still to play is in Monday night's Bills-Vikings game. Two games are already final, and Yahoo's win probabilities for the rest are below. We'll post the full recap once Monday's game is in.",
+      "Daniel beat Isaiah 102.30 to 100.98, his second straight win and his third in three tries against Isaiah all-time. He did it with Dak Prescott (19.5) on the bench and Drew Lock (13.1) starting. Isaiah got 25.9 from Matthew Golden, the best game by anyone in the matchup, but only 0.5 from Josh Jacobs. Ja'Marr Chase had 25.5 for Daniel.",
+      "Nicholas beat Raymond 128.88 to 117.90 to snap a three-game losing streak, with Brock Purdy scoring 28.78 in the first-ever meeting between the two.",
+      "The best game left is Chris vs. Zachary: Chris leads 81.34 to 76.46 with Josh Allen to play, and Zachary has James Cook III and Will Reichard. Yahoo has it 55-45 for Chris.",
+    ],
+    list: [
+      { label: "Nicholas 128.88 · Raymond 117.90", detail: "Final. Nicholas snaps a three-game losing streak." },
+      { label: "Matthew 126.38 · Noah 73.00", detail: "Noah has Justin Jefferson and Tyler Bass left. Yahoo: Matthew 98%." },
+      { label: "Jonathan 120.72 · Andrew 107.36", detail: "Andrew is done; Jonathan has Dalton Kincaid left. C.J. Stroud's 37.36 for Andrew is the top score by any player so far this week. Yahoo: Jonathan 99%." },
+      { label: "lanny 114.98 · Ethan 87.78", detail: "lanny is done, behind Jordan Love's 36.68; Ethan has the Bills D/ST left. Yahoo: lanny 99%." },
+      { label: "Daniel 102.30 · Isaiah 100.98", detail: "Final. Daniel's second straight win." },
+      { label: "Chris 81.34 · Zachary 76.46", detail: "Chris has Josh Allen; Zachary has James Cook III and Will Reichard. Yahoo: Chris 55%." },
+    ],
+    outro: "If every current leader wins: Matthew 8-1; Ethan and Jonathan 6-3; lanny and Nicholas 5-4; Isaiah, Zachary, Andrew, and Chris 4-5; Raymond and Noah 3-6; Daniel 2-7. Isaiah would most likely hold the 6th seed on points for. Standings, the Playoff Picture, the Weekly Report, and the Waiver Wire stay at Week 8 until Week 9 is final.",
+  },
   {
     id: "week-8-recap",
     category: "Recap",
