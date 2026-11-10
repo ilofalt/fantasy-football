@@ -46,7 +46,7 @@ export const weekPickups: Pickup[] = [
   { player: "Packers", position: "D/ST · GB", manager: "Raymond", added: "Nov 4", cost: 0, method: "Waiver", points: 13.0, weeksOnRoster: 1, blurb: "Scored 13 on Ray's bench in an 11-point loss. Lineup decisions remain a mystery to him." },
   { player: "DeMario Douglas", position: "WR · NE", manager: "Zachary", added: "Nov 4", cost: 1, method: "Waiver", points: 11.7, weeksOnRoster: 1, blurb: "A $1 flex play in Zachary's 9.06-point win over Chris. Picked up on a routine traffic stop. Nicholas had dropped him a week earlier." },
   { player: "Chris Rodriguez Jr.", position: "RB · JAX", manager: "Chris", added: "Nov 4", cost: 1, method: "Waiver", points: 10.7, weeksOnRoster: 1, blurb: "10.7 on the bench in a 9.06-point loss. Hard to set a lineup from inside a League of Legends queue." },
-  { player: "Lions", position: "D/ST · DET", manager: "Jonathan", added: "Nov 4", cost: 0, method: "Free agent", points: 10.0, weeksOnRoster: 1, blurb: "A Wednesday free agent in Jonathan's third straight win, a rare week where his points didn't all come from running backs catching passes." },
+  { player: "Lions", position: "D/ST · DET", manager: "Jonathan", added: "Nov 4", cost: 0, method: "Free agent", points: 10.0, weeksOnRoster: 1, blurb: "A Wednesday free agent in Jonathan's third straight win, a rare week Jonathan didn't point out how much better his team would be in PPR." },
 ];
 
 export const seasonPickups: Pickup[] = [
@@ -115,7 +115,7 @@ export interface ManagerDropRecord {
 
 export const weekDrops: Drop[] = [
   { player: "Cam Little", position: "K · JAX", manager: "Raymond", dropped: "Nov 4", pointsAfter: 19.1, weeksAfter: 1, whereNow: "On waivers", blurb: "Ray cut him on Wednesday's waivers, and Little scored 19.1 on Sunday. Ray lost by 10.98. Classic Ray. Fuck Ray." },
-  { player: "Bills", position: "D/ST · BUF", manager: "Jonathan", dropped: "Nov 5", pointsAfter: 17.0, weeksAfter: 1, whereNow: "Now on Ethan's roster", blurb: "Dropped Thursday for Kenny Gainwell (8.6, on the bench), because Jonathan can't resist a running back who catches passes. Ethan picked them up Sunday and got 17." },
+  { player: "Bills", position: "D/ST · BUF", manager: "Jonathan", dropped: "Nov 5", pointsAfter: 17.0, weeksAfter: 1, whereNow: "Now on Ethan's roster", blurb: "Dropped Thursday for Kenny Gainwell (8.6, on the bench), because Jonathan still rosters running backs like this league is PPR. It isn't. Ethan picked them up Sunday and got 17." },
   { player: "Kirk Cousins", position: "QB · LV", manager: "Matthew", dropped: "Nov 4", pointsAfter: 16.14, weeksAfter: 1, whereNow: "On waivers", blurb: "One week after winning Matthew a game, Cousins was back on waivers. Matthew won anyway, by 32.48. Rookie playoff behavior." },
   { player: "Justin Herbert", position: "QB · LAC", manager: "Andrew", dropped: "Nov 7", pointsAfter: 11.42, weeksAfter: 1, whereNow: "On waivers", blurb: "Andrew's third pickup of the season: Herbert out, Malik Washington in. Washington scored 3.1. He should go back to his car forums." },
   { player: "Rams", position: "D/ST · LAR", manager: "Chris", dropped: "Nov 3", pointsAfter: 11.0, weeksAfter: 1, whereNow: "On waivers", blurb: "14 points for Chris in Week 8, then dropped. Chris lost by 9.06, presumably while on a League tilt." },
