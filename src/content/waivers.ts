@@ -5,10 +5,10 @@
 // at Sunday kickoff. Re-adding your own draft pick after dropping him doesn't
 // count as a pickup.
 //
-// Last updated: Week 8 final, including Monday night (Nov 2, 2026).
+// Last updated: Week 9 final, including Monday night (Nov 9, 2026).
 
-export const WAIVERS_UPDATED = "Week 8 final · Mon Nov 2, 2026";
-export const CURRENT_WEEK = 8;
+export const WAIVERS_UPDATED = "Week 9 final · Mon Nov 9, 2026";
+export const CURRENT_WEEK = 9;
 
 export interface Pickup {
   player: string;
@@ -37,54 +37,54 @@ export interface ManagerWaiverRecord {
 }
 
 export const weekPickups: Pickup[] = [
-  { player: "Tyler Allgeier", position: "RB · ARI", manager: "Daniel", added: "Oct 28", cost: 0, method: "Free agent", points: 34.6, weeksOnRoster: 1, blurb: "A free agent on Wednesday and the top-scoring pickup of the week. Daniel started him and got his first win." },
-  { player: "Kirk Cousins", position: "QB · LV", manager: "Matthew", added: "Oct 30", cost: 2, method: "Waiver", points: 29.68, weeksOnRoster: 1, blurb: "Chris dropped him on Tuesday. Matthew paid $2, started him, and beat Zachary by 1.14." },
-  { player: "Jaguars", position: "D/ST · JAX", manager: "Noah", added: "Oct 28", cost: 2, method: "Waiver", points: 25.0, weeksOnRoster: 1, blurb: "A $2 defense that held Indianapolis to 7 points." },
-  { player: "Buccaneers", position: "D/ST · TB", manager: "lanny", added: "Nov 1", cost: 0, method: "Free agent", points: 21.0, weeksOnRoster: 1, blurb: "Added Sunday morning after scoring 31 on waivers the week before. A shutout of Atlanta, and lanny still lost by 55." },
-  { player: "Bills", position: "D/ST · BUF", manager: "Jonathan", added: "Oct 28", cost: 0, method: "Free agent", points: 17.5, weeksOnRoster: 1, blurb: "Scored 17.5 on the bench. Jonathan started the Raiders (10) and won by 32 anyway." },
-  { player: "Commanders", position: "D/ST · WAS", manager: "Isaiah", added: "Oct 28", cost: 0, method: "Free agent", points: 16.5, weeksOnRoster: 1, blurb: "Part of the week's top score." },
-  { player: "Rams", position: "D/ST · LAR", manager: "Chris", added: "Oct 28", cost: 0, method: "Free agent", points: 14.0, weeksOnRoster: 1, blurb: "Chris's second straight win came with a free-agent defense." },
-  { player: "T.J. Hockenson", position: "TE · MIN", manager: "Isaiah", added: "Oct 28", cost: 0, method: "Free agent", points: 13.3, weeksOnRoster: 1, blurb: "Filled in for George Kittle on his bye and scored a touchdown." },
-  { player: "Malik Washington", position: "WR · MIA", manager: "Zachary", added: "Oct 31", cost: 0, method: "Free agent", points: 12.56, weeksOnRoster: 1, blurb: "Scored 12.56 on the bench in a 1.14-point loss." },
-  { player: "Patriots", position: "D/ST · NE", manager: "Ethan", added: "Oct 28", cost: 0, method: "Waiver", points: 11.0, weeksOnRoster: 1, blurb: "A $0 claim that started for the 1st-place team." },
+  { player: "49ers", position: "D/ST · SF", manager: "Nicholas", added: "Nov 4", cost: 0, method: "Waiver", points: 24.0, weeksOnRoster: 1, blurb: "A $0 claim and the top-scoring pickup of the week, in Nicholas' win over Raymond." },
+  { player: "Bo Nix", position: "QB · DEN", manager: "Ethan", added: "Nov 5", cost: 0, method: "Free agent", points: 17.18, weeksOnRoster: 1, blurb: "Nicholas, Isaiah, and Matthew all let him go. Ethan cut Kyler Murray for him, started him, and lost anyway." },
+  { player: "Bills", position: "D/ST · BUF", manager: "Ethan", added: "Nov 8", cost: 0, method: "Free agent", points: 17.0, weeksOnRoster: 1, blurb: "Added Sunday afternoon, three days after Jonathan dropped them, and started on Monday night." },
+  { player: "Chiefs", position: "D/ST · KC", manager: "Isaiah", added: "Nov 4", cost: 0, method: "Waiver", points: 16.5, weeksOnRoster: 1, blurb: "Isaiah's best defense of the season so far. He lost by 0.82." },
+  { player: "Tyler Bass", position: "K · BUF", manager: "Noah", added: "Nov 4", cost: 2, method: "Waiver", points: 13.6, weeksOnRoster: 1, blurb: "A $2 kicker who scored on Monday night." },
+  { player: "Drew Lock", position: "QB · SEA", manager: "Daniel", added: "Nov 4", cost: 0, method: "Free agent", points: 13.1, weeksOnRoster: 1, blurb: "Started over Dak Prescott (19.5, on the bench), and Daniel still won by 0.82." },
+  { player: "Packers", position: "D/ST · GB", manager: "Raymond", added: "Nov 4", cost: 0, method: "Waiver", points: 13.0, weeksOnRoster: 1, blurb: "Scored 13 on Ray's bench in an 11-point loss." },
+  { player: "DeMario Douglas", position: "WR · NE", manager: "Zachary", added: "Nov 4", cost: 1, method: "Waiver", points: 11.7, weeksOnRoster: 1, blurb: "A $1 flex play in Zachary's 9.06-point win over Chris. Nicholas had dropped him a week earlier." },
+  { player: "Chris Rodriguez Jr.", position: "RB · JAX", manager: "Chris", added: "Nov 4", cost: 1, method: "Waiver", points: 10.7, weeksOnRoster: 1, blurb: "10.7 on the bench in a 9.06-point loss." },
+  { player: "Lions", position: "D/ST · DET", manager: "Jonathan", added: "Nov 4", cost: 0, method: "Free agent", points: 10.0, weeksOnRoster: 1, blurb: "A Wednesday free agent in Jonathan's third straight win." },
 ];
 
 export const seasonPickups: Pickup[] = [
-  { player: "Tyler Shough", position: "QB · NO", manager: "Raymond", added: "Aug 28", cost: 0, method: "Free agent", points: 93.16, weeksOnRoster: 5, status: "Dropped Oct 14", blurb: "Still the best pickup of the season: four 16-plus-point games for a free agent. Ray dropped him after a 1.8-point Week 5, and he's now Matthew's." },
-  { player: "Will Reichard", position: "K · MIN", manager: "Zachary", added: "Aug 26", cost: 1, method: "Waiver", points: 86.0, weeksOnRoster: 8, blurb: "A $1 kicker who's been on Zachary's roster all season." },
-  { player: "Braelon Allen", position: "RB · NYJ", manager: "Isaiah", added: "Sep 30", cost: 41, method: "Waiver", points: 85.4, weeksOnRoster: 5, blurb: "Up to 3rd after 25.8 in Week 8: 56.6 points in his last three games for the third-biggest bid of the season." },
-  { player: "Bryce Young", position: "QB · CAR", manager: "lanny", added: "Sep 23", cost: 10, method: "Waiver", points: 75.22, weeksOnRoster: 6, blurb: "Three games of 14 to 22 points for a $10 bid. Now lanny's backup." },
-  { player: "Vikings", position: "D/ST · MIN", manager: "Ethan", added: "Sep 23", cost: 1, method: "Waiver", points: 67.0, weeksOnRoster: 6, blurb: "A 28-point debut for $1." },
-  { player: "Emanuel Wilson", position: "RB · SEA", manager: "Noah", added: "Oct 3", cost: 0, method: "Free agent", points: 66.4, weeksOnRoster: 5, blurb: "A free-agent RB who opened with 26.5 points. He scored zero on Noah's bench on Monday night." },
-  { player: "C.J. Stroud", position: "QB · HOU", manager: "Andrew", added: "Oct 8", cost: 0, method: "Free agent", points: 63.94, weeksOnRoster: 4, blurb: "21.3 points a game, the best per-game pickup of the season. Houston was on bye in Week 8." },
-  { player: "Travis Kelce", position: "TE · KC", manager: "lanny", added: "Aug 26", cost: 1, method: "Waiver", points: 63.0, weeksOnRoster: 8, blurb: "Went undrafted and was claimed for a dollar. Still a starting TE." },
-  { player: "Woody Marks", position: "RB · HOU", manager: "Daniel", added: "Sep 16", cost: 65, method: "Waiver", points: 55.68, weeksOnRoster: 7, blurb: "The biggest FAAB bid of the season. Steady, at about 9 points a week, but not $65 steady." },
-  { player: "Evan McPherson", position: "K · CIN", manager: "Isaiah", added: "Sep 8", cost: 0, method: "Free agent", points: 55.6, weeksOnRoster: 5, status: "Dropped Oct 13", blurb: "Started hot with 19.5 in Week 1, then faded before Isaiah moved on. Now Chris's kicker." },
-  { player: "Isaiah Likely", position: "TE · NYG", manager: "Raymond", added: "Oct 4", cost: 0, method: "Free agent", points: 54.6, weeksOnRoster: 5, blurb: "Isaiah drafted him and dropped him. Ray has 54.6 points from him, but only 9.8 in the last three weeks." },
-  { player: "Emmett Johnson", position: "RB · KC", manager: "Matthew", added: "Aug 26", cost: 0, method: "Waiver", points: 54.46, weeksOnRoster: 8, blurb: "New to the list after 24.06 in Week 8, all of it on Matthew's bench." },
+  { player: "C.J. Stroud", position: "QB · HOU", manager: "Andrew", added: "Oct 8", cost: 0, method: "Free agent", points: 101.3, weeksOnRoster: 5, blurb: "New No. 1: 37.36 in Week 9, the top score by any player that week, for a free agent Andrew added in October." },
+  { player: "Bryce Young", position: "QB · CAR", manager: "lanny", added: "Sep 23", cost: 10, method: "Waiver", points: 97.06, weeksOnRoster: 7, blurb: "21.84 on lanny's bench in Week 9. A $10 bid that keeps paying, even as a backup." },
+  { player: "Will Reichard", position: "K · MIN", manager: "Zachary", added: "Aug 26", cost: 1, method: "Waiver", points: 95.6, weeksOnRoster: 9, blurb: "A $1 kicker on Zachary's roster all season, with 9.6 on Monday night." },
+  { player: "Tyler Shough", position: "QB · NO", manager: "Raymond", added: "Aug 28", cost: 0, method: "Free agent", points: 93.16, weeksOnRoster: 5, status: "Dropped Oct 14", blurb: "Four 16-plus-point games for a free agent before Ray let him go." },
+  { player: "Braelon Allen", position: "RB · NYJ", manager: "Isaiah", added: "Sep 30", cost: 41, method: "Waiver", points: 90.3, weeksOnRoster: 6, blurb: "The third-biggest bid of the season, with 61.5 points in his last four games." },
+  { player: "Travis Kelce", position: "TE · KC", manager: "lanny", added: "Aug 26", cost: 1, method: "Waiver", points: 78.3, weeksOnRoster: 9, blurb: "Went undrafted and was claimed for a dollar. 15.3 in Week 9." },
+  { player: "Vikings", position: "D/ST · MIN", manager: "Ethan", added: "Sep 23", cost: 1, method: "Waiver", points: 73.0, weeksOnRoster: 7, blurb: "A 28-point debut for $1." },
+  { player: "Spencer Shrader", position: "K · IND", manager: "Nicholas", added: "Sep 30", cost: 12, method: "Waiver", points: 68.6, weeksOnRoster: 6, blurb: "New to the list after 17.6 in Week 9. Noah dropped him in September." },
+  { player: "Isaiah Likely", position: "TE · NYG", manager: "Raymond", added: "Oct 4", cost: 0, method: "Free agent", points: 66.9, weeksOnRoster: 6, blurb: "Isaiah drafted him and dropped him. 12.3 for Ray in Week 9." },
+  { player: "Emanuel Wilson", position: "RB · SEA", manager: "Noah", added: "Oct 3", cost: 0, method: "Free agent", points: 66.4, weeksOnRoster: 5, status: "Dropped Nov 4", blurb: "Opened with 26.5 points, then scored 0 in Week 8, and Noah let him go." },
+  { player: "Emmett Johnson", position: "RB · KC", manager: "Matthew", added: "Aug 26", cost: 0, method: "Waiver", points: 66.02, weeksOnRoster: 9, blurb: "35.6 points in the last two weeks, most of it on Matthew's bench." },
+  { player: "Woody Marks", position: "RB · HOU", manager: "Daniel", added: "Sep 16", cost: 65, method: "Waiver", points: 63.58, weeksOnRoster: 8, blurb: "The biggest FAAB bid of the season. Steady, at about 8 points a week, but not $65 steady." },
 ];
 
 export const managerWaiverRecords: ManagerWaiverRecord[] = [
-  { manager: "Isaiah", points: 385.2, pickups: 27, faabSpent: 100 },
-  { manager: "Noah", points: 369.3, pickups: 14, faabSpent: 76 },
-  { manager: "Nicholas", points: 333.5, pickups: 41, faabSpent: 97 },
-  { manager: "lanny", points: 331.1, pickups: 17, faabSpent: 35 },
-  { manager: "Matthew", points: 319.0, pickups: 25, faabSpent: 37 },
-  { manager: "Ethan", points: 279.8, pickups: 18, faabSpent: 74 },
-  { manager: "Zachary", points: 270.3, pickups: 18, faabSpent: 46 },
-  { manager: "Raymond", points: 260.1, pickups: 18, faabSpent: 38 },
-  { manager: "Chris", points: 255.2, pickups: 33, faabSpent: 92 },
-  { manager: "Daniel", points: 221.1, pickups: 24, faabSpent: 91 },
-  { manager: "Jonathan", points: 149.6, pickups: 8, faabSpent: 23 },
-  { manager: "Andrew", points: 107.2, pickups: 2, faabSpent: 0 },
+  { manager: "Noah", points: 435.4, pickups: 16, faabSpent: 84 },
+  { manager: "Isaiah", points: 418.9, pickups: 31, faabSpent: 100 },
+  { manager: "lanny", points: 398.5, pickups: 17, faabSpent: 35 },
+  { manager: "Nicholas", points: 393.7, pickups: 43, faabSpent: 97 },
+  { manager: "Matthew", points: 375.3, pickups: 26, faabSpent: 37 },
+  { manager: "Ethan", points: 325.5, pickups: 20, faabSpent: 74 },
+  { manager: "Chris", points: 323.3, pickups: 35, faabSpent: 93 },
+  { manager: "Zachary", points: 308.1, pickups: 21, faabSpent: 47 },
+  { manager: "Raymond", points: 303.5, pickups: 21, faabSpent: 38 },
+  { manager: "Daniel", points: 270.4, pickups: 26, faabSpent: 100 },
+  { manager: "Jonathan", points: 172.0, pickups: 11, faabSpent: 33 },
+  { manager: "Andrew", points: 150.4, pickups: 3, faabSpent: 5 },
 ];
 
 export const waiverNotes: { title: string; body: string }[] = [
-  { title: "New leader", body: "Isaiah passed Noah for the most points from the wire (385.2), with 82.0 in Week 8 alone: Braelon Allen, the Commanders D/ST, and T.J. Hockenson." },
-  { title: "Best value", body: "lanny has 331.1 points from the wire for $35 of FAAB, about $0.11 a point. Matthew is close behind at 319.0 for $37." },
-  { title: "Most active", body: "Nicholas has made 41 pickups, more than anyone else, and is third in points from them (333.5)." },
-  { title: "Best week", body: "Isaiah got 82.0 points from pickups in Week 8, the most in the league. Matthew (74.3) and Ethan (62.7) were next." },
-  { title: "Doesn't count", body: "Re-adding your own draft pick isn't a pickup, and neither is a player added and dropped within a few minutes, like Daniel's 12-QB carousel on Oct 21." },
+  { title: "New leader", body: "Noah is back on top with 435.4 points from the wire, on just 16 pickups. Isaiah (418.9) is second." },
+  { title: "Best value", body: "lanny has 398.5 points from the wire for $35 of FAAB, about $0.09 a point." },
+  { title: "Most active", body: "Nicholas has made 43 pickups, more than anyone else, and is fourth in points from them (393.7)." },
+  { title: "Best week", body: "Chris got 68.1 points from pickups in Week 9, the most in the league. lanny (67.4) and Noah (66.1) were next." },
+  { title: "Doesn't count", body: "Re-adding your own draft pick isn't a pickup (Raymond re-claimed Rome Odunze this week), and neither is a player added and dropped within a few minutes." },
 ];
 
 // ---------------------------------------------------------------------------
@@ -114,38 +114,38 @@ export interface ManagerDropRecord {
 }
 
 export const weekDrops: Drop[] = [
-  { player: "Kirk Cousins", position: "QB · LV", manager: "Chris", dropped: "Oct 27", pointsAfter: 29.68, weeksAfter: 1, whereNow: "Now on Matthew's roster", blurb: "Chris cut him on Tuesday with Josh Allen back from his bye. Matthew claimed him for $2 and his 29.68 decided a 1.14-point win over Zachary." },
-  { player: "Geno Smith", position: "QB · NYJ", manager: "Daniel", dropped: "Oct 31", pointsAfter: 19.0, weeksAfter: 1, whereNow: "On waivers", blurb: "Daniel added him Wednesday and dropped him Saturday. It's the second straight week Geno scored 19 or more right after being dropped; Isaiah let him go before Week 7." },
-  { player: "Jason Sanders", position: "K · NYJ", manager: "lanny", dropped: "Oct 28", pointsAfter: 15.7, weeksAfter: 1, whereNow: "On waivers", blurb: "Dropped for Chad Ryland, who scored 9.9." },
-  { player: "DeMario Douglas", position: "WR · NE", manager: "Nicholas", dropped: "Oct 31", pointsAfter: 15.1, weeksAfter: 1, whereNow: "On waivers", blurb: "Nicholas traded for him on Wednesday and dropped him Saturday for Dylan Sampson (10.36, on the bench)." },
-  { player: "Rome Odunze", position: "WR · CHI", manager: "Raymond", dropped: "Nov 1", pointsAfter: 10.7, weeksAfter: 1, whereNow: "On waivers", blurb: "Dropped Sunday morning for Chris Godwin Jr., who scored 0. Odunze scored on Monday night." },
-  { player: "Jahan Dotson", position: "WR · ATL", manager: "Ethan", dropped: "Oct 28", pointsAfter: 10.5, weeksAfter: 1, whereNow: "On waivers", blurb: "A $1 pickup a week earlier, dropped right before a 10.5-point game." },
+  { player: "Cam Little", position: "K · JAX", manager: "Raymond", dropped: "Nov 4", pointsAfter: 19.1, weeksAfter: 1, whereNow: "On waivers", blurb: "Ray cut him on Wednesday's waivers, and Little scored 19.1 on Sunday. Ray lost by 10.98." },
+  { player: "Bills", position: "D/ST · BUF", manager: "Jonathan", dropped: "Nov 5", pointsAfter: 17.0, weeksAfter: 1, whereNow: "Now on Ethan's roster", blurb: "Dropped Thursday for Kenny Gainwell (8.6, on the bench). Ethan picked them up Sunday and got 17." },
+  { player: "Kirk Cousins", position: "QB · LV", manager: "Matthew", dropped: "Nov 4", pointsAfter: 16.14, weeksAfter: 1, whereNow: "On waivers", blurb: "One week after winning Matthew a game, Cousins was back on waivers. Matthew won anyway, by 32.48." },
+  { player: "Justin Herbert", position: "QB · LAC", manager: "Andrew", dropped: "Nov 7", pointsAfter: 11.42, weeksAfter: 1, whereNow: "On waivers", blurb: "Andrew's third pickup of the season: Herbert out, Malik Washington in. Washington scored 3.1." },
+  { player: "Rams", position: "D/ST · LAR", manager: "Chris", dropped: "Nov 3", pointsAfter: 11.0, weeksAfter: 1, whereNow: "On waivers", blurb: "14 points for Chris in Week 8, then dropped. Chris lost by 9.06." },
+  { player: "Khalil Shakir", position: "WR · BUF", manager: "Zachary", dropped: "Nov 4", pointsAfter: 7.8, weeksAfter: 1, whereNow: "On waivers", blurb: "Scored 7.8 on Monday night. Zachary won anyway." },
 ];
 
 export const seasonDrops: Drop[] = [
-  { player: "Bo Nix", position: "QB · DEN", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 116.78, weeksAfter: 7, whereNow: "On waivers", blurb: "Nicholas dropped his own 12th-round pick, and Nix has scored 116.78 since, including 19.78 in Week 8 on waivers. Isaiah and Matthew both picked him up and dropped him too." },
-  { player: "Sam Darnold", position: "QB · SEA", manager: "Daniel", dropped: "Sep 22", pointsAfter: 103.3, weeksAfter: 6, whereNow: "On waivers", blurb: "Daniel's own 12th-round pick, cut on a Tuesday. Darnold scored 30.16 that Sunday for Isaiah and has kept scoring since." },
-  { player: "Jordan Love", position: "QB · GB", manager: "Noah", dropped: "Oct 3", pointsAfter: 102.08, weeksAfter: 5, whereNow: "Now on lanny's roster", blurb: "Noah cut him in Week 4 to add Emanuel Wilson. lanny, who drafted Love and also dropped him before Week 1, re-claimed him on Oct 14." },
-  { player: "Spencer Shrader", position: "K · IND", manager: "Noah", dropped: "Sep 19", pointsAfter: 86.6, weeksAfter: 7, whereNow: "Now on Nicholas's roster", blurb: "At least 15 points in four of seven weeks since Noah let him go." },
-  { player: "Buccaneers", position: "D/ST · TB", manager: "Chris", dropped: "Sep 22", pointsAfter: 85.5, weeksAfter: 6, whereNow: "Now on lanny's roster", blurb: "31 points on waivers in Week 7 and 21 for lanny in Week 8." },
-  { player: "Vikings", position: "D/ST · MIN", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 84.0, weeksAfter: 7, whereNow: "Now on Ethan's roster", blurb: "Ethan claimed them for $1 and got a 28-point game in his first week." },
-  { player: "Kyler Murray", position: "QB · MIN", manager: "Isaiah", dropped: "Sep 19", pointsAfter: 79.96, weeksAfter: 7, whereNow: "Now on Ethan's roster", blurb: "Isaiah's 12th-round pick. lanny had him for two weeks; Ethan claimed him for $1 and has 36.3 points from him in two weeks." },
-  { player: "Tre Tucker", position: "WR · LV", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 77.1, weeksAfter: 7, whereNow: "Now on lanny's roster", blurb: "Scored 19.9 days after Nicholas cut him, and 42 for lanny in Weeks 6 and 7." },
-  { player: "Denzel Boston", position: "WR · CLE", manager: "Matthew", dropped: "Aug 26", pointsAfter: 70.42, weeksAfter: 8, whereNow: "Now on Andrew's roster", blurb: "Matthew's 12th-round pick, cut before Week 1. Chris picked him up, then traded him to Andrew." },
-  { player: "Emanuel Wilson", position: "RB · SEA", manager: "Nicholas", dropped: "Sep 30", pointsAfter: 66.4, weeksAfter: 5, whereNow: "Now on Noah's roster", blurb: "Scored 26.5 days after Nicholas dropped him." },
+  { player: "Jordan Love", position: "QB · GB", manager: "Noah", dropped: "Oct 3", pointsAfter: 138.76, weeksAfter: 6, whereNow: "Now on lanny's roster", blurb: "Noah cut him for Emanuel Wilson. Love scored 36.68 for lanny in Week 9. lanny drafted him, dropped him before Week 1, and re-claimed him in October." },
+  { player: "Bo Nix", position: "QB · DEN", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 133.96, weeksAfter: 8, whereNow: "Now on Ethan's roster", blurb: "Nicholas' 12th-round pick. Isaiah, Matthew, and Daniel all picked him up and let him go before Ethan started him in Week 9." },
+  { player: "Spencer Shrader", position: "K · IND", manager: "Noah", dropped: "Sep 19", pointsAfter: 104.2, weeksAfter: 8, whereNow: "Now on Nicholas's roster", blurb: "17.6 for Nicholas in Week 9." },
+  { player: "Sam Darnold", position: "QB · SEA", manager: "Daniel", dropped: "Sep 22", pointsAfter: 103.3, weeksAfter: 7, whereNow: "Not on a roster", blurb: "Daniel's own 12th-round pick, cut on a Tuesday. Darnold scored 30.16 that Sunday for Isaiah." },
+  { player: "Buccaneers", position: "D/ST · TB", manager: "Chris", dropped: "Sep 22", pointsAfter: 99.0, weeksAfter: 7, whereNow: "Now on lanny's roster", blurb: "31 on waivers in Week 7, then 21 and 13.5 for lanny." },
+  { player: "Vikings", position: "D/ST · MIN", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 90.0, weeksAfter: 8, whereNow: "Now on Ethan's roster", blurb: "Ethan claimed them for $1 and got a 28-point game in his first week." },
+  { player: "Tre Tucker", position: "WR · LV", manager: "Nicholas", dropped: "Sep 16", pointsAfter: 84.1, weeksAfter: 8, whereNow: "Now on lanny's roster", blurb: "Scored 19.9 days after Nicholas cut him." },
+  { player: "Denzel Boston", position: "WR · CLE", manager: "Matthew", dropped: "Aug 26", pointsAfter: 81.72, weeksAfter: 9, whereNow: "Now on Andrew's roster", blurb: "Matthew's 12th-round pick, cut before Week 1. Chris picked him up, then traded him to Andrew." },
+  { player: "Kyler Murray", position: "QB · MIN", manager: "Isaiah", dropped: "Sep 19", pointsAfter: 79.96, weeksAfter: 8, whereNow: "Not on a roster", blurb: "Isaiah's 12th-round pick. lanny and Ethan both picked him up; Ethan cut him for Bo Nix on Nov 5." },
+  { player: "Packers", position: "D/ST · GB", manager: "Jonathan", dropped: "Oct 7", pointsAfter: 76.5, weeksAfter: 4, whereNow: "Now on Raymond's roster", blurb: "New to the list: 13 on Ray's bench in Week 9." },
 ];
 
 export const managerDropRecords: ManagerDropRecord[] = [
-  { manager: "Nicholas", pointsGivenAway: 1240.8, drops: 41 },
-  { manager: "Isaiah", pointsGivenAway: 788.4, drops: 26 },
-  { manager: "Chris", pointsGivenAway: 636.5, drops: 29 },
-  { manager: "Noah", pointsGivenAway: 504.1, drops: 13 },
-  { manager: "Matthew", pointsGivenAway: 483.8, drops: 26 },
-  { manager: "lanny", pointsGivenAway: 425.9, drops: 17 },
-  { manager: "Ethan", pointsGivenAway: 408.8, drops: 18 },
-  { manager: "Daniel", pointsGivenAway: 395.4, drops: 25 },
-  { manager: "Raymond", pointsGivenAway: 272.1, drops: 20 },
-  { manager: "Zachary", pointsGivenAway: 192.3, drops: 17 },
-  { manager: "Jonathan", pointsGivenAway: 163.9, drops: 8 },
-  { manager: "Andrew", pointsGivenAway: 61.0, drops: 2 },
+  { manager: "Nicholas", pointsGivenAway: 1451.3, drops: 43 },
+  { manager: "Isaiah", pointsGivenAway: 889.8, drops: 30 },
+  { manager: "Chris", pointsGivenAway: 815.5, drops: 31 },
+  { manager: "Matthew", pointsGivenAway: 671.8, drops: 27 },
+  { manager: "Noah", pointsGivenAway: 651.8, drops: 15 },
+  { manager: "lanny", pointsGivenAway: 528.1, drops: 17 },
+  { manager: "Daniel", pointsGivenAway: 510.9, drops: 25 },
+  { manager: "Ethan", pointsGivenAway: 484.9, drops: 21 },
+  { manager: "Raymond", pointsGivenAway: 393.4, drops: 23 },
+  { manager: "Zachary", pointsGivenAway: 253.4, drops: 20 },
+  { manager: "Jonathan", pointsGivenAway: 237.7, drops: 11 },
+  { manager: "Andrew", pointsGivenAway: 76.9, drops: 3 },
 ];

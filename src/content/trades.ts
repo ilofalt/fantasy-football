@@ -4,9 +4,8 @@ import type { Trade } from "@/lib/trades/types";
 // points in league scoring, per NFL week, counted from the first week each
 // player could score for his new team.
 //
-// Last updated: Week 9 in progress, Sunday night (Nov 8, 2026). Every traded
-// player's Week 9 game is final; only the Monday night game is left.
-export const TRADES_UPDATED = "Week 9 in progress · Sun Nov 8, 2026";
+// Last updated: Week 9 final, including Monday night (Nov 9, 2026).
+export const TRADES_UPDATED = "Week 9 final · Mon Nov 9, 2026";
 
 export const trades: Trade[] = [
   {
@@ -86,7 +85,7 @@ export const trades: Trade[] = [
       "Tuten responded with 23.2 points in Week 6, his best game of the season. Pickens had 9.8 that week in a loss at Green Bay.",
       "Jacksonville was on bye in Week 7, and Pickens scored 13.2 in Dallas' 38-21 win at Philadelphia. That makes it 23.2 to 23.0, close enough to call even.",
       "Tuten came back in Week 8 with 30.4 points in Jacksonville's 42-7 win over Indianapolis, the best game by anyone in this trade. Pickens had 5.8. Isaiah now leads 53.6 to 28.8.",
-      "Week 9 was the rematch. Tuten scored 9.4 and Pickens was out, so Isaiah extended his lead to 63.0 to 28.8. But Daniel won the game 102.30 to 100.98.",
+      "Week 9 was the rematch. Tuten scored 9.4 and Pickens was out, so Isaiah extended his lead to 63.0 to 28.8. But Daniel won the game 101.80 to 100.98.",
     ],
   },
   {
