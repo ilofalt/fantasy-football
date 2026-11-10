@@ -53,13 +53,13 @@ export const trades: Trade[] = [
       },
     ],
     verdict: "Raymond",
-    headline: "Bijan has his best game for lanny, and Ray still wins the week.",
+    headline: "Bijan has his best game for lanny, and Ray, annoyingly, still wins the week.",
     writeUp: [
-      "The biggest trade of the season: a 3-for-3 where Ray sent Bijan Robinson, Chase Brown, and Jameson Williams to lanny for Amon-Ra St. Brown, Javonte Williams, and Blake Corum.",
-      "Week 1 was skewed by byes. Week 7 wasn't, and Ray won it anyway: Javonte Williams scored 25.5, Amon-Ra came back with 19.2, and Corum added 19.6, all against 46.1 from lanny's three. Ray now leads 91.3 to 51.9.",
-      "It also decided the head-to-head game. Ray beat lanny 110.80 to 102.26 in Week 7, with Javonte and Amon-Ra both starting. Jameson Williams (23.1) was lanny's best player.",
-      "Bijan has 30.1 points in three games for lanny after averaging about 24 a game before the trade. Week 8 was lanny's first win of the trade, 32.2 to 30.1, but Ray still leads 121.4 to 84.1.",
-      "Week 9: Bijan scored 25.2, his best game for lanny, but Javonte Williams (20.9), Corum (13.8), and Amon-Ra (10.6) won the week 45.3 to 39.2. Ray leads 166.7 to 123.3.",
+      "The biggest trade of the season: a 3-for-3 where Ray, who apparently decided the best running back in the deal was the problem, sent Bijan Robinson, Chase Brown, and Jameson Williams to lanny for Amon-Ra St. Brown, Javonte Williams, and Blake Corum.",
+      "Week 1 was skewed by byes. Week 7 wasn't, and Ray lucked into it anyway: Javonte Williams scored 25.5, Amon-Ra came back with 19.2, and Corum added 19.6, all against 46.1 from lanny's three. Ray now leads 91.3 to 51.9.",
+      "It also decided the head-to-head game. Ray beat lanny 110.80 to 102.26 in Week 7, even with Caleb Williams (22.62) and Corum (19.6) rotting on his bench, with Javonte and Amon-Ra both starting. Jameson Williams (23.1) was lanny's best player.",
+      "Bijan has 30.1 points in three games for lanny after averaging about 24 a game before the trade. Week 8 was lanny's first win of the trade, 32.2 to 30.1, but Ray still leads 121.4 to 84.1. Even a broken clock.",
+      "Week 9: Bijan scored 25.2, his best game for lanny, but Javonte Williams (20.9), Corum (13.8), and Amon-Ra (10.6) won the week 45.3 to 39.2. Ray leads 166.7 to 123.3, and he is 3-6 anyway, which tells you everything. Fuck Ray.",
     ],
   },
   {
@@ -168,9 +168,9 @@ export const trades: Trade[] = [
     verdict: "Raymond",
     headline: "The most lopsided trade of the season.",
     writeUp: [
-      "The first trade of the year: Ray sent Stefon Diggs and Noah Fant to Nicholas for Ollie Gordon II and Kenyon Sadiq.",
+      "The first trade of the year: Ray, fleecing a new guy, sent Stefon Diggs and Noah Fant to Nicholas for Ollie Gordon II and Kenyon Sadiq.",
       "Gordon became Miami's lead back almost immediately and has 71.4 points in five games since the trade. Diggs has 32.8, including 5.6 in Week 9. Fant has 3.5.",
-      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Ray leads 82.3 to 36.3, and Gordon outscored Diggs again in Week 9 (7.4 plus 5.9 from Sadiq, to 5.6 plus 1.7 from Fant).",
+      "Both tight ends have since been dropped, so this comes down to Gordon vs. Diggs. Ray leads 82.3 to 36.3, the one thing that's gone right for him all year, and Gordon outscored Diggs again in Week 9 (7.4 plus 5.9 from Sadiq, to 5.6 plus 1.7 from Fant).",
     ],
   },
 ];

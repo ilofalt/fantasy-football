@@ -24,7 +24,7 @@ export const standings: StandingRow[] = [
 export const bubbleNotes: string[] = [
   "Three teams are 5-4 and hold seeds 4 through 6: Zachary, lanny, and Nicholas. Nicholas has the last playoff spot, 7.74 points for behind lanny.",
   "Isaiah fell from 4th to 7th after losing to Daniel by 0.82. He's one game behind Nicholas and has scored 45.70 more points, so a tie would go his way.",
-  "Raymond is 3-6 but has the 6th-most points in the league (960.08). He's two games out with five weeks left.",
+  "Raymond is 3-6 despite the 6th-most points in the league (960.08), a rare skill. He's two games out with five weeks left, and nobody's holding their breath.",
   "Matthew (8-1) has won four straight and leads Ethan and Jonathan by two games for the 1st seed.",
   "Daniel has won two straight and is three games out of 6th place with five weeks to go.",
 ];
