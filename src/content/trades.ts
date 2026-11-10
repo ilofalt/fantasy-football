@@ -23,10 +23,10 @@ export const trades: Trade[] = [
       },
     ],
     verdict: null,
-    headline: "Douglas outscores Downs, but not for Nicholas.",
+    headline: "Douglas outscores Downs, but not for Nicholas. Did the AI sign off on this?",
     writeUp: [
       "A one-for-one swap of receivers: Nicholas sent Josh Downs to Chris for DeMario Douglas. Downs was Chris's own 9th-round pick, and Chris had dropped him on Oct 21.",
-      "Nicholas dropped Douglas on Saturday's waivers to claim Dylan Sampson, and Douglas then scored 15.1 on Sunday. Downs scored 9.6 on Chris's bench.",
+      "Nicholas dropped Douglas on Saturday's waivers to claim Dylan Sampson, and Douglas then scored 15.1 on Sunday. Downs scored 9.6 on Chris's bench, which Chris didn't notice because he was in a League of Legends match.",
       "On paper Nicholas' side is ahead, but none of those points counted for him. Douglas is now on Zachary's roster and scored 11.7 in Week 9; Downs had 2.9 for Chris. With Douglas gone from Nicholas' team, we're still calling it even.",
     ],
   },
@@ -81,11 +81,11 @@ export const trades: Trade[] = [
     verdict: "Isaiah",
     headline: "Isaiah leads the trade by 34. Daniel won the game.",
     writeUp: [
-      "A straight swap: Isaiah sent George Pickens to Daniel for Bhayshul Tuten, Daniel's 3rd-round pick.",
+      "A straight swap: Isaiah sent George Pickens to Daniel for Bhayshul Tuten, Daniel's 3rd-round pick. Isaiah picked on the worst team in league history, which is the only fight a man under 200 pounds can win.",
       "Tuten responded with 23.2 points in Week 6, his best game of the season. Pickens had 9.8 that week in a loss at Green Bay.",
       "Jacksonville was on bye in Week 7, and Pickens scored 13.2 in Dallas' 38-21 win at Philadelphia. That makes it 23.2 to 23.0, close enough to call even.",
       "Tuten came back in Week 8 with 30.4 points in Jacksonville's 42-7 win over Indianapolis, the best game by anyone in this trade. Pickens had 5.8. Isaiah now leads 53.6 to 28.8.",
-      "Week 9 was the rematch. Tuten scored 9.4 and Pickens was out, so Isaiah extended his lead to 63.0 to 28.8. But Daniel won the game 101.80 to 100.98.",
+      "Week 9 was the rematch. Tuten scored 9.4 and Pickens was out, so Isaiah extended his lead to 63.0 to 28.8. But Daniel won the game 101.80 to 100.98. The worst team in league history beat victim weight.",
     ],
   },
   {
@@ -111,10 +111,10 @@ export const trades: Trade[] = [
     verdict: "Nicholas",
     headline: "Judkins comes back with 25.9, and the trade flips to Nicholas.",
     writeUp: [
-      "A 2-for-2: Andrew sent Garrett Wilson and Quinshon Judkins to Nicholas for Mike Evans and Jeremiyah Love.",
+      "A 2-for-2: Andrew sent Garrett Wilson and Quinshon Judkins to Nicholas for Mike Evans and Jeremiyah Love. Andrew has made three pickups all season and spent the rest of it looking at cars.",
       "Evans carried Andrew's side early with 33.2 points in two games, then scored zero in Week 7. Love has 5.0 points in five weeks and is now on IR.",
       "Judkins returned in Week 7 and scored 25.9 in Cleveland's win at Tennessee, the most by any player in this trade. Nicholas now leads 59.3 to 35.4.",
-      "The catch: Judkins was on Nicholas' bench, and Nicholas lost by 36.78. The trade is working. The lineup decisions aren't.",
+      "The catch: Judkins was on Nicholas' bench, and Nicholas lost by 36.78. The trade is working. The lineup decisions, which we assume were outsourced to a chatbot, aren't.",
       "Week 8: Wilson 11.3 and Judkins 5.9 for Nicholas, Love 2.8 for Andrew with Evans on bye. Week 9: Judkins 5.5, with Evans and Wilson both out. Nicholas leads 82.0 to 38.2.",
     ],
   },
@@ -140,9 +140,9 @@ export const trades: Trade[] = [
     verdict: "Andrew",
     headline: "Chris is paying for a stash that hasn't played yet.",
     writeUp: [
-      "Chris gave up rookie WR Denzel Boston and Adonai Mitchell for Zach Charbonnet, who hasn't played this season and is still on the PUP list.",
+      "Chris gave up rookie WR Denzel Boston and Adonai Mitchell for Zach Charbonnet, who hadn't played this season and was still on the PUP list. Chris made the deal during a League of Legends loading screen, we assume.",
       "Boston has 34.3 points for Andrew since the trade, including 11.3 in Week 9. Mitchell, long since dropped, scored 23.2 on waivers in Week 8.",
-      "This is a bet on Charbonnet returning for the second half. He returned in Week 8 with 3.4 and scored 10.6 in Week 9, his best game yet. Andrew still leads 57.5 to 14.0.",
+      "This is a bet on Charbonnet returning for the second half. He returned in Week 8 with 3.4 and scored 10.6 in Week 9, his best game yet. Andrew still leads 57.5 to 14.0, and still hasn't checked.",
     ],
   },
   {

@@ -22,9 +22,9 @@ export const standings: StandingRow[] = [
 ];
 
 export const bubbleNotes: string[] = [
-  "Three teams are 5-4 and hold seeds 4 through 6: Zachary, lanny, and Nicholas. Nicholas has the last playoff spot, 7.74 points for behind lanny.",
-  "Isaiah fell from 4th to 7th after losing to Daniel by 0.82. He's one game behind Nicholas and has scored 45.70 more points, so a tie would go his way.",
+  "Three teams are 5-4 and hold seeds 4 through 6: Zachary, lanny, and Nicholas. Zachary would like everyone to keep moving, nothing to see here. Nicholas has the last playoff spot, 7.74 points for behind lanny. The AI says Nicholas is fine; lanny is too busy pricing Pokémon cards to worry.",
+  "Isaiah fell from 4th to 7th after losing to Daniel by 0.82. He's one game behind Nicholas and has scored 45.70 more points, so a tie would go his way. Unlike his scale, the tiebreaker is on his side.",
   "Raymond is 3-6 despite the 6th-most points in the league (960.08), a rare skill. He's two games out with five weeks left, and nobody's holding their breath.",
-  "Matthew (8-1) has won four straight and leads Ethan and Jonathan by two games for the 1st seed.",
-  "Daniel has won two straight and is three games out of 6th place with five weeks to go.",
+  "Matthew (8-1) has won four straight and leads Ethan and Jonathan by two games for the 1st seed. It would be his first playoff appearance ever. Ethan has no hair to lose over it.",
+  "Daniel has won two straight and is three games out of 6th place with five weeks to go. Still the worst team in league history, just with momentum.",
 ];
