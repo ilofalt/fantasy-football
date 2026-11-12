@@ -3,7 +3,7 @@ body {
   min-height: 100%;
 }
 
-/* Deep-linked items scroll into view below the sticky header. */
+/* Deep-linked items scroll into view below the sticky header and tabs. */
 [id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 136px;
 }

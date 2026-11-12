@@ -13,11 +13,12 @@ import Rivalries from "./Rivalries";
 import Trades from "./Trades";
 import Waivers from "./Waivers";
 import WeeklyReport from "./WeeklyReport";
+import TradingCards from "./TradingCards";
 import { parseHash } from "@/lib/permalink";
 
 // The site is a static export served straight from S3, so extra pages would
 // 404 on refresh without a CloudFront rewrite. Tabs live on the one page
-// instead, with the URL hash (#news, #report, #playoffs, #rivalries, #managers, #trades, #waivers)
+// instead, with the URL hash (#news, #report, #playoffs, #rivalries, #managers, #trades, #waivers, #cards)
 // making each one linkable. "#<tab>/<item>" links to a specific story, award,
 // trade, or section within a tab.
 export const TABS = [
@@ -29,6 +30,7 @@ export const TABS = [
   { id: "managers", label: "Managers" },
   { id: "trades", label: "Track Trades" },
   { id: "waivers", label: "Waiver Wire" },
+  { id: "cards", label: "Trading Cards" },
 ] as const;
 
 export type TabId = (typeof TABS)[number]["id"];
@@ -42,6 +44,7 @@ const PANELS: Record<TabId, ReactNode> = {
   managers: <Managers />,
   trades: <Trades />,
   waivers: <Waivers />,
+  cards: <TradingCards />,
 };
 
 function tabFromHash(hash: string): TabId {
@@ -50,7 +53,11 @@ function tabFromHash(hash: string): TabId {
 }
 
 
-export default function LeagueTabs() {
+/**
+ * The header and section tabs stick to the top together, full width, with the
+ * hero between them and the selected panel.
+ */
+export default function LeagueTabs({ header, hero }: { header?: ReactNode; hero?: ReactNode } = {}) {
   const [tab, setTab] = useState<TabId>("matchups");
   // Item to scroll to; `n` bumps so re-clicking the same link scrolls again.
   const [target, setTarget] = useState<{ anchor: string; n: number } | null>(null);
@@ -81,21 +88,40 @@ export default function LeagueTabs() {
 
   return (
     <>
-      <Container maxWidth="md">
-        <Box sx={{ borderBottom: 1, borderColor: "divider", mb: 4 }}>
+      <Box
+        sx={{
+          position: "sticky",
+          top: 0,
+          zIndex: "appBar",
+          bgcolor: "background.paper",
+          borderBottom: 3,
+          borderColor: "primary.main",
+        }}
+      >
+        {header}
+        <Container maxWidth={false} sx={{ borderTop: header ? 1 : 0, borderColor: "divider" }}>
           <Tabs
             value={tab}
             onChange={(_, next: TabId) => select(next)}
             aria-label="League sections"
             variant="scrollable"
+            scrollButtons="auto"
             allowScrollButtonsMobile
+            sx={{
+              minHeight: 48,
+              // Centered when every tab fits; scrolls (with arrows) only when it doesn't.
+              "& .MuiTabs-list, & .MuiTabs-flexContainer": { justifyContent: "safe center" },
+              "& .MuiTab-root": { px: { md: 2.5 } },
+            }}
           >
             {TABS.map((t) => (
               <Tab key={t.id} value={t.id} label={t.label} id={`tab-${t.id}`} aria-controls={`panel-${t.id}`} />
             ))}
           </Tabs>
-        </Box>
-      </Container>
+        </Container>
+      </Box>
+      {hero}
+      <Box sx={{ height: { xs: 8, md: 16 } }} />
       {TABS.map((t) => (
         <div key={t.id} role="tabpanel" id={`panel-${t.id}`} aria-labelledby={`tab-${t.id}`} hidden={tab !== t.id}>
           {tab === t.id && PANELS[t.id]}

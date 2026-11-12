@@ -11,10 +11,9 @@ import FootballIcon from "./FootballIcon";
 export default function Header() {
   return (
     <AppBar
-      position="sticky"
+      position="static"
       color="inherit"
       elevation={0}
-      sx={{ borderBottom: 3, borderColor: "primary.main" }}
     >
       <Container maxWidth="md">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>

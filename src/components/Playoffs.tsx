@@ -18,6 +18,7 @@ import { odds } from "@/content/odds";
 import { pct } from "@/lib/playoffs/odds";
 import { permalinkHash } from "@/lib/permalink";
 import Permalink from "./Permalink";
+import PlayoffScenarios from "./PlayoffScenarios";
 
 function record(t: SeededTeam): string {
   return t.ties ? `${t.wins}-${t.losses}-${t.ties}` : `${t.wins}-${t.losses}`;
@@ -289,6 +290,8 @@ export default function Playoffs() {
               </Box>
             </Box>
           </Card>
+
+          <PlayoffScenarios />
 
           <Card variant="outlined" id="bubble" sx={{ p: { xs: 2.5, md: 3 } }}>
             <Stack direction="row" sx={{ alignItems: "center", mb: 1 }}>
