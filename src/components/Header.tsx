@@ -6,6 +6,7 @@ import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
 import ColorModeToggle from "./ColorModeToggle";
+import FootballIcon from "./FootballIcon";
 
 export default function Header() {
   return (
@@ -13,14 +14,31 @@ export default function Header() {
       position="sticky"
       color="inherit"
       elevation={0}
-      sx={{ borderBottom: 1, borderColor: "divider" }}
+      sx={{ borderBottom: 3, borderColor: "primary.main" }}
     >
       <Container maxWidth="md">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-          <Link href="/" underline="none" color="text.primary" variant="subtitle1" sx={{ fontWeight: 700 }}>
+          <Link
+            href="/"
+            underline="none"
+            color="text.primary"
+            variant="subtitle1"
+            sx={{
+              fontWeight: 700,
+              fontFamily: "var(--font-display), 'Oswald', 'Arial Narrow', Impact, sans-serif",
+              fontSize: { xs: "1.05rem", sm: "1.2rem" },
+              letterSpacing: "0.04em",
+              textTransform: "uppercase",
+              whiteSpace: "nowrap",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 1,
+            }}
+          >
+            <FootballIcon size={26} />
             Fantasy Football
           </Link>
-          <Stack direction="row" spacing={3} sx={{ alignItems: "center" }}>
+          <Stack direction="row" spacing={{ xs: 1.5, sm: 3 }} sx={{ alignItems: "center" }}>
             <Link
               href="https://isaiahofalt.com"
               underline="hover"

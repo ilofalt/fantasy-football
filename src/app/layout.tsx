@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Oswald, Roboto } from "next/font/google";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import ThemeRegistry from "@/components/ThemeRegistry";
 import "./globals.css";
@@ -8,6 +8,13 @@ const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-roboto",
+});
+
+// Condensed athletic face for headings, tabs, and the scoreboard-style hero.
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
 });
 
 const title = "Fantasy Football — Isaiah Ofalt";
@@ -40,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.variable} suppressHydrationWarning>
+    <html lang="en" className={`${roboto.variable} ${oswald.variable}`} suppressHydrationWarning>
       <body>
         <InitColorSchemeScript />
         <ThemeRegistry>{children}</ThemeRegistry>
