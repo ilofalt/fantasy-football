@@ -49,9 +49,10 @@ export function createMemoryStore(
       data.bets[bet.id] = { ...bet };
       changed();
     },
-    async updateBet(id, from, patch) {
+    async updateBet(id, from, patch, expectAmount) {
       const bet = data.bets[id];
       if (!bet || bet.status !== from) return false;
+      if (expectAmount !== undefined && bet.amount !== expectAmount) return false;
       Object.assign(bet, patch);
       changed();
       return true;

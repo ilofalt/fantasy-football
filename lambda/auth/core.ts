@@ -35,8 +35,11 @@ export interface AuthStore {
   listBets(): Promise<Bet[]>;
   getBet(id: string): Promise<Bet | null>;
   createBet(bet: Bet): Promise<void>;
-  /** Applies `patch` only if the bet is still in the `from` status. False if it already moved on. */
-  updateBet(id: string, from: Bet["status"], patch: Partial<Bet>): Promise<boolean>;
+  /**
+   * Applies `patch` only if the bet is still in the `from` status (and, when
+   * given, still at `expectAmount`). False if it already moved on.
+   */
+  updateBet(id: string, from: Bet["status"], patch: Partial<Bet>, expectAmount?: number): Promise<boolean>;
 }
 
 export interface AuthResult {

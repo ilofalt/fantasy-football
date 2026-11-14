@@ -18,8 +18,7 @@ import { useAuth } from "./AuthProvider";
 type Mode = "login" | "signup";
 
 export default function AccountMenu() {
-  const { user, ready, login, signup, logout } = useAuth();
-  const [open, setOpen] = useState(false);
+  const { user, ready, login, signup, logout, loginOpen: open, openLogin, closeLogin } = useAuth();
   const [mode, setMode] = useState<Mode>("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,7 +40,7 @@ export default function AccountMenu() {
   }
 
   const close = () => {
-    setOpen(false);
+    closeLogin();
     setError(null);
   };
 
@@ -57,7 +56,7 @@ export default function AccountMenu() {
 
   return (
     <>
-      <Button size="small" color="inherit" onClick={() => setOpen(true)}>
+      <Button size="small" color="inherit" onClick={openLogin}>
         Log in
       </Button>
       <Dialog open={open} onClose={close} fullWidth maxWidth="xs">

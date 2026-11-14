@@ -106,7 +106,7 @@ export function createDynamoStore(table: string, client = DynamoDBDocumentClient
       await client.send(new PutCommand({ TableName: table, Item: { pk: `BET#${bet.id}`, ...bet } }));
     },
 
-    async updateBet(id, from, patch) {
+    async updateBet(id, from, patch, expectAmount) {
       const keys = Object.keys(patch);
       try {
         await client.send(
@@ -114,10 +114,15 @@ export function createDynamoStore(table: string, client = DynamoDBDocumentClient
             TableName: table,
             Key: { pk: `BET#${id}` },
             UpdateExpression: `SET ${keys.map((k, i) => `#k${i} = :v${i}`).join(", ")}`,
-            ConditionExpression: "#status = :from",
-            ExpressionAttributeNames: { "#status": "status", ...Object.fromEntries(keys.map((k, i) => [`#k${i}`, k])) },
+            ConditionExpression: expectAmount === undefined ? "#status = :from" : "#status = :from AND #amount = :expected",
+            ExpressionAttributeNames: {
+              "#status": "status",
+              ...(expectAmount === undefined ? {} : { "#amount": "amount" }),
+              ...Object.fromEntries(keys.map((k, i) => [`#k${i}`, k])),
+            },
             ExpressionAttributeValues: {
               ":from": from,
+              ...(expectAmount === undefined ? {} : { ":expected": expectAmount }),
               ...Object.fromEntries(keys.map((k, i) => [`:v${i}`, (patch as Record<string, unknown>)[k]])),
             },
           })

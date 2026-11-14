@@ -1,4 +1,4 @@
-import { cancelBet, listBets, matchBet, placeBet, settleBet } from "./bets";
+import { acceptBet, cancelBet, counterBet, listBets, placeBet, settleBet } from "./bets";
 import { type AuthResult, type AuthStore, SESSION_SECONDS, currentUser, login, logout, me, signup } from "./core";
 import { createDynamoStore } from "./dynamo";
 
@@ -79,7 +79,8 @@ export async function route(store: AuthStore, event: HttpEvent) {
       const user = (await currentUser(store, token))!; // checked above
       if (path === "/api/bets") return respond(await placeBet(store, user.manager, body));
       const [, , , id, action] = path.split("/");
-      if (action === "match") return respond(await matchBet(store, user.manager, id));
+      if (action === "accept") return respond(await acceptBet(store, user.manager, id, body.seen));
+      if (action === "counter") return respond(await counterBet(store, user.manager, id, body));
       if (action === "cancel") return respond(await cancelBet(store, user.manager, id));
       if (action === "settle") return respond(await settleBet(store, user.manager, id, body.winner));
     }

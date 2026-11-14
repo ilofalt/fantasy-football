@@ -1,6 +1,6 @@
 import { randomBytes } from "node:crypto";
 import { COMMISSIONER } from "../../src/content/managers";
-import { MAX_BET } from "../../src/lib/bets/types";
+import { type Bet, MAX_BET, responderOf } from "../../src/lib/bets/types";
 import { type AuthResult, type AuthStore, MANAGER_NAMES } from "./core";
 
 // Side bets on matchups. Every call needs a logged-in manager; the handler
@@ -48,34 +48,83 @@ export async function placeBet(
     bettor: manager,
     taker: null,
     status: "open",
+    offeredBy: manager,
     winner: null,
     createdAt: Date.now(),
   });
   return ok(store);
 }
 
-export async function matchBet(store: AuthStore, manager: string, id: string): Promise<AuthResult> {
+const CHANGED = "That bet just changed. Refresh and try again.";
+
+/**
+ * Whether `manager` may answer this bet right now: anyone but the bettor on an
+ * open bet, or only the side whose turn it is on a countered one. Returns an
+ * error result if not.
+ */
+function canAnswer(bet: Bet, manager: string): AuthResult | null {
+  if (bet.status === "open") return bet.bettor === manager ? fail(400, "That's your own bet.") : null;
+  if (bet.status === "countered") {
+    if (manager !== bet.bettor && manager !== bet.taker) {
+      return fail(403, `That bet is between ${bet.bettor} and ${bet.taker}.`);
+    }
+    return manager === responderOf(bet) ? null : fail(403, `Waiting on ${responderOf(bet)} to answer your offer.`);
+  }
+  return fail(409, "That bet was already taken or withdrawn.");
+}
+
+/** Accept the offer on the table. `seen` is the amount the manager was looking at. */
+export async function acceptBet(store: AuthStore, manager: string, id: string, seen: unknown): Promise<AuthResult> {
   const bet = await store.getBet(id);
   if (!bet) return fail(404, "That bet doesn't exist.");
-  if (bet.bettor === manager) return fail(400, "You can't match your own bet.");
-  if (bet.status !== "open") return fail(409, "That bet was already taken or withdrawn.");
-  if (!(await store.updateBet(id, "open", { status: "matched", taker: manager }))) {
-    return fail(409, "That bet was already taken or withdrawn.");
-  }
+  const denied = canAnswer(bet, manager);
+  if (denied) return denied;
+  if (seen !== bet.amount) return fail(409, CHANGED);
+  const patch = bet.status === "open" ? { status: "matched" as const, taker: manager } : { status: "matched" as const };
+  if (!(await store.updateBet(id, bet.status, patch, bet.amount))) return fail(409, CHANGED);
   return ok(store);
 }
 
-/** The bettor can withdraw an open bet; the commissioner can void any unsettled one. */
+/**
+ * Answer the offer with a different amount, higher or lower. The first
+ * counter locks the bet to the bettor and the manager countering.
+ */
+export async function counterBet(
+  store: AuthStore,
+  manager: string,
+  id: string,
+  input: { amount?: unknown; seen?: unknown }
+): Promise<AuthResult> {
+  const bet = await store.getBet(id);
+  if (!bet) return fail(404, "That bet doesn't exist.");
+  const denied = canAnswer(bet, manager);
+  if (denied) return denied;
+  const { amount, seen } = input;
+  if (!Number.isInteger(amount) || (amount as number) < 1 || (amount as number) > MAX_BET) {
+    return fail(400, `Counter with a whole number of FAAB, 1 to ${MAX_BET}.`);
+  }
+  if (amount === bet.amount) return fail(400, "That's the same amount. Accept the bet, or counter with a different number.");
+  if (seen !== bet.amount) return fail(409, CHANGED);
+  const patch = { status: "countered" as const, amount: amount as number, offeredBy: manager, taker: bet.taker ?? manager };
+  if (!(await store.updateBet(id, bet.status, patch, bet.amount))) return fail(409, CHANGED);
+  return ok(store);
+}
+
+/**
+ * The bettor can withdraw an open bet, and either side can walk away from a
+ * countered one (which ends it). Only the commissioner can void a matched bet.
+ */
 export async function cancelBet(store: AuthStore, manager: string, id: string): Promise<AuthResult> {
   const bet = await store.getBet(id);
   if (!bet) return fail(404, "That bet doesn't exist.");
   const isCommissioner = manager === COMMISSIONER;
   if (bet.status === "settled" || bet.status === "cancelled") return fail(409, "That bet is already closed.");
   if (bet.status === "matched" && !isCommissioner) return fail(403, "Only the commissioner can void a matched bet.");
-  if (bet.status === "open" && bet.bettor !== manager && !isCommissioner) return fail(403, "That isn't your bet.");
-  if (!(await store.updateBet(id, bet.status, { status: "cancelled" }))) {
-    return fail(409, "That bet just changed. Refresh and try again.");
+  const inBet = manager === bet.bettor || manager === bet.taker;
+  if ((bet.status === "open" || bet.status === "countered") && !inBet && !isCommissioner) {
+    return fail(403, "That isn't your bet.");
   }
+  if (!(await store.updateBet(id, bet.status, { status: "cancelled" }))) return fail(409, CHANGED);
   return ok(store);
 }
 

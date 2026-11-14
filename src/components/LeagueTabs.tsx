@@ -24,6 +24,7 @@ import { parseHash } from "@/lib/permalink";
 // trade, or section within a tab.
 export const TABS = [
   { id: "matchups", label: "Matchups" },
+  { id: "sportsbook", label: "SportsBook" },
   { id: "news", label: "News" },
   { id: "report", label: "Weekly Report" },
   { id: "playoffs", label: "Playoff Picture" },
@@ -32,7 +33,6 @@ export const TABS = [
   { id: "trades", label: "Track Trades" },
   { id: "waivers", label: "Waiver Wire" },
   { id: "cards", label: "Trading Cards" },
-  { id: "sportsbook", label: "SportsBook" },
 ] as const;
 
 export type TabId = (typeof TABS)[number]["id"];

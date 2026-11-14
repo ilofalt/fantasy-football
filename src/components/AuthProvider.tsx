@@ -12,11 +12,18 @@ interface AuthContextValue {
   login: (email: string, password: string) => Promise<string | null>;
   signup: (email: string, password: string, manager: string) => Promise<string | null>;
   logout: () => Promise<void>;
+  /** The log in / sign up dialog lives in the header; any page can open it. */
+  loginOpen: boolean;
+  openLogin: () => void;
+  closeLogin: () => void;
 }
 
 const AuthContext = createContext<AuthContextValue>({
   user: null,
   ready: true,
+  loginOpen: false,
+  openLogin: () => {},
+  closeLogin: () => {},
   login: async () => "Login isn't available right now.",
   signup: async () => "Login isn't available right now.",
   logout: async () => {},
@@ -27,6 +34,7 @@ export const useAuth = () => useContext(AuthContext);
 export default function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [ready, setReady] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -50,6 +58,9 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
     () => ({
       user,
       ready,
+      loginOpen,
+      openLogin: () => setLoginOpen(true),
+      closeLogin: () => setLoginOpen(false),
       login: async (email, password) => finish(await logIn(email, password)),
       signup: async (email, password, manager) => finish(await signUp(email, password, manager)),
       logout: async () => {
@@ -57,7 +68,7 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
         setUser(null);
       },
     }),
-    [user, ready, finish]
+    [user, ready, loginOpen, finish]
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

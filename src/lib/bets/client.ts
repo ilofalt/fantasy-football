@@ -31,6 +31,8 @@ export interface NewBet {
 
 export const fetchBets = () => request("");
 export const placeBet = (bet: NewBet) => post("", bet);
-export const matchBet = (id: string) => post(`/${id}/match`, {});
+/** `seen` is the amount on screen, so a counter that landed meanwhile isn't accepted by accident. */
+export const acceptBet = (id: string, seen: number) => post(`/${id}/accept`, { seen });
+export const counterBet = (id: string, amount: number, seen: number) => post(`/${id}/counter`, { amount, seen });
 export const cancelBet = (id: string) => post(`/${id}/cancel`, {});
 export const settleBet = (id: string, winner: string) => post(`/${id}/settle`, { winner });

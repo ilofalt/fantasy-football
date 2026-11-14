@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import Alert from "@mui/material/Alert";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -13,12 +13,14 @@ import TextField from "@mui/material/TextField";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Typography from "@mui/material/Typography";
-import { FAAB_BALANCES, FAAB_UPDATED } from "@/content/faab";
+import { FAAB_UPDATED, faabFor } from "@/content/faab";
 import { currentMatchups } from "@/content/matchups";
 import { COMMISSIONER } from "@/content/managers";
-import { cancelBet, fetchBets, matchBet, placeBet, settleBet, type BetsResponse } from "@/lib/bets/client";
-import { type Bet, COMMISSIONER_TITLE, faabOnTheLine, opposingTeam, settledNet } from "@/lib/bets/types";
+import { acceptBet, cancelBet, counterBet, fetchBets, placeBet, settleBet, type BetsResponse } from "@/lib/bets/client";
+import { type Bet, COMMISSIONER_TITLE, faabOnTheLine, opposingTeam, responderOf, settledNet } from "@/lib/bets/types";
+import { parseHash } from "@/lib/permalink";
 import { useAuth } from "./AuthProvider";
+import Permalink from "./Permalink";
 
 const display = "var(--font-display), 'Oswald', 'Arial Narrow', Impact, sans-serif";
 
@@ -57,8 +59,157 @@ function Stat({ label, value, hint }: { label: string; value: string; hint?: str
 const sign = (n: number) => (n > 0 ? `+${n}` : `${n}`);
 const betLine = (b: Bet) => `${b.bettor} bets ${b.amount} FAAB that ${b.pick} beats ${opposingTeam(b)}`;
 
+type Act = (run: () => Promise<BetsResponse>) => Promise<boolean>;
+
+// A bet's share link is "#sportsbook/bet-<id>".
+const betAnchor = (id: string) => `bet-${id}`;
+const HIGHLIGHT = { outline: "2px solid", outlineColor: "primary.main", outlineOffset: 8, borderRadius: 1 } as const;
+
+/** The id of the bet named in the URL's share link, or null. */
+function useLinkedBetId(): string | null {
+  const [id, setId] = useState<string | null>(null);
+  useEffect(() => {
+    const sync = () => {
+      const { tab, anchor } = parseHash(window.location.hash);
+      setId(tab === "sportsbook" && anchor?.startsWith("bet-") ? anchor.slice(4) : null);
+    };
+    sync();
+    window.addEventListener("hashchange", sync);
+    return () => window.removeEventListener("hashchange", sync);
+  }, []);
+  return id;
+}
+
+/** One bet that's still being decided: open, or being countered back and forth. */
+function OpenBetRow({
+  bet,
+  me,
+  isCommissioner,
+  available,
+  busy,
+  act,
+  highlight,
+}: {
+  bet: Bet;
+  me: string;
+  isCommissioner: boolean;
+  available: number;
+  busy: boolean;
+  act: Act;
+  highlight: boolean;
+}) {
+  const [countering, setCountering] = useState(false);
+  const [counter, setCounter] = useState("");
+
+  const countered = bet.status === "countered";
+  const mine = bet.bettor === me;
+  const inBet = mine || bet.taker === me;
+  const responder = countered ? responderOf(bet) : null;
+  // Anyone but the bettor can answer an open bet; only one side's turn at a time once it's countered.
+  const myTurn = countered ? responder === me : !mine;
+  const canAfford = bet.amount <= available;
+
+  const counterNumber = Number(counter);
+  const counterValid =
+    Number.isInteger(counterNumber) && counterNumber >= 1 && counterNumber !== bet.amount && counterNumber <= available;
+
+  let title = betLine(bet);
+  let note = mine ? "Waiting for someone to accept or counter" : `Accept it to back ${opposingTeam(bet)}`;
+  if (countered) {
+    title = `${bet.bettor} (${bet.pick}) vs. ${bet.taker} (${opposingTeam(bet)}) for ${bet.amount} FAAB`;
+    note = `${bet.offeredBy} is asking ${bet.amount} FAAB. ${
+      myTurn ? "Your move." : inBet ? `Waiting on ${responder}.` : `Locked between ${bet.bettor} and ${bet.taker}.`
+    }`;
+  }
+
+  return (
+    <Box id={betAnchor(bet.id)} sx={highlight ? HIGHLIGHT : undefined}>
+      <Stack
+        direction={{ xs: "column", sm: "row" }}
+        spacing={1.5}
+        sx={{ alignItems: { sm: "center" }, justifyContent: "space-between" }}
+      >
+        <Box>
+          <Typography sx={{ fontWeight: 600 }}>
+            {title}
+            {countered && <Chip size="small" label="Countered" sx={{ ml: 1 }} />}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Week {bet.week} · {note}
+          </Typography>
+          {myTurn && !canAfford && (
+            <Typography variant="body2" color="error">
+              You need {bet.amount} FAAB available to accept this. Counter with less?
+            </Typography>
+          )}
+        </Box>
+        <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
+          {myTurn && (
+            <>
+              <Button
+                variant="contained"
+                size="small"
+                disabled={busy || !canAfford}
+                onClick={() => act(() => acceptBet(bet.id, bet.amount))}
+              >
+                Accept bet
+              </Button>
+              <Button variant="outlined" size="small" disabled={busy} onClick={() => setCountering((c) => !c)}>
+                Counter
+              </Button>
+            </>
+          )}
+          {(inBet || isCommissioner) && (
+            <Button size="small" color="inherit" disabled={busy} onClick={() => act(() => cancelBet(bet.id))}>
+              {!inBet ? "Void" : countered ? "Walk away" : "Withdraw"}
+            </Button>
+          )}
+          <Permalink tab="sportsbook" anchor={betAnchor(bet.id)} label="this bet" />
+        </Stack>
+      </Stack>
+      {myTurn && countering && (
+        <Stack direction={{ xs: "column", sm: "row" }} spacing={1.5} sx={{ mt: 1.5 }}>
+          <TextField
+            size="small"
+            type="number"
+            label="Your counter (FAAB)"
+            value={counter}
+            onChange={(e) => setCounter(e.target.value)}
+            slotProps={{ htmlInput: { min: 1, max: available, step: 1 } }}
+            helperText={
+              counter && counterNumber === bet.amount
+                ? "That's the same amount. Accept the bet instead."
+                : counter && counterNumber > available
+                  ? `You only have ${available} available.`
+                  : `Higher or lower than ${bet.amount}, up to ${available}.`
+            }
+            error={!!counter && !counterValid}
+          />
+          <Box>
+            <Button
+              variant="contained"
+              size="small"
+              disabled={busy || !counterValid}
+              onClick={async () => {
+                if (await act(() => counterBet(bet.id, counterNumber, bet.amount))) {
+                  setCountering(false);
+                  setCounter("");
+                }
+              }}
+            >
+              Send counter
+            </Button>
+          </Box>
+        </Stack>
+      )}
+    </Box>
+  );
+}
+
 export default function SportsBook() {
-  const { user, ready } = useAuth();
+  const { user, ready, openLogin } = useAuth();
+  const linkedId = useLinkedBetId();
+  const scrolledTo = useRef<string | null>(null);
   const [bets, setBets] = useState<Bet[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -81,6 +232,16 @@ export default function SportsBook() {
     if (manager) fetchBets().then(apply);
   }, [manager, apply]);
 
+  // Once the bets arrive, bring a shared bet into view (it didn't exist yet when the tab opened).
+  useEffect(() => {
+    if (!linkedId || !bets || scrolledTo.current === linkedId) return;
+    const el = document.getElementById(betAnchor(linkedId));
+    if (el) {
+      scrolledTo.current = linkedId;
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [linkedId, bets]);
+
   const act = async (run: () => Promise<BetsResponse>) => {
     setBusy(true);
     const ok = apply(await run());
@@ -92,20 +253,32 @@ export default function SportsBook() {
   if (!ready) {
     body = null;
   } else if (!user) {
-    body = (
+    body = linkedId ? (
+      <Alert
+        severity="info"
+        action={
+          <Button color="inherit" size="small" onClick={openLogin}>
+            Log in
+          </Button>
+        }
+      >
+        Someone shared a bet with you. Log in to see it, and to accept it or counter.
+      </Alert>
+    ) : (
       <Alert severity="info">Log in with the button at the top of the page to see your FAAB, open bets, and place your own.</Alert>
     );
   } else {
     const all = bets ?? [];
     const isCommissioner = user.manager === COMMISSIONER;
-    const balance = FAAB_BALANCES[user.manager] ?? 0;
+    const { balance, playMoney } = faabFor(user.manager);
     const onTheLine = faabOnTheLine(all, user.manager);
     const available = balance - onTheLine;
     const net = settledNet(all, user.manager);
 
-    const open = all.filter((b) => b.status === "open");
+    const open = all.filter((b) => b.status === "open" || b.status === "countered");
     const live = all.filter((b) => b.status === "matched");
     const settled = all.filter((b) => b.status === "settled");
+    const linked = linkedId ? all.find((b) => b.id === linkedId) : undefined;
 
     const matchup = currentMatchups.matchups.find((m) => m.id === matchupId);
     const teams = matchup ? ([matchup.teams[0].manager, matchup.teams[1].manager] as [string, string]) : null;
@@ -127,52 +300,38 @@ export default function SportsBook() {
           </Stack>
         </Card>
 
+        {playMoney && (
+          <Alert severity="info">You don&rsquo;t actually have any FAAB, but here&rsquo;s some cause this is just a test.</Alert>
+        )}
+
         {error && <Alert severity="error">{error}</Alert>}
+
+        {linkedId && bets && (!linked || linked.status === "cancelled") && (
+          <Alert severity="warning">
+            {linked ? "That bet was withdrawn." : "That bet isn't here. The link may be wrong."}
+          </Alert>
+        )}
 
         <Section
           title={`Open bets${open.length ? ` (${open.length})` : ""}`}
-          subtitle="Think they're wrong? Match a bet to take the other side. The winner is paid in FAAB."
+          subtitle="Think they're wrong? Accept a bet to take the other side, or counter with your own number. Only two managers can be in a bet."
         >
           {open.length === 0 ? (
             <Typography color="text.secondary">No open bets right now. Place one below.</Typography>
           ) : (
-            <Stack spacing={1.5} sx={{ mt: 1 }}>
-              {open.map((b) => {
-                const mine = b.bettor === user.manager;
-                return (
-                  <Stack
-                    key={b.id}
-                    direction={{ xs: "column", sm: "row" }}
-                    spacing={1.5}
-                    sx={{ alignItems: { sm: "center" }, justifyContent: "space-between" }}
-                  >
-                    <Box>
-                      <Typography sx={{ fontWeight: 600 }}>{betLine(b)}</Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Week {b.week}
-                        {mine ? " · waiting for someone to match" : ` · match it to back ${opposingTeam(b)}`}
-                      </Typography>
-                    </Box>
-                    <Stack direction="row" spacing={1}>
-                      {!mine && (
-                        <Button
-                          variant="contained"
-                          size="small"
-                          disabled={busy || b.amount > available}
-                          onClick={() => act(() => matchBet(b.id))}
-                        >
-                          {b.amount > available ? "Not enough FAAB" : `Match ${b.amount} FAAB`}
-                        </Button>
-                      )}
-                      {(mine || isCommissioner) && (
-                        <Button size="small" color="inherit" disabled={busy} onClick={() => act(() => cancelBet(b.id))}>
-                          {mine ? "Withdraw" : "Void"}
-                        </Button>
-                      )}
-                    </Stack>
-                  </Stack>
-                );
-              })}
+            <Stack spacing={2} sx={{ mt: 1 }}>
+              {open.map((b) => (
+                <OpenBetRow
+                  key={b.id}
+                  bet={b}
+                  me={user.manager}
+                  isCommissioner={isCommissioner}
+                  available={available}
+                  busy={busy}
+                  act={act}
+                  highlight={b.id === linkedId}
+                />
+              ))}
             </Stack>
           )}
         </Section>
@@ -257,9 +416,10 @@ export default function SportsBook() {
               {live.map((b) => (
                 <Stack
                   key={b.id}
+                  id={betAnchor(b.id)}
                   direction={{ xs: "column", sm: "row" }}
                   spacing={1.5}
-                  sx={{ alignItems: { sm: "center" }, justifyContent: "space-between" }}
+                  sx={{ alignItems: { sm: "center" }, justifyContent: "space-between", ...(b.id === linkedId ? HIGHLIGHT : {}) }}
                 >
                   <Box>
                     <Typography sx={{ fontWeight: 600 }}>
@@ -269,24 +429,27 @@ export default function SportsBook() {
                       Week {b.week} · {b.amount} FAAB each way
                     </Typography>
                   </Box>
-                  {isCommissioner && (
-                    <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
-                      {b.teams.map((t) => (
-                        <Button
-                          key={t}
-                          size="small"
-                          variant="outlined"
-                          disabled={busy}
-                          onClick={() => act(() => settleBet(b.id, t))}
-                        >
-                          {t} won
+                  <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap", alignItems: "center" }}>
+                    {isCommissioner && (
+                      <>
+                        {b.teams.map((t) => (
+                          <Button
+                            key={t}
+                            size="small"
+                            variant="outlined"
+                            disabled={busy}
+                            onClick={() => act(() => settleBet(b.id, t))}
+                          >
+                            {t} won
+                          </Button>
+                        ))}
+                        <Button size="small" color="inherit" disabled={busy} onClick={() => act(() => cancelBet(b.id))}>
+                          Void
                         </Button>
-                      ))}
-                      <Button size="small" color="inherit" disabled={busy} onClick={() => act(() => cancelBet(b.id))}>
-                        Void
-                      </Button>
-                    </Stack>
-                  )}
+                      </>
+                    )}
+                    <Permalink tab="sportsbook" anchor={betAnchor(b.id)} label="this bet" />
+                  </Stack>
                 </Stack>
               ))}
             </Stack>
@@ -297,11 +460,19 @@ export default function SportsBook() {
           <Section title="Settled" subtitle={`Awarded by the ${COMMISSIONER_TITLE}.`}>
             <Stack spacing={1} sx={{ mt: 1 }}>
               {settled.map((b) => (
-                <Stack key={b.id} direction="row" spacing={1} sx={{ alignItems: "center", flexWrap: "wrap" }} useFlexGap>
+                <Stack
+                  key={b.id}
+                  id={betAnchor(b.id)}
+                  direction="row"
+                  spacing={1}
+                  sx={{ alignItems: "center", flexWrap: "wrap", ...(b.id === linkedId ? HIGHLIGHT : {}) }}
+                  useFlexGap
+                >
                   <Chip size="small" color="primary" label={`${b.winner} +${b.amount}`} />
                   <Typography variant="body2">
                     Week {b.week}: {betLine(b)}
                   </Typography>
+                  <Permalink tab="sportsbook" anchor={betAnchor(b.id)} label="this bet" />
                 </Stack>
               ))}
             </Stack>
