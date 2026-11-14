@@ -44,6 +44,20 @@ describe("sportsbook", () => {
     expect((await call(store, "POST", "/api/bets", matchup)).statusCode).toBe(401);
   });
 
+  it("explains a missing bet without a 404, which CloudFront would replace with the site's 404 page", async () => {
+    const { store, andrew, isaiah } = await setup();
+    const attempts = [
+      call(store, "POST", "/api/bets/nope/accept", { seen: 5 }, andrew),
+      call(store, "POST", "/api/bets/nope/counter", { amount: 9, seen: 5 }, andrew),
+      call(store, "POST", "/api/bets/nope/cancel", {}, andrew),
+      call(store, "POST", "/api/bets/nope/settle", { winner: "Isaiah" }, isaiah),
+    ];
+    for (const res of await Promise.all(attempts)) {
+      expect(res.statusCode).toBe(400);
+      expect(JSON.parse(res.body).error).toBe("That bet doesn't exist.");
+    }
+  });
+
   it("places an open bet that every manager can see", async () => {
     const { store, nicholas, andrew } = await setup();
     const placed = await call(store, "POST", "/api/bets", matchup, nicholas);

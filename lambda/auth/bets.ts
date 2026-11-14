@@ -10,6 +10,10 @@ import { type AuthResult, type AuthStore, MANAGER_NAMES } from "./core";
 
 const fail = (status: number, error: string): AuthResult => ({ status, body: { error } });
 
+// Not a 404: CloudFront swaps any 404 from the Lambda for the site's 404 page,
+// which would hide this message from the person who clicked a stale bet.
+const noSuchBet = () => fail(400, "That bet doesn't exist.");
+
 async function ok(store: AuthStore): Promise<AuthResult> {
   const bets = (await store.listBets()).sort((a, b) => b.createdAt - a.createdAt);
   return { status: 200, body: { bets } };
@@ -76,7 +80,7 @@ function canAnswer(bet: Bet, manager: string): AuthResult | null {
 /** Accept the offer on the table. `seen` is the amount the manager was looking at. */
 export async function acceptBet(store: AuthStore, manager: string, id: string, seen: unknown): Promise<AuthResult> {
   const bet = await store.getBet(id);
-  if (!bet) return fail(404, "That bet doesn't exist.");
+  if (!bet) return noSuchBet();
   const denied = canAnswer(bet, manager);
   if (denied) return denied;
   if (seen !== bet.amount) return fail(409, CHANGED);
@@ -96,7 +100,7 @@ export async function counterBet(
   input: { amount?: unknown; seen?: unknown }
 ): Promise<AuthResult> {
   const bet = await store.getBet(id);
-  if (!bet) return fail(404, "That bet doesn't exist.");
+  if (!bet) return noSuchBet();
   const denied = canAnswer(bet, manager);
   if (denied) return denied;
   const { amount, seen } = input;
@@ -116,7 +120,7 @@ export async function counterBet(
  */
 export async function cancelBet(store: AuthStore, manager: string, id: string): Promise<AuthResult> {
   const bet = await store.getBet(id);
-  if (!bet) return fail(404, "That bet doesn't exist.");
+  if (!bet) return noSuchBet();
   const isCommissioner = manager === COMMISSIONER;
   if (bet.status === "settled" || bet.status === "cancelled") return fail(409, "That bet is already closed.");
   if (bet.status === "matched" && !isCommissioner) return fail(403, "Only the commissioner can void a matched bet.");
@@ -131,7 +135,7 @@ export async function cancelBet(store: AuthStore, manager: string, id: string): 
 export async function settleBet(store: AuthStore, manager: string, id: string, winnerTeam: unknown): Promise<AuthResult> {
   if (manager !== COMMISSIONER) return fail(403, "Only the commissioner settles bets.");
   const bet = await store.getBet(id);
-  if (!bet) return fail(404, "That bet doesn't exist.");
+  if (!bet) return noSuchBet();
   if (bet.status !== "matched" || !bet.taker) return fail(409, "Only a matched bet can be settled.");
   if (typeof winnerTeam !== "string" || !bet.teams.includes(winnerTeam)) return fail(400, "Pick which team won.");
   const winner = winnerTeam === bet.pick ? bet.bettor : bet.taker;
