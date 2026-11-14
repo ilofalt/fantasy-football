@@ -46,6 +46,9 @@ const renderBook = () =>
     </AuthProvider>
   );
 
+// The value under a label in the manager's own FAAB card (the table below repeats these amounts).
+const stat = async (label: string) => (await screen.findByText(label)).nextElementSibling?.textContent;
+
 const countered = (over: Partial<Bet> = {}) =>
   openBet({ status: "countered", bettor: "Nicholas", taker: "Andrew", offeredBy: "Andrew", amount: 20, ...over });
 
@@ -79,7 +82,8 @@ describe("SportsBook", () => {
       mockApi("Andrew", [openBet()]);
       renderBook();
       // Shown as both the balance and what's available (nothing is on the line yet).
-      expect(await screen.findAllByText(`$${FAAB_BALANCES.Andrew}`)).toHaveLength(2);
+      expect(await stat("FAAB")).toBe(`$${FAAB_BALANCES.Andrew}`);
+      expect(await stat("Available to bet")).toBe(`$${FAAB_BALANCES.Andrew}`);
       expect(await screen.findByText(`Zachary bets 5 FAAB that ${home} beats ${away}`)).toBeInTheDocument();
       const headings = screen.getAllByRole("heading", { level: 3 }).map((h) => h.textContent);
       expect(headings[0]).toBe("Open bets (1)");
@@ -91,8 +95,43 @@ describe("SportsBook", () => {
       expect(FAAB_BALANCES[name]).toBe(0);
       mockApi(name, []);
       renderBook();
-      expect(await screen.findAllByText(`$${PLAY_MONEY_FAAB}`)).toHaveLength(2);
+      expect(await stat("FAAB")).toBe(`$${PLAY_MONEY_FAAB}`);
+      expect(await stat("Available to bet")).toBe(`$${PLAY_MONEY_FAAB}`);
       expect(screen.getByText("You don’t actually have any FAAB, but here’s some cause this is just a test.")).toBeInTheDocument();
+    });
+  });
+
+  describe("FAAB table", () => {
+    it("lists every manager's FAAB at the bottom of the tab, biggest first", async () => {
+      mockApi("Andrew", []);
+      renderBook();
+      const placeBet = await screen.findByRole("heading", { name: "Place a bet" });
+      const heading = screen.getByRole("heading", { name: "Who can bet what" });
+      expect(placeBet.compareDocumentPosition(heading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+
+      const rows = screen.getAllByTestId("faab-row");
+      expect(rows).toHaveLength(Object.keys(FAAB_BALANCES).length);
+      // The "can bet" column, which counts play money, runs from most to least.
+      const canBet = rows.map((r) => Number(/\$(\d+)/.exec(r.textContent ?? "")?.[1]));
+      expect(canBet).toEqual([...canBet].sort((a, b) => b - a));
+      expect(rows[0]).toHaveTextContent(`$${PLAY_MONEY_FAAB}*`);
+      const andrew = rows.find((r) => r.textContent?.includes("Andrew"))!;
+      expect(andrew).toHaveTextContent(`$${FAAB_BALANCES.Andrew}`);
+    });
+
+    it("shows managers with none as play money, with their real balance beside it", async () => {
+      mockApi(null, []);
+      renderBook();
+      const daniel = (await screen.findAllByTestId("faab-row")).find((r) => r.textContent?.includes("Daniel"))!;
+      expect(daniel).toHaveTextContent(`$${PLAY_MONEY_FAAB}*`);
+      expect(daniel).toHaveTextContent("$0 (play money)");
+      expect(screen.getByText(/In reality they have zero/)).toBeInTheDocument();
+    });
+
+    it("is there for logged-out visitors too", async () => {
+      mockApi(null, []);
+      renderBook();
+      expect(await screen.findByRole("heading", { name: "Who can bet what" })).toBeInTheDocument();
     });
   });
 
@@ -214,7 +253,7 @@ describe("SportsBook", () => {
     it("places a bet capped at the available FAAB", async () => {
       const calls = mockApi("Andrew", []);
       renderBook();
-      await screen.findAllByText(`$${FAAB_BALANCES.Andrew}`);
+      await stat("Available to bet");
 
       fireEvent.click(screen.getByRole("button", { name: `${home} wins` }));
       const amount = screen.getByLabelText("FAAB to bet");

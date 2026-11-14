@@ -20,6 +20,7 @@ import { acceptBet, cancelBet, counterBet, fetchBets, placeBet, settleBet, type 
 import { type Bet, COMMISSIONER_TITLE, faabOnTheLine, opposingTeam, responderOf, settledNet } from "@/lib/bets/types";
 import { parseHash } from "@/lib/permalink";
 import { useAuth } from "./AuthProvider";
+import FaabBalances from "./FaabBalances";
 import Permalink from "./Permalink";
 
 const display = "var(--font-display), 'Oswald', 'Arial Narrow', Impact, sans-serif";
@@ -493,6 +494,7 @@ export default function SportsBook() {
           Yahoo.
         </Typography>
         {body}
+        <FaabBalances />
       </Container>
     </Box>
   );
