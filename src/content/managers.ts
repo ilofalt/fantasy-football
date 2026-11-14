@@ -21,3 +21,6 @@ export function managerForTeamKey(key: string): string | null {
   const n = key.match(/\.t\.(\d+)$/)?.[1];
   return (n && MANAGERS_BY_TEAM[n]) || null;
 }
+
+/** The manager who settles side bets. Their account has to be created first, since sign-up is open. */
+export const COMMISSIONER = "Isaiah";

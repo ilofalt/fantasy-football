@@ -14,11 +14,12 @@ import Trades from "./Trades";
 import Waivers from "./Waivers";
 import WeeklyReport from "./WeeklyReport";
 import TradingCards from "./TradingCards";
+import SportsBook from "./SportsBook";
 import { parseHash } from "@/lib/permalink";
 
 // The site is a static export served straight from S3, so extra pages would
 // 404 on refresh without a CloudFront rewrite. Tabs live on the one page
-// instead, with the URL hash (#news, #report, #playoffs, #rivalries, #managers, #trades, #waivers, #cards)
+// instead, with the URL hash (#news, #report, #playoffs, #rivalries, #managers, #trades, #waivers, #cards, #sportsbook)
 // making each one linkable. "#<tab>/<item>" links to a specific story, award,
 // trade, or section within a tab.
 export const TABS = [
@@ -31,6 +32,7 @@ export const TABS = [
   { id: "trades", label: "Track Trades" },
   { id: "waivers", label: "Waiver Wire" },
   { id: "cards", label: "Trading Cards" },
+  { id: "sportsbook", label: "SportsBook" },
 ] as const;
 
 export type TabId = (typeof TABS)[number]["id"];
@@ -45,6 +47,7 @@ const PANELS: Record<TabId, ReactNode> = {
   trades: <Trades />,
   waivers: <Waivers />,
   cards: <TradingCards />,
+  sportsbook: <SportsBook />,
 };
 
 function tabFromHash(hash: string): TabId {

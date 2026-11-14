@@ -1,6 +1,7 @@
 import { createHash, randomBytes, scrypt, timingSafeEqual } from "node:crypto";
 import { promisify } from "node:util";
 import { MANAGERS_BY_TEAM } from "../../src/content/managers";
+import type { Bet } from "../../src/lib/bets/types";
 
 // Accounts for the league's managers: email + password, one account per
 // manager. Passwords are scrypt-hashed but otherwise kept deliberately simple
@@ -31,6 +32,11 @@ export interface AuthStore {
   putSession(tokenHash: string, session: Session): Promise<void>;
   getSession(tokenHash: string): Promise<Session | null>;
   deleteSession(tokenHash: string): Promise<void>;
+  listBets(): Promise<Bet[]>;
+  getBet(id: string): Promise<Bet | null>;
+  createBet(bet: Bet): Promise<void>;
+  /** Applies `patch` only if the bet is still in the `from` status. False if it already moved on. */
+  updateBet(id: string, from: Bet["status"], patch: Partial<Bet>): Promise<boolean>;
 }
 
 export interface AuthResult {
@@ -109,6 +115,13 @@ export async function me(store: AuthStore, token: string | undefined): Promise<A
   const session = token ? await store.getSession(hashToken(token)) : null;
   if (!session || session.expiresAt <= Date.now() / 1000) return { status: 200, body: { user: null } };
   return { status: 200, body: { user: { email: session.email, manager: session.manager } } };
+}
+
+/** The logged-in manager for a session cookie, or null. */
+export async function currentUser(store: AuthStore, token: string | undefined) {
+  const session = token ? await store.getSession(hashToken(token)) : null;
+  if (!session || session.expiresAt <= Date.now() / 1000) return null;
+  return { email: session.email, manager: session.manager };
 }
 
 export async function logout(store: AuthStore, token: string | undefined): Promise<AuthResult> {

@@ -2,49 +2,23 @@ import { createServer } from "node:http";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { route } from "../lambda/auth/handler";
-import type { AuthStore, Session, User } from "../lambda/auth/core";
+import { createMemoryStore, type MemoryData } from "../lambda/auth/memory";
 
 // Local stand-in for the auth Lambda + DynamoDB: same request handling, with
-// accounts kept in a JSON file so they survive restarts. `next dev` proxies
-// /api/* here (see next.config.mjs).
+// accounts and bets kept in a JSON file so they survive restarts. `next dev`
+// proxies /api/* here (see next.config.mjs).
 
 const PORT = Number(process.env.AUTH_PORT ?? 8787);
 const FILE = "node_modules/.cache/dev-auth.json";
 
-interface Data {
-  users: Record<string, User>;
-  sessions: Record<string, Session>;
-}
+const data: MemoryData = existsSync(FILE)
+  ? JSON.parse(readFileSync(FILE, "utf8"))
+  : { users: {}, sessions: {}, bets: {} };
 
-const data: Data = existsSync(FILE) ? JSON.parse(readFileSync(FILE, "utf8")) : { users: {}, sessions: {} };
-const save = () => {
+const store = createMemoryStore(data, (d) => {
   mkdirSync(dirname(FILE), { recursive: true });
-  writeFileSync(FILE, JSON.stringify(data, null, 2));
-};
-
-const store: AuthStore = {
-  async createUser(user) {
-    if (data.users[user.email]) return "email-taken";
-    if (Object.values(data.users).some((u) => u.manager === user.manager)) return "manager-taken";
-    data.users[user.email] = user;
-    save();
-    return "ok";
-  },
-  async getUser(email) {
-    return data.users[email] ?? null;
-  },
-  async putSession(hash, session) {
-    data.sessions[hash] = session;
-    save();
-  },
-  async getSession(hash) {
-    return data.sessions[hash] ?? null;
-  },
-  async deleteSession(hash) {
-    delete data.sessions[hash];
-    save();
-  },
-};
+  writeFileSync(FILE, JSON.stringify(d, null, 2));
+});
 
 createServer(async (req, res) => {
   const chunks: Buffer[] = [];

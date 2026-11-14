@@ -1,4 +1,5 @@
-import { type AuthResult, type AuthStore, SESSION_SECONDS, login, logout, me, signup } from "./core";
+import { cancelBet, listBets, matchBet, placeBet, settleBet } from "./bets";
+import { type AuthResult, type AuthStore, SESSION_SECONDS, currentUser, login, logout, me, signup } from "./core";
 import { createDynamoStore } from "./dynamo";
 
 // Lambda Function URL handler (payload format v2) behind CloudFront at /api/auth/*.
@@ -56,6 +57,12 @@ export async function route(store: AuthStore, event: HttpEvent) {
 
   if (method === "GET" && path === "/api/auth/me") return respond(await me(store, token));
 
+  if (path === "/api/bets" || path.startsWith("/api/bets/")) {
+    const user = await currentUser(store, token);
+    if (!user) return json(401, { error: "Log in to use the SportsBook." });
+    if (method === "GET" && path === "/api/bets") return respond(await listBets(store));
+  }
+
   if (method === "POST") {
     // Browsers can't send JSON cross-site without a preflight, which blocks forged form posts.
     if (!event.headers?.["content-type"]?.startsWith("application/json")) {
@@ -67,6 +74,15 @@ export async function route(store: AuthStore, event: HttpEvent) {
     if (path === "/api/auth/signup") return respond(await signup(store, body));
     if (path === "/api/auth/login") return respond(await login(store, body));
     if (path === "/api/auth/logout") return respond(await logout(store, token));
+
+    if (path.startsWith("/api/bets")) {
+      const user = (await currentUser(store, token))!; // checked above
+      if (path === "/api/bets") return respond(await placeBet(store, user.manager, body));
+      const [, , , id, action] = path.split("/");
+      if (action === "match") return respond(await matchBet(store, user.manager, id));
+      if (action === "cancel") return respond(await cancelBet(store, user.manager, id));
+      if (action === "settle") return respond(await settleBet(store, user.manager, id, body.winner));
+    }
   }
 
   return json(404, { error: "Not found." });

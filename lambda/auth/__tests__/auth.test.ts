@@ -1,33 +1,7 @@
 /** @jest-environment node */
-import { type AuthStore, type Session, type User, MANAGER_NAMES, SESSION_SECONDS } from "../core";
+import { MANAGER_NAMES, SESSION_SECONDS } from "../core";
 import { COOKIE_NAME, route } from "../handler";
-
-function memoryStore(): AuthStore {
-  const users = new Map<string, User>();
-  const managers = new Set<string>();
-  const sessions = new Map<string, Session>();
-  return {
-    async createUser(user) {
-      if (users.has(user.email)) return "email-taken";
-      if (managers.has(user.manager)) return "manager-taken";
-      users.set(user.email, user);
-      managers.add(user.manager);
-      return "ok";
-    },
-    async getUser(email) {
-      return users.get(email) ?? null;
-    },
-    async putSession(hash, session) {
-      sessions.set(hash, session);
-    },
-    async getSession(hash) {
-      return sessions.get(hash) ?? null;
-    },
-    async deleteSession(hash) {
-      sessions.delete(hash);
-    },
-  };
-}
+import { createMemoryStore as memoryStore } from "../memory";
 
 const post = (path: string, body: unknown, cookie?: string) => ({
   rawPath: path,

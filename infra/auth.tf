@@ -52,7 +52,7 @@ resource "aws_iam_role" "auth" {
 data "aws_iam_policy_document" "auth" {
   statement {
     effect    = "Allow"
-    actions   = ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:DeleteItem"]
+    actions   = ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:DeleteItem", "dynamodb:UpdateItem", "dynamodb:Scan"]
     resources = [aws_dynamodb_table.auth.arn]
   }
 
