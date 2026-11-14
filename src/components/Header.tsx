@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
+import AccountMenu from "./AccountMenu";
 import ColorModeToggle from "./ColorModeToggle";
 import FootballIcon from "./FootballIcon";
 
@@ -43,10 +44,11 @@ export default function Header() {
               underline="hover"
               color="text.secondary"
               variant="body2"
-              sx={{ "&:hover": { color: "text.primary" } }}
+              sx={{ display: { xs: "none", sm: "inline" }, "&:hover": { color: "text.primary" } }}
             >
               isaiahofalt.com
             </Link>
+            <AccountMenu />
             <ColorModeToggle />
           </Stack>
         </Toolbar>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Roboto } from "next/font/google";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
+import AuthProvider from "@/components/AuthProvider";
 import ThemeRegistry from "@/components/ThemeRegistry";
 import "./globals.css";
 
@@ -50,7 +51,9 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${oswald.variable}`} suppressHydrationWarning>
       <body>
         <InitColorSchemeScript />
-        <ThemeRegistry>{children}</ThemeRegistry>
+        <ThemeRegistry>
+          <AuthProvider>{children}</AuthProvider>
+        </ThemeRegistry>
       </body>
     </html>
   );
