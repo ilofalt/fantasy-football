@@ -1,7 +1,7 @@
 // Hand-written league news, newest first. Edit this file to publish a new
 // story; the News tab renders whatever is here.
 //
-// Last updated: Week 9 final, including Monday night (Nov 9, 2026).
+// Last updated: Week 10 in progress, Sunday night (Nov 15, 2026).
 
 export type NewsCategory =
   | "Recap"
@@ -32,6 +32,27 @@ export interface NewsArticle {
 }
 
 export const news: NewsArticle[] = [
+  {
+    id: "week-10-sunday",
+    category: "Recap",
+    title: "Week 10, Sunday night: Daniel drops 149, Matthew clinches his first playoff spot ever",
+    dek: "Four games are done and two are all but done. Monday night's Chargers-Ravens game decides nothing except how bad Noah's week looks.",
+    date: "2026-11-15",
+    paragraphs: [
+      "Daniel beat Ethan 149.32 to 126.02. That's his best score of the season by more than 27 points and the sixth-highest score by anyone this year. The worst team in league history has now won three straight. Dak Prescott scored 36.42, a week after Daniel left him on the bench, and George Pickens scored 36.00. Pickens came from Isaiah in their trade; Bhayshul Tuten, who went the other way, scored 19.80. Ethan has lost three straight, and his head is now the only shiny thing on his team.",
+      "Matthew beat Chris 142.18 to 119.78 behind Jahmyr Gibbs (42.70) and Emmett Johnson (33.60). At 9-1 he has clinched a playoff spot, no matter what happens the rest of the way. It's the first time he has ever made the playoffs, and someone should probably explain to him how they work. Chris left Seth McGowan (18.64) on the bench, presumably because the lineup lock hit during a League of Legends match.",
+      "Raymond beat Zachary 126.02 to 99.86. Ray won while leaving Cam Skattebo's 28.20 on his bench, which is the most Ray way possible to win a game; enjoy it, it won't happen often. Zachary benched Patrick Mahomes (35.92) for Jayden Daniels (23.76), which Officer Zachary will note in his report as a judgment call. lanny beat Andrew 111.20 to 86.26 unless Baltimore's defense scores 25 on Monday night. Andrew's Ravens are the only thing he has left, which means he started a defense, which means he checked his lineup at some point. Unconfirmed.",
+    ],
+    list: [
+      { label: "Daniel 149.32 · Ethan 126.02 (final)", detail: "Dak 36.42, Pickens 36.00, Chase 27.60. Daniel's third straight win. Ethan loses his third straight" },
+      { label: "Matthew 142.18 · Chris 119.78 (final)", detail: "Matthew is 9-1 and has clinched a playoff spot for the first time in his life" },
+      { label: "Raymond 126.02 · Zachary 99.86 (final)", detail: "Ray wins with 28.20 on his bench. Zachary benched Mahomes. Nobody looks good here" },
+      { label: "Nicholas 131.36 · Isaiah 98.60 (Monday left)", detail: "Christian McCaffrey scored 45.80, the top player of the week so far. Isaiah needs Omarion Hampton to outscore Zay Flowers by 33. Yahoo gives Nicholas a 99% chance, which he has presumably asked a chatbot to confirm. The victim-weight commissioner doesn't have the muscle to argue" },
+      { label: "Jonathan 103.76 · Noah 52.30 (Monday left)", detail: "Noah needs 52 from Ladd McConkey. He's at the lowest score of the season unless McConkey gets 10. Jonathan left Matthew Stafford (20.76) on his bench and still won't stop talking about how this would look in PPR" },
+      { label: "lanny 111.20 · Andrew 86.26 (Monday left)", detail: "Andrew needs 25 from the Ravens defense. lanny's done and can go back to his card show" },
+    ],
+    outro: "If Monday night goes as expected: Matthew 9-1; Jonathan 7-3; Ethan, lanny, and Nicholas 6-4; Zachary 5-5; Isaiah, Andrew, and Raymond 4-6; Daniel, Chris, and Noah 3-7. Standings, the Weekly Report, and the Playoff Picture update once Monday's game is final.",
+  },
   {
     id: "week-9-recap",
     category: "Recap",
