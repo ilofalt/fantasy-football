@@ -6,7 +6,7 @@
 // with Nicholas set to $0. Check these against Yahoo, and update them after
 // the commissioner settles bets and moves FAAB around.
 
-export const FAAB_UPDATED = "Sun Nov 15, 2026 (from Yahoo)";
+export const FAAB_UPDATED = "Mon Nov 16, 2026 (from Yahoo)";
 
 export const FAAB_BALANCES: Record<string, number> = {
   Isaiah: 0,

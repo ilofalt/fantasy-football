@@ -3,28 +3,28 @@ import type { StandingRow } from "@/lib/playoffs/seed";
 // Regular-season standings, hand-updated after each week's games are final.
 // Seeds and both brackets on the Playoff Picture tab are computed from this.
 
-export const STANDINGS_THROUGH_WEEK = 9;
+export const STANDINGS_THROUGH_WEEK = 10;
 export const REGULAR_SEASON_WEEKS = 14;
 
 export const standings: StandingRow[] = [
-  { manager: "Matthew", wins: 8, losses: 1, ties: 0, pointsFor: 1061.7, pointsAgainst: 946.48, streak: "W4" },
-  { manager: "Ethan", wins: 6, losses: 3, ties: 0, pointsFor: 1133.44, pointsAgainst: 953.26, streak: "L2" },
-  { manager: "Jonathan", wins: 6, losses: 3, ties: 0, pointsFor: 1058.8, pointsAgainst: 963.8, streak: "W3" },
-  { manager: "Zachary", wins: 5, losses: 4, ties: 0, pointsFor: 983.84, pointsAgainst: 958.0, streak: "W1" },
-  { manager: "lanny", wins: 5, losses: 4, ties: 0, pointsFor: 949.62, pointsAgainst: 1063.52, streak: "W1" },
-  { manager: "Nicholas", wins: 5, losses: 4, ties: 0, pointsFor: 941.88, pointsAgainst: 907.68, streak: "W1" },
-  { manager: "Isaiah", wins: 4, losses: 5, ties: 0, pointsFor: 987.58, pointsAgainst: 960.14, streak: "L1" },
-  { manager: "Andrew", wins: 4, losses: 5, ties: 0, pointsFor: 884.48, pointsAgainst: 906.58, streak: "L4" },
-  { manager: "Raymond", wins: 3, losses: 6, ties: 0, pointsFor: 960.08, pointsAgainst: 1034.32, streak: "L2" },
-  { manager: "Chris", wins: 3, losses: 6, ties: 0, pointsFor: 920.64, pointsAgainst: 985.98, streak: "L1" },
-  { manager: "Noah", wins: 3, losses: 6, ties: 0, pointsFor: 896.02, pointsAgainst: 936.52, streak: "L1" },
-  { manager: "Daniel", wins: 2, losses: 7, ties: 0, pointsFor: 818.84, pointsAgainst: 980.64, streak: "W2" },
+  { manager: "Matthew", wins: 9, losses: 1, ties: 0, pointsFor: 1203.88, pointsAgainst: 1066.26, streak: "W5" },
+  { manager: "Jonathan", wins: 7, losses: 3, ties: 0, pointsFor: 1177.56, pointsAgainst: 1016.1, streak: "W4" },
+  { manager: "Ethan", wins: 6, losses: 4, ties: 0, pointsFor: 1259.46, pointsAgainst: 1102.08, streak: "L3" },
+  { manager: "Nicholas", wins: 6, losses: 4, ties: 0, pointsFor: 1080.64, pointsAgainst: 1026.28, streak: "W2" },
+  { manager: "lanny", wins: 6, losses: 4, ties: 0, pointsFor: 1060.82, pointsAgainst: 1154.28, streak: "W2" },
+  { manager: "Zachary", wins: 5, losses: 5, ties: 0, pointsFor: 1083.7, pointsAgainst: 1084.02, streak: "L1" },
+  { manager: "Isaiah", wins: 4, losses: 6, ties: 0, pointsFor: 1106.18, pointsAgainst: 1098.9, streak: "L2" },
+  { manager: "Raymond", wins: 4, losses: 6, ties: 0, pointsFor: 1086.1, pointsAgainst: 1134.18, streak: "W1" },
+  { manager: "Andrew", wins: 4, losses: 6, ties: 0, pointsFor: 975.24, pointsAgainst: 1017.78, streak: "L5" },
+  { manager: "Chris", wins: 3, losses: 7, ties: 0, pointsFor: 1040.42, pointsAgainst: 1128.16, streak: "L2" },
+  { manager: "Daniel", wins: 3, losses: 7, ties: 0, pointsFor: 967.66, pointsAgainst: 1106.66, streak: "W3" },
+  { manager: "Noah", wins: 3, losses: 7, ties: 0, pointsFor: 948.32, pointsAgainst: 1055.28, streak: "L2" },
 ];
 
 export const bubbleNotes: string[] = [
-  "Three teams are 5-4 and hold seeds 4 through 6: Zachary, lanny, and Nicholas. Zachary would like everyone to keep moving, nothing to see here. Nicholas has the last playoff spot, 7.74 points for behind lanny. The AI says Nicholas is fine; lanny is too busy pricing Pokémon cards to worry.",
-  "Isaiah fell from 4th to 7th after losing to Daniel by 0.82. He's one game behind Nicholas and has scored 45.70 more points, so a tie would go his way. Unlike his scale, the tiebreaker is on his side.",
-  "Raymond is 3-6 despite the 6th-most points in the league (960.08), a rare skill. He's two games out with five weeks left, and nobody's holding their breath.",
-  "Matthew (8-1) has won four straight and leads Ethan and Jonathan by two games for the 1st seed. It would be his first playoff appearance ever. Ethan has no hair to lose over it.",
-  "Daniel has won two straight and is three games out of 6th place with five weeks to go. Still the worst team in league history, just with momentum.",
+  "Matthew (9-1) has clinched a playoff spot, the first of his life, and has an 85% chance at the 1st seed. Jonathan (7-3) is two games back and plays him in Week 11. Ethan has no hair to lose over it, but he's lost three straight anyway.",
+  "Ethan, Nicholas, and lanny are all 6-4 and hold seeds 3 through 5. Nicholas plays Ethan this week in their first-ever meeting; the AI has already run the numbers. lanny gets Noah, who may not set his lineup, which is the easiest draw in Pokémon or football.",
+  "Zachary (5-5) holds the 6th seed by a game over Isaiah, Raymond, and Andrew, despite losing to Ray. Zachary plays Isaiah this week; if Isaiah wins, they're tied and Isaiah's 22.48-point edge in points for wins the tiebreaker. Unlike his scale, the tiebreaker is on his side.",
+  "Raymond is 4-6 with the 4th-best all-play record in the league, a rare skill. He's a game out with four to play and needs help, which he has never once given anyone else. Andrew has lost five straight and has three bye-week starters for Week 11; he'll find out when he gets back from the dealership.",
+  "Chris, Daniel, and Noah are 3-7 and still alive, barely. Daniel has won three straight and needs to win out plus a lot of help: Zachary would have to lose three of his last four, Isaiah and Ray two each, and Andrew and Chris one each. Still the worst team in league history, now with a winning streak and a pulse.",
 ];
