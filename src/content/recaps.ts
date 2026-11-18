@@ -20,6 +20,8 @@ export interface RecapStory {
   story: string;
   /** The film room: lineup calls, trades, pickups, and drops that cost them. */
   mistakes: Mistake[];
+  /** Overrides the film room heading ("Film room: what went wrong"). */
+  filmRoomTitle?: string;
 }
 
 export const RECAP_WEEK = 10;
@@ -118,13 +120,15 @@ export const recapStories: Record<string, RecapStory> = {
     ],
   },
   Chris: {
-    headline: "Set your lineup during a loading screen, lost by 22.40.",
+    // Handle with care: Chris gets the gentle, supportive version.
+    headline: "Look at you go, buddy! 119.78 points! We're so proud of you.",
     story:
-      "You beat your projection, and Deebo Samuel (26.04) and Parker Washington (24.6) both went off. But Chris Rodriguez Jr. started at flex and scored 1.0 while Seth McGowan scored 18.64 on your bench. Swapping them would have cut the loss to under 5. You're 3-7 with a 2.9% chance at the playoffs, which is roughly your ranked win rate.",
+      "You beat your projection by 6.30, and that's what really matters. Deebo Samuel (26.04) and Parker Washington (24.6) had huge games, and you picked them all by yourself. Matthew scored a little more, but he's had a lucky season, and nobody's keeping score. (Yahoo is, but don't worry about Yahoo.) You're 3-7, which is 7-3 if you read it in a mirror. Everyone in the league thinks you're doing amazing, sweetie.",
+    filmRoomTitle: "Film room: gold stars",
     mistakes: [
-      { kind: "Bench", text: "Seth McGowan scored 18.64 on your bench while Chris Rodriguez Jr. started at flex and scored 1.0. You lost by 22.40." },
-      { kind: "Trade", text: "You traded for Josh Downs, your own draft pick whom you'd dropped a week earlier, and he scored 13.2 on your bench." },
-      { kind: "Drop", text: "You dropped the Rams defense on Nov 3. lanny claimed them for $5 and they scored 16.5." },
+      { kind: "Bench", text: "Seth McGowan scored 18.64 on your bench, which means you have so much depth! Chris Rodriguez Jr. scored 1.0 at flex, and one is more than zero. Great job!" },
+      { kind: "Trade", text: "You brought Josh Downs home again after letting him go, because you believe in second chances. He scored 13.2 keeping your bench warm for you. What a good teammate." },
+      { kind: "Drop", text: "You shared the Rams defense with lanny, and they scored 16.5 for him. Sharing is caring, and you're the most caring manager in the league." },
     ],
   },
   Raymond: {

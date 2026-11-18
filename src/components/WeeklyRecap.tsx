@@ -242,7 +242,7 @@ function RecapBody({
           {story && story.mistakes.length > 0 && (
             <Box>
               <Typography variant="overline" color="text.secondary" component="h3">
-                Film room: what went wrong
+                {story.filmRoomTitle ?? "Film room: what went wrong"}
               </Typography>
               <Stack component="ul" spacing={1.25} sx={{ listStyle: "none", p: 0, m: 0, mt: 0.5 }}>
                 {story.mistakes.map((m) => (
