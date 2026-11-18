@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { news, type NewsArticle } from "@/content/news";
 import Permalink from "./Permalink";
+import { RecapLink } from "./WeeklyRecap";
 
 export function formatDate(iso: string): string {
   // Parse as a calendar date, not UTC midnight, so it never shifts a day.
@@ -35,6 +36,7 @@ function ArticleCard({ article, featured }: { article: NewsArticle; featured: bo
           <Typography color="text.secondary" sx={{ mt: 1 }}>
             {article.dek}
           </Typography>
+          {article.recapWeek !== undefined && <RecapLink week={article.recapWeek} />}
         </Box>
         {article.paragraphs.map((p, i) => (
           <Typography key={i} sx={{ lineHeight: 1.7 }}>

@@ -29,6 +29,8 @@ export interface NewsArticle {
   list?: NewsListItem[];
   /** Optional closing paragraph shown after the list. */
   outro?: string;
+  /** Set on a week's final recap to link to that week's personalized manager recaps. */
+  recapWeek?: number;
 }
 
 export const news: NewsArticle[] = [
@@ -38,6 +40,7 @@ export const news: NewsArticle[] = [
     title: "Week 10 final: Daniel drops 148.82, Matthew clinches, and Noah posts the season's lowest score",
     dek: "Matthew is the first team into the playoffs, the first trip of his life. Isaiah falls a game behind Zachary for 6th, and the worst team in league history has won three straight.",
     date: "2026-11-16",
+    recapWeek: 10,
     paragraphs: [
       "Daniel beat Ethan 148.82 to 126.02, the top score of the week and his best of the season by 27 points (a stat correction shaved 0.50 off Sunday night's 149.32). Dak Prescott scored 36.42 a week after Daniel benched him, George Pickens scored 36.00, and Ja'Marr Chase added 27.60. Pickens came from Isaiah in their October trade. It's Daniel's third straight win, and for the first time all season he isn't in last place. He's still the worst team in league history; he just has company now. Ethan has lost three straight despite scoring the most points in the league, and the glare off his head can't distract from it anymore.",
       "Matthew beat Chris 142.18 to 119.78 behind Jahmyr Gibbs (42.70) and Emmett Johnson (33.60). At 9-1 he has clinched a playoff spot, the first team in this season and the first playoff berth of his life. Someone should explain to him that there are more games after this. Chris left Seth McGowan (18.64) and Josh Downs (13.2) on his bench while starting Chris Rodriguez Jr. (1.0) at flex. He set that lineup during a League of Legends queue, presumably.",

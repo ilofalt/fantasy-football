@@ -14,6 +14,7 @@ import Tabs from "@mui/material/Tabs";
 import TextField from "@mui/material/TextField";
 import { MANAGERS_BY_TEAM } from "@/content/managers";
 import { useAuth } from "./AuthProvider";
+import { useRecap } from "./WeeklyRecap";
 
 type Mode = "login" | "signup";
 
@@ -25,6 +26,7 @@ export default function AccountMenu() {
   const [manager, setManager] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const recap = useRecap();
 
   if (!ready) return null;
 
@@ -32,6 +34,11 @@ export default function AccountMenu() {
     return (
       <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
         <span data-testid="greeting">Hi, {user.manager}</span>
+        {recap.available && (
+          <Button size="small" color="inherit" onClick={recap.openRecap}>
+            Recap
+          </Button>
+        )}
         <Button size="small" color="inherit" onClick={() => logout()}>
           Log out
         </Button>

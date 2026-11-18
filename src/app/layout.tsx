@@ -3,6 +3,7 @@ import { Oswald, Roboto } from "next/font/google";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import AuthProvider from "@/components/AuthProvider";
 import ThemeRegistry from "@/components/ThemeRegistry";
+import RecapProvider from "@/components/WeeklyRecap";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -52,7 +53,9 @@ export default function RootLayout({
       <body>
         <InitColorSchemeScript />
         <ThemeRegistry>
-          <AuthProvider>{children}</AuthProvider>
+          <AuthProvider>
+            <RecapProvider>{children}</RecapProvider>
+          </AuthProvider>
         </ThemeRegistry>
       </body>
     </html>
