@@ -67,10 +67,11 @@ export const CARD_TEXT: Record<string, CardText> = {
     flavor: "The only card in the set that comes pre-creased.",
   },
   Chris: {
-    position: "Ranked Grinder",
-    ability: { name: "Between Games", text: "Sets his lineup during League of Legends loading screens." },
-    weakness: "Monday Night Football starting during a ranked match.",
-    flavor: "Spends more time in the Rift than on the waiver wire.",
+    // Handle with care: Chris gets the gentle, supportive version.
+    position: "Everyone's Favorite",
+    ability: { name: "Big Heart", text: "Believes in every player on his roster, even the ones on his bench. Especially those." },
+    weakness: "None. Chris is perfect just the way he is.",
+    flavor: "Won the Downs trade in Week 11. We were never worried.",
   },
   Noah: {
     position: "Dynasty GM",

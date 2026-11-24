@@ -43,8 +43,8 @@ describe("Rivalries", () => {
 
   it("shows this week's games and the league's best rivalries", () => {
     renderWithTheme(<Rivalries />);
-    expect(screen.getByRole("heading", { name: /Week 11's history/ })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Most played: Chris vs\. lanny/ })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Week 12's history/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Most played: Jonathan vs\. Matthew/ })).toBeInTheDocument();
     expect(screen.getAllByRole("button", { name: /^\w+ vs\. \w+: / })).toHaveLength(12 * 11);
   });
 });

@@ -6,21 +6,21 @@
 // with Nicholas set to $0. Check these against Yahoo, and update them after
 // the commissioner settles bets and moves FAAB around.
 
-export const FAAB_UPDATED = "Mon Nov 16, 2026 (from Yahoo)";
+export const FAAB_UPDATED = "Mon Nov 23, 2026 (from Yahoo)";
 
 export const FAAB_BALANCES: Record<string, number> = {
   Isaiah: 0,
   Nicholas: 0,
   Andrew: 95,
-  Noah: 16,
+  Noah: 10,
   lanny: 50,
   Daniel: 0,
-  Ethan: 26,
+  Ethan: 9,
   Chris: 5,
-  Jonathan: 47,
+  Jonathan: 41,
   Raymond: 59,
   Zachary: 53,
-  Matthew: 25,
+  Matthew: 20,
 };
 
 // While the SportsBook is just a test, anyone with no FAAB left plays with this much.

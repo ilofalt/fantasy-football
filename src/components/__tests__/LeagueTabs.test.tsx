@@ -57,10 +57,10 @@ describe("LeagueTabs", () => {
   it("opens the tab from a deep link to a specific item and scrolls to it", () => {
     const scrollIntoView = jest.fn();
     Element.prototype.scrollIntoView = scrollIntoView;
-    window.history.replaceState(null, "", "/#news/week-11-preview");
+    window.history.replaceState(null, "", "/#news/week-12-preview");
     renderWithTheme(<LeagueTabs />);
     expect(screen.getByRole("tab", { name: "News" })).toHaveAttribute("aria-selected", "true");
-    expect(document.getElementById("week-11-preview")).not.toBeNull();
+    expect(document.getElementById("week-12-preview")).not.toBeNull();
     expect(scrollIntoView).toHaveBeenCalled();
   });
 

@@ -52,6 +52,10 @@ The deploy sync excludes `data/*` so deploys never delete the live scoreboard. L
 
 **One-time setup:** create a Yahoo app with Fantasy Sports read access, then run `npm run yahoo:auth` in your own terminal. It asks for the app's Client ID and Secret, has you approve access in the browser, and stores the credentials in SSM — nothing touches disk or Terraform state. The league ID is the `yahoo_league_id` Terraform variable.
 
+## Weekly updates
+
+After each NFL week is final, follow [`WEEKLY_UPDATE.md`](WEEKLY_UPDATE.md). It lists every file that changes: scores, standings and the Playoff Picture, trades, waivers, FAAB, news, the personal recaps, and the running jokes.
+
 ## Deployment
 
 Pushing to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml): build → sync `out/` to S3 → invalidate the CloudFront cache. Authentication to AWS uses OIDC federation (GitHub issues a short-lived signed token, AWS trades it for temporary credentials scoped to a single least-privilege deploy role) — no AWS keys are stored in GitHub.

@@ -4,7 +4,7 @@
 // in the same spirit as the trading cards: harmless.
 //
 // To publish a new week: set RECAP_WEEK, make sure week-N.json is in
-// src/content/weekly, and replace the storylines. Managers who dismissed last
+// src/content/weekly, and replace the storylines (see WEEKLY_UPDATE.md). Managers who dismissed last
 // week's recap will see the new one on their next visit.
 
 export type MistakeKind = "Bench" | "Lineup" | "Trade" | "Waiver" | "Drop";
@@ -24,131 +24,133 @@ export interface RecapStory {
   filmRoomTitle?: string;
 }
 
-export const RECAP_WEEK = 10;
+export const RECAP_WEEK = 11;
 
 export const recapStories: Record<string, RecapStory> = {
-  Nicholas: {
-    headline: "The AI started McCaffrey. The AI gets the credit.",
+  Zachary: {
+    headline: "You finally started Mahomes. Top score of the week.",
     story:
-      "Christian McCaffrey dropped 45.80 with 161 receiving yards, the best game by any player this week, and Brock Purdy added 32.16. That was enough to cover a 49ers defense that scored 1.5 and a Brock Bowers who scored 2.8. Two straight wins, 6-4, and every time someone asks how you did it, you answer \"Great question!\"",
+      "Patrick Mahomes threw for 324 yards and 3 touchdowns for 24.96, Bucky Irving added 20.0, and James Cook III 18.2. 122.66 was the best score in the league and your lineup was perfect: not a single bench point left behind. You beat Isaiah, you're 6-5, and you're the 5th seed. Case closed. You may now return to your donut.",
     mistakes: [
-      { kind: "Drop", text: "You cut the Vikings in September. They scored 22.5 for Ethan this week while your 49ers defense gave up 35+ and scored 1.5. The AI was not consulted." },
-      { kind: "Bench", text: "Kaelon Black scored 14.6 on your bench while Garrett Wilson started at flex and scored 10.6 with a fumble." },
-      { kind: "Lineup", text: "Brock Bowers scored 2.8 against a 10.98 projection. Some prompts just don't work." },
-    ],
-  },
-  Isaiah: {
-    headline: "Beat your projection by 13.65. Lost by 20.16. Classic featherweight.",
-    story:
-      "It was the closest game of the week, which is like being the heaviest guy in the flyweight division. You needed 32.76 from Omarion Hampton on Monday night and got 20.00. Meanwhile George Pickens, whom you traded to Daniel, scored 36.00 for somebody else. You're 4-6 and a game out, and you built a website so the whole league can watch.",
-    mistakes: [
-      { kind: "Trade", text: "You traded George Pickens to Daniel in October. He caught 3 touchdowns for 36.00 this week. Bhayshul Tuten, what you got back, scored 19.8." },
-      { kind: "Waiver", text: "Braelon Allen was a $41 bid, the third-biggest of the season. He started and scored 5.6." },
-      { kind: "Drop", text: "You drafted Isaiah Likely and cut him. He scored 20.2 for Ray this week. Weak hands to match the weak frame." },
-      { kind: "Bench", text: "Adonai Mitchell scored 7.4 on your bench while Tetairoa McMillan started and scored 4.5." },
-    ],
-  },
-  lanny: {
-    headline: "Pulled a holo from a pack you bought for the gum.",
-    story:
-      "Kyren Williams scored 3.7, Travis Kelce 3.5, and Jordan Love 11.8. Then Cam Little kicked 170 yards of field goals for 21.0 and the Rams defense added 16.5. Your kicker and defense carried the team. It was only the 9th-best score of the week and it still won. Two straight, 6-4, and the booster box is already in your cart.",
-    mistakes: [
-      { kind: "Trade", text: "The Ray trade lost another week, 53.4 to 45.5. Amon-Ra St. Brown scored 22.8 for Ray while Jameson Williams scored 6.0 for you. Losing a trade to Ray is a rare and special skill." },
-      { kind: "Lineup", text: "Kyren Williams scored 3.7 on a 16.99 projection while Justice Hill scored 5.3 on your bench." },
-      { kind: "Waiver", text: "Travis Kelce, your $1 August pickup, scored 3.5. Still a better return than a Pokémon booster pack, barely." },
-    ],
-  },
-  Andrew: {
-    headline: "Five straight losses. Check the lineup between car auctions.",
-    story:
-      "Jaylen Warren scored 5.6 on a 16.32 projection, Jason Myers kicked for 2, and the Ravens defense put up 4.5. Jordyn Tyson scored 10 on your bench while Denzel Boston started and scored 3.82. You also dropped Justin Herbert, who scored 16.76. Heads up: you have three bye-week starters for Week 11. The autopilot you set in August doesn't know that.",
-    mistakes: [
-      { kind: "Trade", text: "Mike Evans, whom you traded for in October, has scored 0 two weeks straight, and Jeremiyah Love from the same deal is on IR. Nicholas got Quinshon Judkins (15.1) and Garrett Wilson (10.6) out of it." },
-      { kind: "Bench", text: "Jordyn Tyson scored 10 on your bench while Denzel Boston, another trade pickup, started and scored 3.82." },
-      { kind: "Drop", text: "You dropped Justin Herbert two weeks ago. He scored 16.76 this week." },
-      { kind: "Lineup", text: "Jason Myers kicked for 2. The Ravens defense needed 25 and got 4.5." },
-    ],
-  },
-  Jonathan: {
-    headline: "Four straight wins, and you still want PPR.",
-    story:
-      "Joe Burrow threw for 409 yards and 4 touchdowns for 33.16. Derrick Henry turned 20 total yards into 15.0 points by scoring touchdowns on both of his touches near the goal line. You're 7-3, and you'll still tell anyone who listens that Henry's two catches deserved more points.",
-    mistakes: [
-      { kind: "Waiver", text: "You paid $10 for Kaleb Johnson and dropped Mark Andrews to make room. Johnson started and scored 5.2; Andrews scored 10.7 on Monday night." },
-      { kind: "Drop", text: "You dropped Aaron Jones Sr. for Tank Dell. Jones scored 13.0 for Ethan; Dell scored 2.6 on your bench." },
-      { kind: "Waiver", text: "You dropped the Lions to pay $5 to get back the Bills, whom you'd dropped on Nov 5. The Lions scored 15.0. The Bills scored 12.5 on your bench." },
-    ],
-  },
-  Noah: {
-    headline: "52.30. The lowest score of the season.",
-    story:
-      "Drake Maye threw for 48 yards. Ladd McConkey started with a projection of 0 and delivered exactly that, while DK Metcalf scored 14.4 on your bench. Even with the perfect lineup you'd have lost by 52, so the lineup isn't the problem: this season just isn't in the five-year plan. You're 3-7, but the 2029 dynasty roster looks great.",
-    mistakes: [
-      { kind: "Lineup", text: "Ladd McConkey started with a projection of 0 and scored 0. DK Metcalf scored 14.4 on your bench. Yahoo was trying to tell you something." },
-      { kind: "Drop", text: "You cut Alvin Kamara on Saturday night. He scored 14.4 on Sunday." },
-      { kind: "Drop", text: "Jordan Love, whom you dropped in October for Emanuel Wilson, has scored 150.56 since. He's been on the worst-drops list since it started." },
-    ],
-  },
-  Daniel: {
-    headline: "The worst team in league history put up the best score of the week.",
-    story:
-      "Dak Prescott threw 5 touchdowns for 36.42, a week after you benched him. George Pickens, the player you got from Isaiah, caught 3 touchdowns for 36.00, and Ja'Marr Chase went for 231 yards. Drew Lock scored 16.1 on your bench just because he could. Three straight wins, and you're out of last place for the first time all season. Still the worst team in league history, but now with a pulse.",
-    mistakes: [
-      { kind: "Lineup", text: "Dak Prescott threw 5 touchdowns this week. Last week, you benched him." },
-      { kind: "Waiver", text: "Woody Marks was a $65 bid, the biggest of the season. He scored 8.5." },
-      { kind: "Bench", text: "Rico Dowdle scored 4.4 on your bench while Tyler Allgeier started and scored 1.9. You won by 22.80, so we'll allow it." },
-    ],
-  },
-  Ethan: {
-    headline: "Most points in the league. Three straight losses.",
-    story:
-      "126.02 tied for the 4th-best score of the week and would have beaten seven teams. It ran into Daniel's best game of the year instead. Chuba Hubbard scored 34.2 and the Vikings defense posted 8 sacks, but Jordan Addison started and scored 0. You'd pull your hair out over it, but there's none to pull.",
-    mistakes: [
-      { kind: "Lineup", text: "Jordan Addison started at flex with a projection of 0 and scored 0. That's an empty roster spot with extra steps." },
-      { kind: "Drop", text: "You dropped the Bills for Eddy Pineiro. The Bills scored 12.5 for Jonathan; Pineiro scored 7.8. You lost by 22.80." },
-      { kind: "Lineup", text: "Sam LaPorta scored 2.1 and Christian Watson 4.7, against a combined 22.02 projected." },
+      { kind: "Lineup", text: "Will Reichard kicked for 1.8 on an 8.87 projection. Your most reliable player all season picked the wrong week to go off duty." },
+      { kind: "Bench", text: "Jayden Daniels scored 18.06 on your bench. You made the right call, but it took you two weeks of benching Mahomes to get here." },
+      { kind: "Waiver", text: "Pat Freiermuth, your Thursday free-agent pickup, started and scored 5.5. Routine traffic stop, nothing found." },
     ],
   },
   Matthew: {
-    headline: "Clinched. Your first playoff spot ever.",
+    headline: "Six straight wins. Beat Ray and the 1st seed is yours.",
     story:
-      "Jahmyr Gibbs scored 42.70 and Emmett Johnson 33.60, which made up for 11.48 from Tyler Shough and 2.4 from Tucker Kraft. You're 9-1 with five straight wins, and you're in the playoffs for the first time in your life. Someone will explain how they work before Week 15.",
+      "Jahmyr Gibbs scored 27.8 and Emmett Johnson 24.8, and the Lions defense, which Jonathan dropped a week ago, scored 8.5 against Jonathan. Your lineup was perfect. You're 10-1 and a win over Raymond in Week 12 clinches the 1st seed, in the first playoff appearance of your life. The playoffs are the games after Week 14. You're welcome.",
+    filmRoomTitle: "Film room: nitpicks",
     mistakes: [
-      { kind: "Bench", text: "Konata Mumpfield, your $2 pickup, scored 9.6 on your bench. It cost you nothing, which is the most annoying thing about your season." },
-      { kind: "Lineup", text: "Tyler Shough scored 11.48 against a 20.02 projection, and Tucker Kraft scored 2.4. You won by 22.40 anyway." },
-      { kind: "Drop", text: "You cut Denzel Boston before Week 1. He's scored 85.54 since, for other people. You don't care; you clinched." },
+      { kind: "Lineup", text: "DeVonta Smith scored 5.6 on a 10.33 projection. You won by 25.88, so this is genuinely the worst thing that happened to you this week." },
+      { kind: "Drop", text: "You cut Jonah Coleman in September. He scored 34.9 for Noah this week and has 94.3 since you let him go." },
+      { kind: "Waiver", text: "Darren Waller cost $2 and scored 5.2. You'll survive." },
+    ],
+  },
+  lanny: {
+    headline: "Three straight wins. The booster box budget is secure.",
+    story:
+      "Travis Kelce, your $1 August pickup, scored 21.9, the Broncos defense put up 17, and Jameson Williams added 16.8. Justice Hill, whom you grabbed off waivers on Sunday night of Week 10, scored 15.6. 118.76 was the 3rd-best score of the week, and you're 7-4 and the 4th seed. You beat Noah by 5.66, and he left 18 points on his bench, so this one was a holo pull.",
+    mistakes: [
+      { kind: "Lineup", text: "Chase Brown scored 4.1 on a 13.45 projection, from the trade you keep losing to Ray." },
+      { kind: "Trade", text: "Javonte Williams scored 23.6 for Ray this week. Ray now leads the trade 253.9 to 189.7. Losing a trade to Ray is a rare and special skill." },
+      { kind: "Bench", text: "Jaylen Waddle scored 7.6 on your bench while Jalen Coker started at flex and scored 5.2." },
+    ],
+  },
+  Noah: {
+    headline: "Benched the 18.2. Started the 0.2. Lost by 5.66.",
+    story:
+      "Last week you started Ladd McConkey (0) and benched DK Metcalf (14.4). This week you benched McConkey and he scored 18.2, while Metcalf started and scored 0.2. Starting McConkey would have won by 12.34. Jonah Coleman ran for 3 touchdowns (34.9) and Ashton Jeanty added 23.9, and it still wasn't enough. You're 3-8, and Week 12 against Daniel is an elimination game. Good thing the dynasty team doesn't play Daniel.",
+    mistakes: [
+      { kind: "Bench", text: "Ladd McConkey scored 18.2 on your bench while DK Metcalf started and scored 0.2. That alone would have won the game." },
+      { kind: "Waiver", text: "Kirk Cousins cost $6 to fill in for Drake Maye and scored 8.4. You lost by 5.66." },
+      { kind: "Drop", text: "You cut Drew Stevens before Week 1. He kicked for 17.8 on waivers this week, more than Tyler Bass gave you (16.5)." },
+    ],
+  },
+  Raymond: {
+    headline: "Benched Skattebo when he scored 28. Started him for 3.8.",
+    story:
+      "Last week Cam Skattebo scored 28.2 on your bench. This week you started him and he scored 3.8. Jared Goff scored 21.86 on your bench while Caleb Williams started and scored 15.84. You still beat Chris 111.74 to 88.72, thanks to Javonte Williams (23.6) and the Bears defense (19.5). Two straight wins, 5-6, and a 29% chance at the playoffs. Now you get Matthew, who clinches the 1st seed by beating you. Fuck Ray, as always.",
+    mistakes: [
+      { kind: "Bench", text: "Jared Goff scored 21.86 on your bench while Caleb Williams started and scored 15.84." },
+      { kind: "Lineup", text: "Cam Skattebo: benched for 28.2 in Week 10, started for 3.8 in Week 11. Perfectly timed, both ways." },
+      { kind: "Drop", text: "You dropped the Giants for the Bengals. The Giants scored 10.0 on waivers; the Bengals scored 0.5 on your bench." },
+    ],
+  },
+  Andrew: {
+    headline: "Two pickups and a win. Who are you and what have you done with Andrew?",
+    story:
+      "You made two pickups in one day, Cameron Dicker (8.2) and Chig Okonkwo (8.1), and both started. CeeDee Lamb scored 23.7, C.J. Stroud 21.96, and Breece Hall 19.5, and the losing streak is over at five. But Mike Evans scored 19.9 on your bench while Jordyn Tyson started at flex and scored 1.5. You're 5-6, a game out, and that new car smell must be the app you finally opened.",
+    mistakes: [
+      { kind: "Bench", text: "Mike Evans scored 19.9 on your bench while Jordyn Tyson started at flex and scored 1.5." },
+      { kind: "Lineup", text: "Jaylen Warren scored 3.4 on a 16.17 projection, a week after scoring 5.6 on a 16.32 projection." },
+      { kind: "Trade", text: "Evans's 19.9 was his best game since you traded for him, and it counted for nothing. Nicholas still leads the trade 112.6 to 58.1." },
+    ],
+  },
+  Ethan: {
+    headline: "Losing streak over. The shine is back.",
+    story:
+      "Chuba Hubbard ran for 120 yards and 2 touchdowns (30.0), Saquon Barkley added 15.0, and Chimere Dike, a free agent you picked up on Thursday, scored 13.88. Bo Nix, whom Nicholas dropped in September, beat Nicholas with 12.5. You're 7-4 and the 2nd seed again, and you still lead the league in points. The head is gleaming.",
+    mistakes: [
+      { kind: "Drop", text: "You dropped Aaron Rodgers after one week. He scored 17.48 this week. Bo Nix scored 12.5 in his place." },
+      { kind: "Lineup", text: "The Vikings defense scored -2 and Chase McLaughlin kicked for 3." },
+      { kind: "Waiver", text: "Josh Cameron was the biggest bid of the week ($8). He scored 7.0 on your bench." },
+    ],
+  },
+  Jonathan: {
+    headline: "You started a tight end projected for 0. He scored 0.",
+    story:
+      "Dalton Kincaid was projected for 0 and delivered exactly that. Tyler Higbee was on bye, and so were Kaleb Johnson, Drake London, and Matthew Stafford on your bench. Joe Burrow scored 19.9, and Derrick Henry 18.1. The four-game winning streak is over, and Matthew started the Lions defense you dropped last week against you. You also dropped Puka Nacua, a wide receiver who catches passes, which you'd think a PPR merchant would value. You're 7-4 and the 3rd seed.",
+    mistakes: [
+      { kind: "Lineup", text: "Dalton Kincaid started at TE with a projection of 0 and scored 0." },
+      { kind: "Drop", text: "You dropped the Lions on Nov 14 to buy the Bills back. Matthew picked up the Lions and they scored 8.5 against you." },
+      { kind: "Drop", text: "You dropped Puka Nacua on Friday. He's not on anyone's roster now. Bold move for a guy who wants catches to count." },
+      { kind: "Waiver", text: "Kaleb Johnson, your $10 pickup, was on bye. He's scored 5.2 for you total." },
+    ],
+  },
+  Isaiah: {
+    headline: "Three straight losses. Your playoff odds weigh less than you do.",
+    story:
+      "93.04 against a 106.58 projection. Bhayshul Tuten scored 6.3, Kyle Monangai 1.8, and Elic Ayomanor, your Sunday morning pickup, 4.2. Meanwhile George Pickens scored 19.3 for Daniel, and the trade lead you were so proud of is down to 5 points. Zachary scored the most points in the league against you. You're 4-7, 9th, and down to an 8.8% chance at the playoffs, and you built the website that tells everyone.",
+    mistakes: [
+      { kind: "Bench", text: "Braelon Allen, your $41 bid, scored 11.9 on your bench while Kyle Monangai started and scored 1.8." },
+      { kind: "Trade", text: "George Pickens scored 19.3 for Daniel; Bhayshul Tuten scored 6.3 for you. Your lead in that trade is down to 89.1 to 84.1." },
+      { kind: "Lineup", text: "Bhayshul Tuten scored 6.3 on a 16.63 projection." },
+      { kind: "Waiver", text: "You dropped Tutu Atwell on Sunday morning for Elic Ayomanor, who started and scored 4.2." },
     ],
   },
   Chris: {
     // Handle with care: Chris gets the gentle, supportive version.
-    headline: "Look at you go, buddy! 119.78 points! We're so proud of you.",
+    headline: "Chris, you won a trade! We are SO proud of you!",
     story:
-      "You beat your projection by 6.30, and that's what really matters. Deebo Samuel (26.04) and Parker Washington (24.6) had huge games, and you picked them all by yourself. Matthew scored a little more, but he's had a lucky season, and nobody's keeping score. (Yahoo is, but don't worry about Yahoo.) You're 3-7, which is 7-3 if you read it in a mirror. Everyone in the league thinks you're doing amazing, sweetie.",
+      "Josh Downs scored 7.4 this week, and that means you're officially winning the Downs trade, 33.1 to 27.2. We always knew you had it in you. Your Texans defense scored 18.5, one of the best defenses of the week, and you picked them all by yourself. Raymond scored a few more points than you, but Raymond is Raymond, and nobody likes it when he wins. You're 3-8, which is just 8-3 spelled differently. Everyone in the league is cheering for you, buddy.",
     filmRoomTitle: "Film room: gold stars",
     mistakes: [
-      { kind: "Bench", text: "Seth McGowan scored 18.64 on your bench, which means you have so much depth! Chris Rodriguez Jr. scored 1.0 at flex, and one is more than zero. Great job!" },
-      { kind: "Trade", text: "You brought Josh Downs home again after letting him go, because you believe in second chances. He scored 13.2 keeping your bench warm for you. What a good teammate." },
-      { kind: "Drop", text: "You shared the Rams defense with lanny, and they scored 16.5 for him. Sharing is caring, and you're the most caring manager in the league." },
+      { kind: "Trade", text: "You're winning the Downs trade, 33.1 to 27.2! Every single week you believed in him. Gold star." },
+      { kind: "Lineup", text: "You started the Texans defense and they scored 18.5. That's a great pick, Chris. Really great." },
+      { kind: "Bench", text: "Jacory Croskey-Merritt scored 16.2 on your bench. Look at all that depth! Not everyone has a bench that good. You should be really proud." },
     ],
   },
-  Raymond: {
-    headline: "For once, the projected win was a real win.",
+  Daniel: {
+    headline: "Dak threw 4 touchdowns. Ja'Marr Chase caught 3.1 points.",
     story:
-      "Amon-Ra St. Brown scored 22.8, Blake Corum 21.9, and Isaiah Likely 20.2. You did it with Cam Skattebo scoring 28.2 on your bench, so it could have been a 45-point win. You're 4-6 and still a game out. The card still comes pre-creased, but this week the crease is on the other guy. Fuck Ray, respectfully.",
+      "Dak Prescott scored 37.4, the best game by any player this week, and George Pickens added 19.3. Then Ja'Marr Chase scored 3.1 on a 17.35 projection, Luther Burden III scored 1.8, and DJ Moore scored 18.1 on your bench. The three-game winning streak is over, and you're back in last place at 3-8. Week 12 against Noah is an elimination game. The worst team in league history is fighting for its life.",
     mistakes: [
-      { kind: "Bench", text: "Cam Skattebo scored 28.2 on your bench while Javonte Williams started and scored 8.7. You won anyway, which is the most Ray thing possible." },
-      { kind: "Bench", text: "The Giants scored 9.5 on your bench while the Packers started, gave up 28 to 34, and scored 4." },
-      { kind: "Drop", text: "You dropped Cam Little two weeks ago. lanny paid $5 for him and he kicked 21 points to beat Andrew." },
+      { kind: "Bench", text: "DJ Moore scored 18.1 on your bench while Luther Burden III started and scored 1.8." },
+      { kind: "Lineup", text: "Ja'Marr Chase scored 3.1 on a 17.35 projection." },
+      { kind: "Waiver", text: "You cut Woody Marks, the $65 bid, the biggest of the season, after 72.08 points. About 90 cents a point, which is a lot for a team this bad." },
     ],
   },
-  Zachary: {
-    headline: "Mahomes scored 35.92 on your bench. It's going in the report.",
+  Nicholas: {
+    headline: "60.70. The AI is still generating an explanation.",
     story:
-      "Jayden Daniels started and scored 23.76 while Patrick Mahomes sat. You lost by 26.16, so he wouldn't have saved you, but the paperwork is filed. Malik Nabers, DeMario Douglas, and Tyler Warren combined for 4.2 points. That's not a passing game, it's a traffic stop. Your one good call: the Steelers defense scored -5.5 on your bench. You're 5-5 and holding 6th, with Isaiah coming for it in Week 11.",
+      "Your kicker scored -0.6. Your defense scored -2.5. Mark Andrews, whom you added, dropped, and re-added this week, scored 1.4. Brock Purdy scored 22.2, and that was a third of your points. 60.70 was the lowest score of the week and the second-lowest of the season, and Bo Nix, whom you dropped in September, scored 12.5 in Ethan's win over you. You're 6-5, holding the 6th seed by a game over Ray and Andrew. Maybe try a different model.",
     mistakes: [
-      { kind: "Bench", text: "Patrick Mahomes scored 35.92 on your bench while Jayden Daniels started and scored 23.76. Second straight week Mahomes sat." },
-      { kind: "Waiver", text: "DeMario Douglas, picked up after Nicholas dropped him, started and scored 0.4 on a 7.13 projection." },
-      { kind: "Lineup", text: "Malik Nabers scored 2.9 with a fumble and Tyler Warren scored 0.9." },
+      { kind: "Drop", text: "You dropped the 49ers for Mark Andrews. The 49ers scored 16 on waivers. Andrews scored 1.4 and your Buccaneers scored -2.5." },
+      { kind: "Lineup", text: "Spencer Shrader kicked for -0.6. Negative. From a kicker." },
+      { kind: "Drop", text: "Bo Nix, your September drop, scored 12.5 for Ethan in his win over you." },
+      { kind: "Trade", text: "Stefon Diggs scored 5.5 on a 10.21 projection. Ray still leads that trade 108.3 to 59.5." },
     ],
   },
 };
