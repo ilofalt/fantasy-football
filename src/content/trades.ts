@@ -4,10 +4,60 @@ import type { Trade } from "@/lib/trades/types";
 // points in league scoring, per NFL week, counted from the first week each
 // player could score for his new team.
 //
-// Last updated: Week 11 final, including Monday night (Nov 23, 2026).
-export const TRADES_UPDATED = "Week 11 final · Mon Nov 23, 2026";
+// Last updated: Week 12 in progress, after the Thanksgiving games (Nov 27, 2026).
+// Older trades count through Week 11 final; the two Nov 24 trades show Week 12 so far.
+export const TRADES_UPDATED = "Week 12 through Thanksgiving · Fri Nov 27, 2026";
 
 export const trades: Trade[] = [
+  {
+    id: "daniel-chris-nov-24",
+    date: "2026-11-24",
+    weeksCounted: [12],
+    sides: [
+      {
+        manager: "Chris",
+        received: [{ name: "DJ Moore", position: "WR · BUF", weeklyPointsSinceTrade: [1.5] }],
+      },
+      {
+        manager: "Daniel",
+        received: [{ name: "Zach Charbonnet", position: "RB · SEA", weeklyPointsSinceTrade: [null], note: "Plays Sunday at SF" }],
+      },
+    ],
+    verdict: null,
+    headline: "Two trades in one morning. Chris is in his GM era, and we're here for it.",
+    writeUp: [
+      "Three hours after the Ray trade, Chris sent Zach Charbonnet to Daniel for DJ Moore. Chris took Charbonnet off Andrew's hands back on Oct 6, when he was still on the PUP list, nursed him back to a starting role, and has now turned him into a starting receiver. That's patience and good timing, Chris. Daniel, owner of the worst team in league history, gets a running back to go with it.",
+      "Week 12 (so far): Moore started for Chris and caught 15 yards' worth of passes, 1.5 points, in Buffalo's 13-10 Thanksgiving-night win over Kansas City. Charbonnet plays Sunday at San Francisco.",
+      "Too early to call. Moore's 1.5 is technically a lead, the same way Daniel's roster is technically a fantasy football team.",
+    ],
+  },
+  {
+    id: "chris-raymond-nov-24",
+    date: "2026-11-24",
+    weeksCounted: [12],
+    sides: [
+      {
+        manager: "Chris",
+        received: [
+          { name: "Caleb Williams", position: "QB · CHI", weeklyPointsSinceTrade: [25.8] },
+          { name: "Blake Corum", position: "RB · LAR", weeklyPointsSinceTrade: [31.0] },
+          { name: "Ollie Gordon II", position: "RB · MIA", weeklyPointsSinceTrade: [null], note: "Plays Sunday vs NYJ" },
+        ],
+      },
+      {
+        manager: "Raymond",
+        received: [{ name: "Josh Allen", position: "QB · BUF", weeklyPointsSinceTrade: [7.54] }],
+      },
+    ],
+    verdict: "Chris",
+    headline: "Chris wins a trade before Sunday even starts. Ray benched the better quarterback to lose it.",
+    writeUp: [
+      "A 3-for-1: Ray sent Caleb Williams, Blake Corum, and Ollie Gordon II to Chris for Josh Allen. Ray got Corum from lanny and Gordon from Nicholas in his two earlier trades, so he has now cashed in the only two good decisions he's made all season for one quarterback.",
+      "Week 12 (so far): Chris started both new guys right away, and it paid off. Caleb Williams threw for 345 yards and two touchdowns for 25.8 points in Chicago's 39-35 win at Detroit, and Corum ran for 184 yards and a touchdown for 31.0 against Green Bay. That's 56.8 points from the trade before Sunday, which is also most of Chris's 58.30 against Isaiah.",
+      "Ray started Allen over Jared Goff. Allen threw for 81 yards and two interceptions for 7.54 points. Goff scored 17.32 on Ray's bench. Ray traded three players to get a worse game out of his quarterback than the one he already had. Fuck Ray.",
+      "Chris leads 56.8 to 7.54, with Gordon still to play Sunday against the Jets. Chris, you saw something here that nobody else in this league saw. Trust your gut, buddy. It's working.",
+    ],
+  },
   {
     id: "nicholas-chris-oct-28",
     date: "2026-10-28",
@@ -42,7 +92,7 @@ export const trades: Trade[] = [
         received: [
           { name: "Amon-Ra St. Brown", position: "WR · DET", weeklyPointsSinceTrade: [null, 19.2, 7.6, 10.6, 22.8, 10.2], note: "Bye in Week 6" },
           { name: "Javonte Williams", position: "RB · DAL", weeklyPointsSinceTrade: [13.0, 25.5, 7.7, 20.9, 8.7, 23.6] },
-          { name: "Blake Corum", position: "RB · LAR", weeklyPointsSinceTrade: [14.0, 19.6, 14.8, 13.8, 21.9, null] },
+          { name: "Blake Corum", position: "RB · LAR", weeklyPointsSinceTrade: [14.0, 19.6, 14.8, 13.8, 21.9, null], note: "Traded to Chris on Nov 24" },
         ],
       },
       {
@@ -141,7 +191,7 @@ export const trades: Trade[] = [
       {
         manager: "Chris",
         received: [
-          { name: "Zach Charbonnet", position: "RB · SEA", weeklyPointsSinceTrade: [0, 0, 0, 3.4, 10.6, 11.9, null], note: "Back from the PUP list in Week 8" },
+          { name: "Zach Charbonnet", position: "RB · SEA", weeklyPointsSinceTrade: [0, 0, 0, 3.4, 10.6, 11.9, null], note: "Traded to Daniel on Nov 24" },
         ],
       },
     ],
@@ -163,7 +213,7 @@ export const trades: Trade[] = [
       {
         manager: "Raymond",
         received: [
-          { name: "Ollie Gordon II", position: "RB · MIA", weeklyPointsSinceTrade: [17.5, 17.8, null, 19.8, 8.9, 7.4, 13.5, 8.2], note: "Bye in Week 6" },
+          { name: "Ollie Gordon II", position: "RB · MIA", weeklyPointsSinceTrade: [17.5, 17.8, null, 19.8, 8.9, 7.4, 13.5, 8.2], note: "Traded to Chris on Nov 24" },
           { name: "Kenyon Sadiq", position: "TE · NYJ", weeklyPointsSinceTrade: [0, 0, 1.7, 0.6, 2.7, 5.9, 0.3, 4], note: "Since dropped" },
         ],
       },
