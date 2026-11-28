@@ -1,7 +1,7 @@
 // Hand-written league news, newest first. Edit this file to publish a new
 // story; the News tab renders whatever is here.
 //
-// Last updated: Week 12 in progress, after the Thanksgiving games (Nov 27, 2026).
+// Last updated: Week 12 in progress, after Friday's Broncos-Steelers game (Nov 27, 2026).
 
 export type NewsCategory =
   | "Recap"
@@ -37,25 +37,26 @@ export const news: NewsArticle[] = [
   {
     id: "week-12-thanksgiving",
     category: "Recap",
-    title: "Week 12 after Thanksgiving: Gibbs drops 48, Chris wins two trades in a morning, and Ray benches the wrong QB",
-    dek: "Four NFL games are done. Matthew is already at 109.70, Chris is up 45 on Isaiah, and Nicholas hasn't scored a point.",
+    title: "Week 12 through Friday: Gibbs drops 48, Chris wins two trades in a morning, and Zachary benches 30 points of defense",
+    dek: "Five NFL games are done. Matthew is already at 109.70, Chris is up 33.90 on Isaiah, and Nicholas still hasn't scored a point.",
     date: "2026-11-27",
     paragraphs: [
       "Chris made two trades on Tuesday morning. First he got Caleb Williams, Blake Corum, and Ollie Gordon II from Ray for Josh Allen, then he flipped Zach Charbonnet to Daniel for DJ Moore. Two days later, Williams scored 25.8 and Corum 31.0, the second-best game by anyone so far this week. Chris, that's a great week of work. We're all really proud of you. The full breakdowns are on the Trades tab.",
       "Ray started his new quarterback, Josh Allen, who threw two interceptions for 7.54 points. Jared Goff scored 17.32 on Ray's bench, next to Rome Odunze's 23.20. Ray has 40.52 points on his bench and trails Matthew by 50.76. Fuck Ray.",
       "Matthew is at 109.70 before Sunday. Jahmyr Gibbs ran for 205 yards and three touchdowns for 48.20, the best game in the league so far, and DeVonta Smith caught 200 yards and two touchdowns for 35.00 in Philadelphia's 39-38 win at Dallas. Matthew has already clinched his first playoff spot ever and still keeps acting like he's never been here before. That's because he hasn't.",
       "Isaiah is at 13.40 against Chris. He started Braelon Allen, who plays Sunday, over Kyle Monangai, who scored two touchdowns on Thanksgiving for 16.40 on Isaiah's bench. The commissioner can't lift a lineup decision, either.",
-      "Elsewhere: Daniel leads Noah 49.14 to 10.60 behind Dak Prescott's 27.04. Noah's tight end, Colston Loveland, lost a fumble for -1.50 and left with a knee injury, and he's likely headed to IR, which mostly worries Noah as a dynasty asset. Ethan leads Zachary 52.30 to 23.50 behind D'Andre Swift's 25.70; Officer Zachary correctly benched Patrick Mahomes (7.66), and his report will say so. lanny leads Jonathan 45.62 to 11.30, and Jonathan's tight end Dallas Goedert had 1.40, which he points out would be more in PPR. Andrew leads Nicholas 16.40 to 0.00 thanks to CeeDee Lamb, which means Andrew's lineup was set, which means someone set it.",
+      "Friday: Pittsburgh beat Denver 27-5, and the Steelers defense scored 30.00 with two touchdowns, two interceptions, and three sacks. All of it went on Officer Zachary's bench, because he started the Patriots. That's a lot of evidence to leave in the locker. Bo Nix threw two interceptions and lost a fumble for 3.96 for Ethan, whose quarterback had about as much shine on Friday as Ethan's head. Chris Boswell kicked for 11.00, and Isaiah climbed to 24.40. Getting outweighed is nothing new for a man at victim weight. Jonah Coleman added 8.70 for Noah, with DK Metcalf's touchdown (10.10) on his bench. Nicholas switched his quarterback from Brock Purdy to Deshaun Watson, which is exactly what a chatbot would suggest if you asked it how to make your week more interesting.",
+      "Elsewhere: Through Thursday, Daniel led Noah 49.14 to 10.60 behind Dak Prescott's 27.04. Noah's tight end, Colston Loveland, lost a fumble for -1.50 and left with a knee injury, and he's likely headed to IR, which mostly worries Noah as a dynasty asset. Ethan leads Zachary 52.30 to 23.50 behind D'Andre Swift's 25.70; Officer Zachary correctly benched Patrick Mahomes (7.66), and his report will say so. lanny leads Jonathan 45.62 to 11.30, and Jonathan's tight end Dallas Goedert had 1.40, which he points out would be more in PPR. Andrew leads Nicholas 16.40 to 0.00 thanks to CeeDee Lamb, which means Andrew's lineup was set, which means someone set it.",
     ],
     list: [
       { label: "Matthew 109.70 · Raymond 58.94", detail: "Gibbs 48.20 and DeVonta Smith 35.00. Ray left Odunze (23.20) and Goff (17.32) on his bench and started Allen (7.54)" },
-      { label: "Chris 58.30 · Isaiah 13.40", detail: "Corum 31.00 and Caleb Williams 25.80, both added Tuesday. Isaiah benched Monangai's 16.40. Yahoo gives Chris a 67% chance, and we think he's earned it" },
-      { label: "Ethan 52.30 · Zachary 23.50", detail: "Swift 25.70, Watson 14.00, LaPorta 11.90. Saquon Barkley scored 0.70, which is still more than Ethan has on top of his head" },
-      { label: "Daniel 49.14 · Noah 10.60", detail: "Dak 27.04. Loveland -1.50 and hurt. The worst team in league history is winning by 38.54" },
-      { label: "lanny 45.62 · Jonathan 11.30", detail: "Kyren Williams 14.00 and Love 11.12 for lanny. Jonathan has Burrow, Henry, Higgins, and London on Sunday" },
-      { label: "Andrew 16.40 · Nicholas 0.00", detail: "Lamb 16.40. Nicholas' only Thursday player, Konata Mumpfield (8.90), was on his bench. Ask the chatbot why" },
+      { label: "Chris 58.30 · Isaiah 24.40", detail: "Corum 31.00 and Caleb Williams 25.80, both added Tuesday. Isaiah benched Monangai's 16.40 and got 11.00 from Boswell on Friday. Chris has earned this one, and we couldn't be happier for him" },
+      { label: "Ethan 56.26 · Zachary 23.50", detail: "Swift 25.70, Watson 14.00, LaPorta 11.90, Nix 3.96. Saquon Barkley scored 0.70, which is still more than Ethan has on top of his head. Zachary left the Steelers' 30.00 on his bench" },
+      { label: "Daniel 49.14 · Noah 19.30", detail: "Dak 27.04. Loveland -1.50 and hurt, Coleman 8.70. The worst team in league history is winning by 29.84" },
+      { label: "lanny 53.62 · Jonathan 11.30", detail: "Kyren Williams 14.00, Love 11.12, and the Broncos defense 8.00 for lanny. Jonathan has Burrow, Henry, Higgins, and London on Sunday" },
+      { label: "Andrew 22.00 · Nicholas 0.00", detail: "Lamb 16.40 and Jaylen Warren 5.60. Nicholas' only Thursday player, Konata Mumpfield (8.90), was on his bench. Ask the chatbot why" },
     ],
-    outro: "Still to come: Broncos-Steelers on Friday, a full Sunday, and Panthers-Buccaneers on Monday night. Standings, the Playoff Picture, and the Weekly Report update after Monday's game.",
+    outro: "Still to come: a full Sunday and Panthers-Buccaneers on Monday night. Standings, the Playoff Picture, and the Weekly Report update after Monday's game.",
   },
   {
     id: "week-11-recap",
